@@ -1,0 +1,290 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  /*overflow-x: hidden;*/
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.wrapper {
+  position: relative;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+header {
+  
+}
+header nav ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .glow {
+  position: fixed;
+  left: -20em;
+  top: 1em;
+  z-index: -1;
+}
+
+header .banner {
+  position: absolute;
+  right: 0em;
+  top: 6em;
+}
+
+header .titles {
+  top: 13em;
+  left: 10em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header .primary-title {
+  font-size: 1.2em;
+}
+
+header .secondary-title {
+  font-size: 2.6em;
+  text-shadow: #000 0px 0px 3px;
+}
+
+header .tertiary-title {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+header .second-tertiary-title {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.container .about {
+  margin-top: 52em;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.container .about h3 {
+}
+
+.container .skills {
+  margin-top: 18em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .skills h3 {
+}
+
+.container .skills .primary-skills {
+  list-style-type: none;
+  padding: 0;
+  opacity: .8;
+}
+
+.container .skills .primary-skills li {
+  padding: .5em;
+  margin-bottom: .5em;
+}
+
+.container .skills .primary-skills li:nth-child(1) {
+  background-color: #f70505;
+  width: 90%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(2) {
+  background-color: purple;
+  width: 95%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(3) {
+  background-color: #1802b1;
+  width: 88%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(4) {
+  background-color: #027911;
+  width: 91%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(5) {
+  background-color: #f9973c;
+  width: 81%;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(6) {
+  background-color: #f5f93c;
+  width: 98%;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(7) {
+  background-color: #ea21fa;
+  width: 99%;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.container .skills .primary-skills li:nth-child(8) {
+  background-color: orange;
+  width: 78%;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.container .skills .more-skills {
+  list-style-type: none;
+  padding: 0;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center; 
+}
+
+.container .skills .more-skills li {
+  margin-bottom: .5em;
+}
+
+.services-background {
+  background-color: #4e518f;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 19em;
+  top: 92em;
+}
+
+.container .services {
+  padding: 1em;
+  color: #ffffff;
+  margin-top: 4em;
+}
+
+.container .services h4 {
+  text-align: center;
+}
+
+.container .services p {
+  text-align: center;
+}
+
+.container .services > p {
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.container .services ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 10em;
+}
+
+.container .services ul li {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container .portfolio {
+  position: relative;
+  margin-top: 4em;
+}
+
+.container .portfolio ul {
+  padding: 0;
+  padding-top: 2em;
+  list-style-type: none;
+  text-align: center;
+}
+
+.container .portfolio ul li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1.2em;
+}
+
+.container .portfolio ul.tabs li a {
+  padding: 1.2em 2em;
+  text-decoration: none;
+  background-color: #c7c7c7;
+  color: #000000;
+  border-radius: .3em;
+}
+
+.container .portfolio ul li a.active {
+  background-color: #8800da;
+  color: #ffffff;
+}
+
+.container .portfolio .items .screen {
+  position: absolute;
+  width: 100%;
+}
+
+.container .portfolio .items .fullstack li {
+  margin-bottom: .9em;
+}
+
+footer {
+  position: relative;
+  padding: 1em;
+  margin-top: 25em;
+}
+
+footer span {
+  display: block;
+  margin-top: -2em;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+footer ul li a {
+  text-decoration: none;
+}

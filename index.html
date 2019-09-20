@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Full Stack Developer | Front End Developer | Web Developer | Web Designer | Freelancer</title>
+</head>
+<body>
+  <div class="services-background"></div>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="https://medium.com/@zafarsaleem">Blog</a></li>
+          <li><a href="mailto:zsaleem@protonmail.com">Hire me</a></li>
+        </ul>
+      </nav>
+      <img class="glow" src="./assets/glow.png">
+        <img class="banner" src="./assets/banner.png">
+        <div class="titles">
+          <h4 class="title primary-title">Hello & Welcome</h4>
+          <h2 class="title secondary-title">I'm Zafar</h2>
+          <h6 class="title tertiary-title">- I'm a Web Developer, Full Stack Developer -</h6>
+          <h6 class="title second-tertiary-title">- Front End Developer & Web Designer -</h6>
+        </div>
+    </header>
+    <div class="container">
+      <div id="about" class="about">
+        <h3>About Me</h3>
+        <p>I am Full Stack, Web, Front end developer. I have experience and expertise in developing engaging web applications and websites.</p>
+        <p>In addition, I am a creative and passionate web designer and UI/UX designer.</p>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul class="primary-skills">
+          <li>Reactjs</li>
+          <li>JavaScript</li>
+          <li>Redux</li>
+          <li>NodeJS</li>
+          <li>MongoDB</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>GraphQL</li>
+        </ul>
+      </div>
+      <div id="services" class="services">
+        <h3>Services</h3>
+        <p>Below are some of the services that I offer to my clients.</p>
+        <ul>
+          <li>
+            <h4>Full Stack Development</h4>
+            <p>Both client and server sides development</p>
+            <p>are the core of any digital project</p>
+            <p>I offer services on both sides</p>
+          </li>
+          <li>
+            <h4>UI Development</h4>
+            <p>Both client and server sides development</p>
+            <p>are the core of any digital project</p>
+            <p>I offer services on both sides</p>
+          </li>
+          <li>
+            <h4>Web Design</h4>
+            <p>Both client and server sides development</p>
+            <p>are the core of any digital project</p>
+            <p>I offer services on both sides</p>
+          </li>
+        </ul>
+      </div>
+      <div id="portfolio" class="portfolio">
+        <h3>Portfolio</h3>
+        <ul class="tabs">
+          <li><a class="active tabs fullstack" href="#items" onclick="toggle_visibility('fullstack-items', 'tabs', 'fullstack');">Full Stack Development</a></li>
+          <li><a class="tabs ui" href="#items" onclick="toggle_visibility('ui-items', 'tabs', 'ui');">UI Development</a></li>
+          <li><a class="tabs design" href="#items" onclick="toggle_visibility('design-items', 'tabs', 'design');">Web Design</a></li>
+        </ul>
+        <div id="items" class="items">
+          <div class="fullstack-items screen show">
+            <ul>
+              <li><a href="https://github.com/toolboxtheplatform/toolbox.app"><img src="./assets/toolbox.png"></a></li>
+              <li><a href="https://github.com/timeoffthescheduler/app"><img src="./assets/timeoff.png"></a></li>
+            </ul>
+          </div>
+          <div class="ui-items screen hide">
+            <ul>
+              <li><a href="https://www.la-kritzer.ch/"><img src="./assets/kritzer.png"></a></li>
+              <li><a href="https://zafar-saleem.github.io"><img src="./assets/portfolio.png"></a></li>
+              <li><a href="https://toolboxtheplatform.github.io"><img src="./assets/toolbox-landing-page.png"></a></li>
+              <li><a href="https://github.com/toolboxtheplatform/toolbox.app"><img src="./assets/toolbox.png"></a></li>
+              <li><a href="https://github.com/timeoffthescheduler/app"><img src="./assets/timeoff.png"></a></li>
+              <li><a href="https://westwing.de"><img src="./assets/westwing.png"></a></li>
+              <li><a href="https://tayara.tn"><img src="./assets/tayara.png"></a></li>
+              <li><a href="https://slimmingworld.co.uk"><img src="./assets/slimming.png"></a></li>
+            </ul>
+          </div>
+          <div class="design-items screen hide">
+            <ul>
+              <li><a href="https://zafar-saleem.github.io"><img src="./assets/portfolio.png"></a></li>
+              <li><a href="https://toolboxtheplatform.github.io"><img src="./assets/toolbox-landing-page.png"></a></li>
+              <li><a href="https://www.uplabs.com/posts/identity-access-management-landing-page-toolbox-tp"><img src="./assets/toolbox.png"></a></li>
+              <li><a href="https://www.uplabs.com/posts/timeoff-to-schedule-vacations"><img src="./assets/timeoff.png"></a></li>
+              <li><a href="https://www.uplabs.com/posts/work-hours"><img src="./assets/daily-time.png"></a></li>
+              <li><a href="https://www.uplabs.com/posts/feature-request-service"><img src="./assets/feature-request.png"></a></li>
+              <li><a href="https://www.uplabs.com/posts/bookstore-9176fc23-1d1a-4963-b863-10c7cca4b43c"><img src="./assets/book-store.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a target="_blank" href="https://github.com/zafar-saleem">Github</a></li>
+        <li><a target="_blank" href="https://uplab.com/zsaleem">Uplab</a></li>
+        <li><a target="_blank" href="https://medium.com/@zafarsaleem">Medium</a></li>
+        <li><a target="_blank" href="https://angle.co/zfrsaleem">Angel.co</a></li>
+      </ul>
+      <span>© Copyright 2019</span>
+    </footer>
+  </div>
+  <script type="text/javascript">
+  <!--
+      function toggle_visibility(el, tbs, tb) {
+       let e = document.querySelector(`.${el}`);
+       let tab = document.querySelector(`.${tb}`);
+       let tabs = document.querySelectorAll(`.${tbs}`);
+       let items = document.querySelectorAll('.screen');
+
+       tabs.forEach(tab => {
+        tab.classList.remove('active');
+       });
+
+       tab.classList.add('active');
+
+       items.forEach(item => {
+         item.classList.remove('show');
+         item.classList.add('hide');
+       });
+
+       if (e.classList.contains('hide')) {
+        e.classList.remove('hide');
+        e.classList.add('show');
+       }
+      }
+  //-->
+  </script>
+</body>
+</html>
