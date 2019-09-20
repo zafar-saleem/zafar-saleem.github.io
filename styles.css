@@ -189,13 +189,13 @@ header .second-tertiary-title {
   z-index: -1;
   width: 100%;
   height: 22em;
-  top: 96em;
+  top: 100em;
 }
 
 .container .services {
   padding: 1em;
   color: #ffffff;
-  margin-top: 4em;
+  margin-top: 6em;
 }
 
 .container .services h4 {
