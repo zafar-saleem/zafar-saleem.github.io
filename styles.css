@@ -5,10 +5,11 @@ body {
   /*overflow-x: hidden;*/
 }
 
-h3 {
+h1 {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 1.6em;
 }
 
 .wrapper {
