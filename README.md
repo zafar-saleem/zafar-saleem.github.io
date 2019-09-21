@@ -1,3 +1,3 @@
-# About This Project
+### Portfolio
 
-This is my, Zafar Saleem's, personal website that shows links to my github, linkedin, instagram and medium profiles alongside CV with list of technical skills and experiences. This can be accessed on [https://zafar-saleem.github.io](https://zafar-saleem.github.io/).
+This is my portfolio site. If you would like to contact or hire me then please visit my [portfolio page](https://zafar-saleem.github.io)
