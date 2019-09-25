@@ -42,10 +42,15 @@ header nav ul li {
 
 header nav ul li:nth-child(6) {
   vertical-align: middle;
+  position: fixed;
+  right: 10em;
+  top: 3em;
 }
 
 header nav ul li:nth-child(6) div a {
   text-decoration: none !important;
+  color: #000;
+  z-index: 100;
 }
 
 header nav ul li a {
