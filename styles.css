@@ -51,6 +51,7 @@ header nav ul li:nth-child(6) div a {
   text-decoration: none !important;
   color: #000;
   z-index: 100;
+  mix-blend-mode: difference;
 }
 
 header nav ul li a {
