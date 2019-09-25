@@ -40,6 +40,14 @@ header nav ul li {
   margin-right: 1em;
 }
 
+header nav ul li:nth-child(6) {
+  vertical-align: middle;
+}
+
+header nav ul li:nth-child(6) div a {
+  text-decoration: none !important;
+}
+
 header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
