@@ -334,7 +334,8 @@ header .small {
   /*display: inline-block;*/
 }
 
-.container .testimonials ul li p {
+.container .testimonials ul li p b {
+  font-weight: 500;
 }
 
 .container .height {
