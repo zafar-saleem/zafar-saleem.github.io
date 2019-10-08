@@ -99,10 +99,10 @@
       </div>
       <div id="portfolio" class="portfolio">
         <h1>Portfolio</h1>
-        <ul class="tabs">
-          <li><a class="active tabs fullstack" href="#items" onclick="toggle_visibility('fullstack-items', 'tabs', 'fullstack');">Full Stack Development</a></li>
-          <li><a class="tabs ui" href="#items" onclick="toggle_visibility('ui-items', 'tabs', 'ui');">UI Development</a></li>
-          <li><a class="tabs design" href="#items" onclick="toggle_visibility('design-items', 'tabs', 'design');">Web Design</a></li>
+        <ul id="tabs" class="tabs">
+          <li><a class="active tabs fullstack" href="#portfolio" onclick="toggle_visibility('fullstack-items', 'tabs', 'fullstack');">Full Stack Development</a></li>
+          <li><a class="tabs ui" href="#portfolio" onclick="toggle_visibility('ui-items', 'tabs', 'ui');">UI Development</a></li>
+          <li><a class="tabs design" href="#portfolio" onclick="toggle_visibility('design-items', 'tabs', 'design');">Web Design</a></li>
           <li class="overflow"></li>
         </ul>
         <div id="items" class="items">
@@ -115,6 +115,7 @@
           </div>
           <div class="ui-items screen hide">
             <ul>
+              <li><a href="http://timeoffthescheduler.github.io"><img alt="timeoff-landing-page" src="./assets/timeoff-landing-page.png"></a></li>
               <li><a href="https://www.la-kritzer.ch/"><img alt="kritzer" src="./assets/kritzer.png"></a></li>
               <li><a href="https://zafar-saleem.github.io"><img alt="web-portfolio" src="./assets/portfolio.png"></a></li>
               <li><a href="https://toolboxtheplatform.github.io"><img alt="toolbox-landing-page" src="./assets/toolbox-landing-page.png"></a></li>
@@ -128,6 +129,7 @@
           </div>
           <div class="design-items screen hide">
             <ul>
+
               <li><a href="https://zafar-saleem.github.io"><img alt="web-portfolio" src="./assets/portfolio.png"></a></li>
               <li><a href="https://www.uplabs.com/posts/identity-access-management-landing-page-toolbox-tp"><img alt="landing-page" src="./assets/toolbox-landing-page.png"></a></li>
               <li><a href="https://github.com/toolboxtheplatform/toolbox.app"><img alt="identity-access-management" src="./assets/toolbox.png"></a></li>
