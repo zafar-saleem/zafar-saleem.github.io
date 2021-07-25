@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import Dp from './components/dp';
 import Description from './components/description';
@@ -7,6 +8,12 @@ const IdCardWrapper = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #122023;
+  animation: expand .5s ease-in-out;
+  @keyframes expand {
+    from {
+      transform: scale(0);
+    }
+  }
 `;
 
 const IdCard = styled.div`
@@ -29,6 +36,10 @@ const ProfileRow = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    document.title = 'Zafar Saleem | JavaScript | React | React Hooks | Redux | Node | Express | MongoDB';
+  }, []);
+
   return (
     <IdCardWrapper>
       <IdCard>
