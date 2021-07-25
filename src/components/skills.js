@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const Para = styled.p`
-	animation-duration: 5s;
+	animation-duration: ${({duration}) => `${duration}ms`};
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: opacity;
@@ -63,6 +63,7 @@ const Skills = () => {
     'Pashto',
   ];
   let index = 1;
+  const duration = 5000;
 
   useEffect(() => {
     setInterval(() => {
@@ -71,11 +72,11 @@ const Skills = () => {
       if (index === skillsList.length) {
         index = 0;
       }
-    }, 5000);
+    }, duration);
   }, []);
 
 	return (
-		<Para props={skill}>{skill}</Para>
+		<Para duration={duration}>{skill}</Para>
 	);
 }
 
