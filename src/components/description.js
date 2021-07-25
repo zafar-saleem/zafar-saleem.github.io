@@ -29,7 +29,7 @@ const Description = () => (
 	  <p>JavaScript</p>
 	  <p>
 	    <Link href='https://zafarsaleem.medium.com'>Medium</Link>
-	    <Link href='https://github.com/zafar-salee'>Github</Link>
+	    <Link href='https://github.com/zafar-saleem'>Github</Link>
 	    <Link href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
 	    <Link href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
 	  </p>
