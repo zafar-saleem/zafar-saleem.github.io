@@ -16,7 +16,9 @@ const Link = styled.a`
   text-decoration: none;
   font-size: 12px;
   margin-right: 5px;
+  box-sizing: border-box;
   &:hover {
+    font-size: 13px;
     text-shadow: 0px 0px 10px #12a0a0;
   }
 `;
