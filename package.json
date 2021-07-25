@@ -2,7 +2,7 @@
   "name": "zafar-saleem.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zafar-saleem.github.io/zafar-saleem.github.io",
+  "homepage": "http://zafar-saleem.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
