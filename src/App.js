@@ -5,7 +5,7 @@ import Description from './components/description';
 const IdCardWrapper = styled.div`
   display: flex;
   height: 100vh;
-  width:100%;
+  width: 100%;
   background-color: #122023;
 `;
 
@@ -21,6 +21,11 @@ const IdCard = styled.div`
 
 const ProfileRow = styled.div`
   display: flex;
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 function App() {

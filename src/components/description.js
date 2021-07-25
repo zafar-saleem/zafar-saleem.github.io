@@ -6,6 +6,9 @@ const Desc = styled.div`
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0px 0px 4px #12a0a0;
   letter-spacing: 1px;
+  @media screen and (max-width: 500px) {
+  	font-size: 14px;
+  }
 `;
 
 const Link = styled.a`
