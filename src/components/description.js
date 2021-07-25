@@ -13,6 +13,9 @@ const Desc = styled.div`
   	font-size: 14px;
     flex-basis: 80%;
   }
+  @media screen and (max-width: 376px) {
+    flex-basis: 85%;
+  }
 `;
 
 const Name = styled.h1`
