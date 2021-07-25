@@ -1,3 +1,4 @@
+import Skills from './skills';
 import styled from 'styled-components';
 
 const Desc = styled.div`
@@ -9,6 +10,11 @@ const Desc = styled.div`
   @media screen and (max-width: 500px) {
   	font-size: 14px;
   }
+`;
+
+const Name = styled.h1`
+  display: inline-block;
+  margin: 0;
 `;
 
 const Link = styled.a`
@@ -23,17 +29,37 @@ const Link = styled.a`
   }
 `;
 
-const Description = () => (
-	<Desc>
-	  <h1>Zafar Saleem</h1>
-	  <p>JavaScript</p>
-	  <p>
-	    <Link href='https://zafarsaleem.medium.com'>Medium</Link>
-	    <Link href='https://github.com/zafar-saleem'>Github</Link>
-	    <Link href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
-	    <Link href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
-	  </p>
-	</Desc>
-);
+const Period = styled.span`
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 1000;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: opacity;
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+const Description = () => {
+  return (
+    <Desc>
+      <Name>Zafar Saleem</Name><Period>_</Period>
+      <Skills />
+      <p>
+        <Link href='https://zafarsaleem.medium.com'>Medium</Link>
+        <Link href='https://github.com/zafar-saleem'>Github</Link>
+        <Link href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
+        <Link href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
+      </p>
+    </Desc>
+  )
+};
 
 export default Description;
