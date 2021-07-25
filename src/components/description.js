@@ -34,6 +34,7 @@ const Link = styled.a`
   box-sizing: border-box;
   &:hover {
     text-shadow: 0px 0px 10px #12a0a0;
+    text-decoration: overline;
   }
 `;
 
