@@ -27,26 +27,12 @@ const Name = styled.h1`
 `;
 
 const Link = styled.a`
-  position:absolute;
   color: #999999;
   text-decoration: none;
   font-size: 12px;
   margin-right: 5px;
   box-sizing: border-box;
-  &.github {
-    left: 78px;
-  }
-  &.linkedin {
-    left: 132px;
-  }
-  &.instagram {
-    left: 200px;
-  }
-  &.cv {
-    left: 282px;
-  }
   &:hover {
-    font-size: 13px;
     text-shadow: 0px 0px 10px #12a0a0;
   }
 `;
@@ -55,9 +41,10 @@ const Period = styled.span`
   display: inline-block;
   font-size: 16px;
   font-weight: 1000;
-  animation-duration: 1s;
+  animation-duration: .2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-direction: alternate;
   animation-name: opacity;
   @keyframes opacity {
     from {
@@ -75,11 +62,11 @@ const Description = () => {
       <Name>Zafar Saleem</Name><Period>_</Period>
       <Skills />
       <p>
-        <Link className='medium' href='https://zafarsaleem.medium.com'>Medium</Link>
-        <Link className='github' href='https://github.com/zafar-saleem'>Github</Link>
-        <Link className='linkedin' href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
-        <Link className='instagram' href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
-        <Link className='cv' href={`${cv}`}>CV</Link>
+        <Link href='https://zafarsaleem.medium.com'>Medium</Link>
+        <Link href='https://github.com/zafar-saleem'>Github</Link>
+        <Link href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
+        <Link href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
+        <Link href={`${cv}`}>CV</Link>
       </p>
     </Desc>
   )
