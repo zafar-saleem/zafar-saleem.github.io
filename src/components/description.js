@@ -24,7 +24,7 @@ const Link = styled.a`
 const Description = () => (
 	<Desc>
 	  <h1>Zafar Saleem</h1>
-	  <p>Developer</p>
+	  <p>JavaScript</p>
 	  <p>
 	    <Link href='https://zafarsaleem.medium.com'>Medium</Link>
 	    <Link href='https://github.com/zafar-salee'>Github</Link>
