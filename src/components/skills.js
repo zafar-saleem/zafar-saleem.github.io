@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const P = styled.p`
+const Para = styled.p`
 	animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -35,11 +35,13 @@ const Skills = () => {
     'Github',
     'Gitlab',
     'Bitbucket',
+    'Gitflow',
     'CSS Grid',
     'Mongoose',
     'Jest',
     'Enzyme',
     'Styled-Components',
+    'CSS-in-JS',
     'jQuery',
     'SASS',
     'AJAX',
@@ -52,12 +54,18 @@ const Skills = () => {
     'Jira',
     'Agile',
     'Scrum',
+    'SDLC',
+    'Team Work',
+    'Individual Work',
+    'Photoshop',
+    'English',
+    'Urdu',
+    'Pashto',
   ];
-  let interval;
   let index = 1;
 
   useEffect(() => {
-    interval = setInterval(() => {
+    setInterval(() => {
       setSkill(skillsList[index]);
       index++;
       if (index === skillsList.length) {
@@ -67,7 +75,7 @@ const Skills = () => {
   }, []);
 
 	return (
-		<P>{skill}</P>
+		<Para props={skill}>{skill}</Para>
 	);
 }
 
