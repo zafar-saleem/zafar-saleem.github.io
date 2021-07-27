@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styled from 'styled-components';
 import Dp from './components/dp';
 import Description from './components/description';
@@ -36,10 +35,6 @@ const ProfileRow = styled.div`
 `;
 
 function App() {
-  useEffect(() => {
-    document.title = 'Zafar Saleem | JavaScript | React | React Hooks | Redux | Node | Express | MongoDB';
-  }, []);
-
   return (
     <IdCardWrapper>
       <IdCard>
