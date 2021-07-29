@@ -67,7 +67,7 @@ const Skills = () => {
     'Documentation',
     'JSDocs',
     'Software Architecture',
-    'IT Infrastructure'
+    'IT Infrastructure',
     'Responsive Design',
     'Mobile First',
     'Skype',
