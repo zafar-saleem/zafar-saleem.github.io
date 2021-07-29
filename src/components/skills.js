@@ -62,12 +62,16 @@ const Skills = () => {
     'Urdu',
     'Pashto',
     'Team Builder',
-    'Writing',
-    'Technical Writing',
+    'Blogger',
+    'Technical Blogger',
     'Documentation',
     'JSDocs',
     'Software Architecture',
     'IT Infrastructure'
+    'Responsive Design',
+    'Mobile First',
+    'Skype',
+    'Slack'
   ];
   let index = 1;
   const duration = 5000;
