@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Dp from './components/dp';
-import Description from './components/description';
+import Dp from './components/dp/dp';
+import Description from './components/description/description';
 
 const IdCardWrapper = styled.div`
   display: flex;
