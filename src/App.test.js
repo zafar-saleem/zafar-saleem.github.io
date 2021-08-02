@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { shallow, mount } from 'enzyme';
 import App from './App';
+describe('<App />', () => {
+  const wrapper = shallow(<App />);
+  it('should have Dp component', () => {
+    expect(wrapper.find('Dp').length).toEqual(1);
+  });
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  it('should have Description component', () => {
+    expect(wrapper.find('Description').length).toEqual(1);
+  });
 });

@@ -70,6 +70,7 @@ const Skills = () => {
     'IT Infrastructure',
     'Responsive Design',
     'Mobile First',
+    'CSS Media Queries',
     'Skype',
     'Slack'
   ];

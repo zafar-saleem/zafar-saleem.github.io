@@ -1,5 +1,5 @@
-import Skills from './skills';
-import cv from '../assets/cv/CV.pdf';
+import Skills from '../skills/skills';
+import cv from '../../assets/cv/CV.pdf';
 import styled from 'styled-components';
 
 const Desc = styled.div`
