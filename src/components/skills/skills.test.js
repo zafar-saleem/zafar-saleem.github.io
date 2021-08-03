@@ -1,5 +1,4 @@
 import { mount } from 'enzyme';
-import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import Skills from './skills';
 
@@ -13,12 +12,14 @@ function sleep(ms) {
 
 describe('<Skills />', () => {
 	const wrapper = mount(<Skills />);
+	const paragraph = wrapper.find('p');
+
 	it('should have p tag', () => {
-		expect(wrapper.find('p').length).toEqual(1);
+		expect(paragraph.length).toEqual(1);
 	});
 	it('should have skills updating after 5000ms', async () => {
-		expect(wrapper.find('p').text()).toBe('JavaScript');
+		expect(paragraph.text()).toBe('JavaScript');
 		await act(() => sleep(5000));
-		expect(wrapper.find('p').text()).toBe('React');
+		expect(paragraph.text()).toBe('React');
 	}, 10000);
 });
