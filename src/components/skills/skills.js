@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { skills } from '../../data/skills';
 import styled from 'styled-components';
 
 const Para = styled.p`
@@ -18,70 +19,14 @@ const Para = styled.p`
 
 const Skills = () => {
 	const [skill, setSkill] = useState('JavaScript');
-  const skillsList = [
-    'JavaScript',
-    'React',
-    'Redux',
-    'React Hooks',
-    'HTML5',
-    'CSS3',
-    'Node',
-    'Express',
-    'MongoDB',
-    'CI/CD',
-    'AWS',
-    'Heroku',
-    'Git',
-    'Github',
-    'Gitlab',
-    'Bitbucket',
-    'Gitflow',
-    'CSS Grid',
-    'Mongoose',
-    'Jest',
-    'Enzyme',
-    'Styled-Components',
-    'CSS-in-JS',
-    'jQuery',
-    'SASS',
-    'AJAX',
-    'Angular',
-    'Sublime Text',
-    'Vim',
-    'Slack',
-    'Skype',
-    'Confluence',
-    'Jira',
-    'Agile',
-    'Scrum',
-    'SDLC',
-    'Team Work',
-    'Individual Work',
-    'Photoshop',
-    'English',
-    'Urdu',
-    'Pashto',
-    'Team Builder',
-    'Blogger',
-    'Technical Blogger',
-    'Documentation',
-    'JSDocs',
-    'Software Architecture',
-    'IT Infrastructure',
-    'Responsive Design',
-    'Mobile First',
-    'CSS Media Queries',
-    'Skype',
-    'Slack'
-  ];
   let index = 1;
   const duration = 5000;
 
   useEffect(() => {
     setInterval(() => {
-      setSkill(skillsList[index]);
+      setSkill(skills[index]);
       index++;
-      if (index === skillsList.length) {
+      if (index === skills.length) {
         index = 0;
       }
     }, duration);
