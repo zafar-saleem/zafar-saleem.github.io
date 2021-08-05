@@ -113,7 +113,7 @@ export const skills = [
   },
   {
     name: 'Vim',
-    icon: '',
+    icon: 'https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/vim-icon.png',
   },
   {
     name: 'Slack',
