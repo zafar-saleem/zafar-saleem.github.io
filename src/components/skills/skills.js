@@ -47,7 +47,7 @@ const Skills = () => {
 
 	return (
 		<Para duration={duration}>
-      <img src={skill.icon} />
+      <img src={skill.icon} alt={skill.name} />
       <span>{skill.name}</span>
     </Para>
 	);
