@@ -63,11 +63,31 @@ const Description = () => {
       <Name>Zafar Saleem</Name><Period>_</Period>
       <Skills />
       <p>
-        <Link href='https://zafarsaleem.medium.com'>Medium</Link>
-        <Link href='https://github.com/zafar-saleem'>Github</Link>
-        <Link href='https://www.linkedin.com/in/zeesaleem/'>Linkedin</Link>
-        <Link href='https://www.instagram.com/xafarfotos/'>Instagram</Link>
-        <Link href={`${cv}`}>CV</Link>
+        <Link
+          href='https://zafarsaleem.medium.com'
+          rel='Zafar Saleem zafarsaleem.medium.com Blogs'>
+          Medium
+        </Link>
+        <Link
+          href='https://github.com/zafar-saleem'
+          rel='Zafar Saleem Github.com/zafar-saleem Profile'>
+          Github
+        </Link>
+        <Link
+          href='https://www.linkedin.com/in/zeesaleem/'
+          rel='Zafar Saleem Linkedin.com/in/zeesaleem Profile'>
+          Linkedin
+        </Link>
+        <Link
+          href='https://www.instagram.com/xafarfotos/'
+          rel='Zafar Saleem Instagram.com/xafarfotos Profile'>
+          Instagram
+        </Link>
+        <Link
+          href={`${cv}`}
+          rel='Zafar Saleem CV'>
+          CV
+        </Link>
       </p>
     </Desc>
   )
