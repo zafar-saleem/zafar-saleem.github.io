@@ -65,7 +65,7 @@ const Dp = () => (
 	<DpContainer>
 	  <ArcOuter />
 	  <ArcInner />
-	  <DpImage src={`${avatar}`} alt='JavaScript | HTML | CSS | React | Redux' />
+	  <DpImage src={`${avatar}`} alt='Zafar Saleem | JavaScript | HTML | CSS | React | Redux | Node | Express' />
 	</DpContainer>
 );
 
