@@ -23,6 +23,9 @@ const IdCard = styled.div`
   padding: 1em;
   border: 2px solid #0AE0DF;
   box-shadow: 0px 0px 3px 1px #12a0a0, inset 0px 0px 3px 1px #12a0a0;
+  @media screen and (max-width: 500px) {
+    width: 20em;
+  }
 `;
 
 const ProfileRow = styled.div`
