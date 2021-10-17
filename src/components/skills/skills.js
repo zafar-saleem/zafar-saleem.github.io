@@ -23,7 +23,7 @@ const Para = styled.p`
     left: 33px;
   }
 `;
-
+// https://icons8.com/icons/set/co-founder
 const Skills = () => {
 	const [skill, setSkill] = useState({
     name: 'Co-Founder',
