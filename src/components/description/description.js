@@ -26,7 +26,7 @@ const Name = styled.h1`
   }
 `;
 
-const Link = styled.a`
+export const Link = styled.a`
   color: #999999;
   text-decoration: none;
   font-size: 12px;
