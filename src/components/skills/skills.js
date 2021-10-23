@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { skills } from '../../data/skills';
+import { Link } from '../description/description';
 import styled from 'styled-components';
 
 const Para = styled.p`
@@ -23,6 +24,22 @@ const Para = styled.p`
     left: 33px;
   }
 `;
+
+const Container = styled.div`
+	a {
+		position: absolute !important;
+	  top: 85px;
+	  right: 0;
+	  font-size: 10px;
+	  &:hover {
+	  	text-decoration: underline;
+	  }
+	  @media screen and (max-width: 500px) {
+	  	top: 68px;
+	  }
+	}
+`;
+
 // https://icons8.com/icons/set/co-founder
 const Skills = () => {
 	const [skill, setSkill] = useState({
@@ -46,10 +63,15 @@ const Skills = () => {
   }, []);
 
 	return (
-		<Para duration={duration}>
-      <img src={skill.icon} alt={skill.name} />
-      <span>{skill.name}</span>
-    </Para>
+		<Container>
+			<Para duration={duration}>
+	      <img src={skill.icon} alt={skill.name} />
+	      <span>{skill.name}</span>
+	    </Para>
+	    <Link href='https://gist.github.com/zafar-saleem/c194969fc6c6994b3bbf6df8c46aab61'>
+	    	View All Skills
+	   	</Link>
+    </Container>
 	);
 }
 
