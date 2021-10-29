@@ -18,8 +18,8 @@ describe('<Skills />', () => {
 		expect(paragraph.length).toEqual(1);
 	});
 	it('should have skills updating after 5000ms', async () => {
-		expect(paragraph.text()).toBe('Co-Founder');
-		await act(() => sleep(5000));
 		expect(paragraph.text()).toBe('JavaScript');
+		await act(() => sleep(5000));
+		expect(paragraph.text()).toBe('React');
 	}, 10000);
 });
