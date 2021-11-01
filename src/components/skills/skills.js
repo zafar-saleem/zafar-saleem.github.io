@@ -69,7 +69,7 @@ const Skills = () => {
 	      <span>{skill.name}</span>
 	    </Para>
 	    <Link href='https://gist.github.com/zafar-saleem/c194969fc6c6994b3bbf6df8c46aab61'>
-	    	View All Skills
+	    	View All
 	   	</Link>
     </Container>
 	);
