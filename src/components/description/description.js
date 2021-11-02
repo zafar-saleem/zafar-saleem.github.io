@@ -84,7 +84,7 @@ const Description = () => {
           Linkedin
         </Link>
         <Link
-          href='https://www.instagram.com/xafarfotos/'
+          href='https://www.instagram.com/zafarsaleem.fotos/'
           rel='Zafar Saleem Instagram.com/zafarsaleem.fotos Profile'>
           Instagram
         </Link>
