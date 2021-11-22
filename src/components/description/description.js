@@ -74,7 +74,7 @@ const Description = () => {
           Github
         </Link>
         <Link
-          href='https://gitlab.com/users/zsaleem/projects'
+          href='https://gitlab.com/zsaleem'
           rel='Zafar Saleem Gitlab.com/zsaleem Profile'>
           Gitlab
         </Link>
