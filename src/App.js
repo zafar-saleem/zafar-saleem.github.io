@@ -1,6 +1,8 @@
+import { useRef } from 'react';
 import styled from 'styled-components';
 import Dp from './components/dp/dp';
 import Description from './components/description/description';
+import { Fireworks } from 'fireworks-js/dist/react';
 
 const IdCardWrapper = styled.div`
   display: flex;
@@ -37,16 +39,33 @@ const ProfileRow = styled.div`
   }
 `;
 
+const FireworksShow = styled(Fireworks)`
+	position: absolute;
+	top: 0;
+  left: 0;
+  width: '100%';
+  height: '100%';
+  position: 'fixed';
+  background: '#000';
+`;
+
 function App() {
+	const options = {
+    speed: 3
+  };
+
   return (
-    <IdCardWrapper>
-      <IdCard>
-        <ProfileRow>
-          <Dp />
-          <Description />
-        </ProfileRow>
-      </IdCard>
-    </IdCardWrapper>
+  	<>
+  		<FireworksShow options={options} />
+	    <IdCardWrapper>
+	      <IdCard>
+	        <ProfileRow>
+	          <Dp />
+	          <Description />
+	        </ProfileRow>
+	      </IdCard>
+	    </IdCardWrapper>
+    </>
   );
 }
 
