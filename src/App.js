@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 import Dp from './components/dp/dp';
 import Description from './components/description/description';
+// import useWindowSize from 'react-use/lib/useWindowSize';
+// import Confetti from 'react-confetti';
 // import { Fireworks } from 'fireworks-js/dist/react';
 
 const IdCardWrapper = styled.div`
@@ -52,12 +54,14 @@ const ProfileRow = styled.div`
 // `;
 
 function App() {
+	// const { width, height } = useWindowSize();
 	// const options = {
  //    speed: 3
  //  };
 
   return (
   	<>
+  		{/*<Confetti width={width} height={height} />*/}
   		{/*<FireworksShow options={options} />*/}
 	    <IdCardWrapper>
 	      <IdCard>
