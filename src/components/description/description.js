@@ -29,7 +29,7 @@ const Name = styled.h1`
 export const Link = styled.a`
   color: #999999;
   text-decoration: none;
-  font-size: 12px;
+  font-size: .75rem;
   margin-right: 5px;
   box-sizing: border-box;
   &:hover {
@@ -66,7 +66,7 @@ const Description = () => {
         <Link
           href='https://zafarsaleem.medium.com'
           rel='Zafar Saleem zafarsaleem.medium.com Blogs'>
-          Blog
+          Blogs
         </Link>
         <Link
           href='https://github.com/zafar-saleem'
