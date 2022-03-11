@@ -66,7 +66,12 @@ const Description = () => {
         <Link
           href='https://zafarsaleem.medium.com'
           rel='Zafar Saleem zafarsaleem.medium.com Blogs'>
-          Blogs
+          Medium
+        </Link>
+        <Link
+          href='https://blog.logrocket.com/author/zafarsaleem/'
+          rel='Zafar Saleem LogRocket Blogs'>
+          LogRocket
         </Link>
         <Link
           href='https://github.com/zafar-saleem'
@@ -79,19 +84,9 @@ const Description = () => {
           Gitlab
         </Link>
         <Link
-          href='https://www.linkedin.com/in/zeesaleem/'
-          rel='Zafar Saleem Linkedin.com/in/zeesaleem Profile'>
-          Linkedin
-        </Link>
-        <Link
           href='https://www.instagram.com/zafarsaleem.fotos/'
           rel='Zafar Saleem Instagram.com/zafarsaleem.fotos Profile'>
           Instagram
-        </Link>
-        <Link
-          href={`${cv}`}
-          rel='Zafar Saleem CV'>
-          CV
         </Link>
       </p>
     </Desc>
