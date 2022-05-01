@@ -41,6 +41,18 @@ const ProfileRow = styled.div`
   }
 `;
 
+const Greeting = styled.h1`
+	position: absolute;
+	top: 25%;
+	left: 43%;
+	color: #ffffff;
+	font-family: 'Orbitron', sans-serif;
+	@media screen and (max-width: 500px) {
+		top: 20%;
+		left: 25%;
+	}
+`;
+
 // const FireworksShow = styled(Fireworks)`
 // 	width: 100%;
 // 	height: 100%;
@@ -66,6 +78,7 @@ function App() {
 	    <IdCardWrapper>
 	      <IdCard>
 	        <ProfileRow>
+	        	<Greeting>Eid Mubarak</Greeting>
 	          <Dp />
 	          <Description />
 	        </ProfileRow>
