@@ -84,8 +84,8 @@ const Description = () => {
           Gitlab
         </Link>
         <Link
-          href='https://www.instagram.com/zafarsaleem.fotos/'
-          rel='Zafar Saleem Instagram.com/zafarsaleem.fotos Profile'>
+          href='https://www.instagram.com/zafar.fotos/'
+          rel='Zafar Saleem Instagram Profile'>
           Instagram
         </Link>
         <Link
