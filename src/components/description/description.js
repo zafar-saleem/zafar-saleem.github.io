@@ -69,8 +69,8 @@ const Description = () => {
           Blogs
         </Link>
         <Link
-          href='https://www.linkedin.com/in/zeesaleem/'
-          rel='Zafar Saleem Linkedin.com/in/zeesaleem Profile'>
+          href='https://www.linkedin.com/in/zafar-saleem-7a022425b/'
+          rel='Zafar Saleem Linkedin.com/in/zafar-saleem-7a022425b Profile'>
           Linkedin
         </Link>
         <Link
@@ -82,11 +82,6 @@ const Description = () => {
           href='https://gitlab.com/zsaleem'
           rel='Zafar Saleem Gitlab.com/zsaleem Profile'>
           Gitlab
-        </Link>
-        <Link
-          href='https://www.instagram.com/zafar.fotos/'
-          rel='Zafar Saleem Instagram Profile'>
-          Instagram
         </Link>
         <Link
           href={`${cv}`}
