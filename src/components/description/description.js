@@ -69,8 +69,8 @@ const Description = () => {
           Blogs
         </Link>
         <Link
-          href='https://www.linkedin.com/in/zafar-saleem-7a022425b/'
-          rel='Zafar Saleem Linkedin.com/in/zafar-saleem-7a022425b Profile'>
+          href='https://www.linkedin.com/in/zeesaleem'
+          rel='Zafar Saleem Linkedin.com/in/zeesaleem Profile'>
           Linkedin
         </Link>
         <Link
