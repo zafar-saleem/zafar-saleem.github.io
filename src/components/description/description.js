@@ -64,7 +64,7 @@ const Description = () => {
       <Skills />
       <p>
         <Link
-          href='https://zafarsaleem.medium.com'
+          href='https://medium.com/@zafarsaleem'
           rel='Zafar Saleem zafarsaleem.medium.com Blogs'>
           Blogs
         </Link>
