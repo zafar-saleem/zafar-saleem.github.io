@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 import Dp from './components/dp/dp';
 import Description from './components/description/description';
+import {Link} from "./components/description/description";
 // import useWindowSize from 'react-use/lib/useWindowSize';
 // import Confetti from 'react-confetti';
 // import { Fireworks } from 'fireworks-js/dist/react';
@@ -53,6 +54,16 @@ const Greeting = styled.h1`
 	}
 `;
 
+const Footer = styled.div`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8rem;
+`;
+
 // const FireworksShow = styled(Fireworks)`
 // 	width: 100%;
 // 	height: 100%;
@@ -84,6 +95,9 @@ function App() {
 	        </ProfileRow>
 	      </IdCard>
 	    </IdCardWrapper>
+      <Footer>
+        <Link href="mailto:zafarsaleem3@gmail.com">zafarsaleem3@gmail.com</Link> | <Link href="https://wa.me/971509700336"> WhatsApp +971-50-970-0336</Link> | <Link href="tel:+97150-970-0336"> Mobile +971-50-970-0336</Link>
+      </Footer>
     </>
   );
 }
