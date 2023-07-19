@@ -96,7 +96,7 @@ function App() {
 	      </IdCard>
 	    </IdCardWrapper>
       <Footer>
-        <Link href="mailto:zafarsaleem3@gmail.com">zafarsaleem3@gmail.com</Link> | <Link href="https://wa.me/971509700336"> WhatsApp +971-50-970-0336</Link> | <Link href="tel:+97150-970-0336"> Mobile +971-50-970-0336</Link>
+        <Link href="mailto:zafarsaleem3@gmail.com">zafarsaleem3@gmail.com</Link>
       </Footer>
     </>
   );
