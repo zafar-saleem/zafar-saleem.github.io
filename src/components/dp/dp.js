@@ -1,4 +1,4 @@
-import avatar from '../../assets/images/dp.jpg';
+import avatar from '../../assets/images/dp.png';
 import styled from 'styled-components';
 
 const DpContainer = styled.div`
