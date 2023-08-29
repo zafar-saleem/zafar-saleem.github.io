@@ -96,7 +96,7 @@ function App() {
 	      </IdCard>
 	    </IdCardWrapper>
       <Footer>
-        <Link href="mailto:zafarsaleem3@gmail.com">zafarsaleem3@gmail.com</Link>
+        <Link href="https://calendly.com/zafarsaleem">Book a Time</Link>| <Link href="mailto:zafarsaleem3@gmail.com">zafarsaleem3@gmail.com</Link>
       </Footer>
     </>
   );
