@@ -84,7 +84,7 @@ const Description = () => {
           Gitlab
         </Link>
         <Link
-          href='https://www.dropbox.com/scl/fi/caqejc0tn8dth7aeoa96l/CV.pdf?rlkey=z7wktxgtktgt6lbvfom9228bz&dl=0'
+          href='https://www.dropbox.com/scl/fi/geottsibi1r9hwwyze55i/CV.pdf?rlkey=si3ef58b4826vovnn6866mlhx&dl=0'
           rel='Zafar Saleem CV'>
           CV
         </Link>
