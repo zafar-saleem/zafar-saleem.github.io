@@ -130,7 +130,7 @@
       opacity: 1;
     }
   }
-`;var b=()=>Object(m.jsxs)(l,{children:[Object(m.jsx)(V,{children:"Zafar Saleem"}),Object(m.jsx)(v,{children:"_"}),Object(m.jsx)(w,{}),Object(m.jsxs)("p",{children:[Object(m.jsx)(K,{href:"https://medium.com/@zafarsaleem",rel:"Zafar Saleem zafarsaleem.medium.com Blogs",children:"Blogs"}),Object(m.jsx)(K,{href:"https://www.linkedin.com/in/zeesaleem",rel:"Zafar Saleem Linkedin.com/in/zeesaleem Profile",children:"Linkedin"}),Object(m.jsx)(K,{href:"https://github.com/zafar-saleem",rel:"Zafar Saleem Github.com/zafar-saleem Profile",children:"Github"}),Object(m.jsx)(K,{href:"https://gitlab.com/zsaleem",rel:"Zafar Saleem Gitlab.com/zsaleem Profile",children:"Gitlab"}),Object(m.jsx)(K,{href:"https://instagram.com/zafarfotos",rel:"Zafar Saleem Instagram Profile",children:"Instagram"})]})]});const U=o.a.div`
+`;var b=()=>Object(m.jsxs)(l,{children:[Object(m.jsx)(V,{children:"Zafar Saleem"}),Object(m.jsx)(v,{children:"_"}),Object(m.jsx)(w,{}),Object(m.jsxs)("p",{children:[Object(m.jsx)(K,{href:"https://medium.com/@zafarsaleem",rel:"Zafar Saleem zafarsaleem.medium.com Blogs",children:"Blogs"}),Object(m.jsx)(K,{href:"https://www.linkedin.com/in/zeesaleem",rel:"Zafar Saleem Linkedin.com/in/zeesaleem Profile",children:"Linkedin"}),Object(m.jsx)(K,{href:"https://github.com/zafar-saleem",rel:"Zafar Saleem Github.com/zafar-saleem Profile",children:"Github"}),Object(m.jsx)(K,{href:"https://gitlab.com/zsaleem",rel:"Zafar Saleem Gitlab.com/zsaleem Profile",children:"Gitlab"}),Object(m.jsx)(K,{href:"https://instagram.com/dakalfotografy",rel:"Zafar Saleem Instagram Profile",children:"Instagram"})]})]});const U=o.a.div`
   display: flex;
   height: 100vh;
   width: 100%;
@@ -178,4 +178,4 @@
   text-align: center;
   font-size: 0.8rem;
 `);var x=function(){return Object(m.jsxs)(m.Fragment,{children:[Object(m.jsx)(U,{children:Object(m.jsx)(X,{children:Object(m.jsxs)(f,{children:[Object(m.jsx)(s,{}),Object(m.jsx)(b,{})]})})}),Object(m.jsxs)(h,{children:[Object(m.jsx)(K,{href:"https://calendly.com/zafarsaleem",children:"Book a Time"}),"| ",Object(m.jsx)(K,{href:"mailto:zafarsaleem3@gmail.com",children:"zafarsaleem3@gmail.com"})]})]})};var I=A=>{A&&A instanceof Function&&e.e(3).then(e.bind(null,22)).then((a=>{let{getCLS:e,getFID:i,getFCP:g,getLCP:n,getTTFB:t}=a;e(A),i(A),g(A),n(A),t(A)}))};t.a.render(Object(m.jsx)(g.a.StrictMode,{children:Object(m.jsx)(x,{})}),document.getElementById("root")),I()}},[[21,1,2]]]);
-//# sourceMappingURL=main.8f552baf.chunk.js.map
+//# sourceMappingURL=main.198d4437.chunk.js.map
