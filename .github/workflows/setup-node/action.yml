@@ -3,6 +3,10 @@ description: "Setup Node.js - Cache dependencies - Install dependencies"
 runs:
   using: "composite"
   steps:
+    - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 9.10.0
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
@@ -18,4 +22,4 @@ runs:
     - name: Install dependencies
       shell: bash
       if: steps.cache_dependencies.outputs.cache-hit != 'true'
-      run: npm ci
+      run: pnpm install
