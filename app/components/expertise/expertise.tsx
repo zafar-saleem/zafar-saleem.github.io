@@ -1,45 +1,86 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, LabelList, XAxis, YAxis } from "recharts"
 
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import {
   ChartConfig,
   ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
 } from "@/components/ui/chart"
 
 const chartData = [
-  { skill: "JavaScript", desktop: 9, },
-  { skill: "Reactjs", desktop: 9, },
-  { skill: "Nextjs", desktop: 9, },
-  { skill: "TypeScript", desktop: 8, },
-  { skill: "HTML", desktop: 9, },
-  { skill: "CSS", desktop: 9, },
+  { month: "JavaScript", desktop: 10 },
+  { month: "React.js", desktop: 9 },
+  { month: "Next.js", desktop: 9 },
+  { month: "TypeScript", desktop: 8 },
+  { month: "HTML", desktop: 10 },
+  { month: "CSS", desktop: 10 },
 ]
 
 const chartConfig = {
   desktop: {
     label: "Skill",
     color: "#2563eb",
-  },
-} satisfies ChartConfig;
+  }
+} satisfies ChartConfig
 
 export const Expertise = ({ id }: { id: string }) => {
   return (
     <div id={id} className="w-full">
-      <h2 className="text-3xl font-extrabold lg:text-5xl text-center">Core Expertise</h2>
-      <ChartContainer config={chartConfig} className="min-h-[200px] w-full mt-10">
-        <BarChart accessibilityLayer data={chartData}>
-          <CartesianGrid vertical={false} />
-          <XAxis
-            dataKey="skill"
-            tickLine={false}
-            tickMargin={10}
-            axisLine={false}
-            tickFormatter={(value) => value.slice(0, 10)}
-          />
-          <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-        </BarChart>
-      </ChartContainer>
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-3xl font-extrabold lg:text-5xl text-center">Core Expertise</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ChartContainer config={chartConfig}>
+            <BarChart
+              accessibilityLayer
+              data={chartData}
+              layout="vertical"
+              margin={{
+                right: 16,
+              }}
+            >
+              <CartesianGrid horizontal={false} />
+              <YAxis
+                dataKey="month"
+                type="category"
+                tickLine={false}
+                tickMargin={10}
+                axisLine={false}
+                tickFormatter={(value) => value.slice(0, 3)}
+                hide
+              />
+              <XAxis dataKey="desktop" type="number" hide />
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent indicator="line" />}
+              />
+              <Bar
+                dataKey="desktop"
+                layout="vertical"
+                fill="var(--color-desktop)"
+                radius={4}
+              >
+                <LabelList
+                  dataKey="month"
+                  position="insideLeft"
+                  offset={8}
+                  className="fill-background"
+                  fontSize={12}
+                />
+              </Bar>
+            </BarChart>
+          </ChartContainer>
+        </CardContent>
+      </Card>
     </div>
   )
 }
