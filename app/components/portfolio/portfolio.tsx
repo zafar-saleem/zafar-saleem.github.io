@@ -1,8 +1,4 @@
 import * as React from "react";
-import kritzer from "./assets/kritzer.png";
-import slimming from "./assets/slimming.png";
-import tayara from "./assets/tayara.png";
-import westwing from "./assets/westwing.png";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -14,33 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-
-const contents = [
-  {
-    title: "kritzer Portfolio",
-    src: kritzer,
-    link: "https://www.la-kritzer.ch/",
-    alt: "Kritzer Portfolio Case Study",
-  },
-  {
-    title: "Slimming World Fitness",
-    src: slimming,
-    link: "https://slimmingworld.co.uk",
-    alt: "Slimming World Health Case Study",
-  },
-  {
-    title: "Tayara marketplace",
-    src: tayara,
-    link: "https://tayara.tn",
-    alt: "Marketplace Case Study",
-  },
-  {
-    title: "Westwing e-commerce",
-    src: westwing,
-    link: "https://westwing.de",
-    alt: "E-Commerce Case Study",
-  }
-];
+import { contents } from "./contents";
 
 export const Portfolio = ({id}: { id: string }) => {
   return (
