@@ -23,7 +23,7 @@ import { renderMobileMenuItem } from "./components/mobile-menu-item";
 
 const Navbar = () => {
   return (
-    <section className="py-4">
+    <div className="py-4">
       <div className="container">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
@@ -76,7 +76,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
