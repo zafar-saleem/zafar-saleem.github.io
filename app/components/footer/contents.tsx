@@ -26,6 +26,7 @@ export const contents = {
         { text: "X (Formerly Twitter)", url: "https://x.com/zafartalks" },
         { text: "Instagram", url: "https://instagram.com/dakalfotografy" },
         { text: "LinkedIn", url: "https://linkedin.com/in/zeesaleem" },
+        { text: "Blog", url: "https://medium.com/@zafarsaleem" },
       ],
     },
   ],
