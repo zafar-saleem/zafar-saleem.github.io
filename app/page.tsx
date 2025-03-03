@@ -3,6 +3,7 @@ import { Navbar } from "./components/navbar";
 import { Expertise } from "./components/expertise";
 import { Services } from "./components/services";
 import { Footer } from "./components/footer";
+import { Portfolio } from "./components/portfolio";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <Hero id="about" />
           <Expertise id="expertise" />
           <Services id="services" />
+          <Portfolio id="casestudies" />
           <Footer />
         </main>
       </div>

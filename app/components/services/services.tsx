@@ -11,7 +11,7 @@ import { contents } from "./contents";
 
 export const Services = ({ id }: { id: string }) => {
   return (
-    <div className="w-full" id={id}>
+    <div className="w-full mt-15" id={id}>
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Services</h2>
       <div className="grid grid-cols-3 gap-4 mt-10">
         {
