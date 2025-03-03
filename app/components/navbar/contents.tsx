@@ -34,6 +34,6 @@ export const menu = [
   },
   {
     title: "Contact me",
-    url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you ",
+    url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
   },
 ];

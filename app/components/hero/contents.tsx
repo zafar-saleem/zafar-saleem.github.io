@@ -8,6 +8,6 @@ export const contents = {
     `,
   button: {
     text: "Contact Me",
-    url: "mailto:zsaleem@protonmail.com?subject=Contact from Portfolio Website - ",
+    url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
   },
 }
