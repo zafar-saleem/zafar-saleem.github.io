@@ -28,8 +28,8 @@ const chartConfig = {
 export const Expertise = ({ id }: { id: string }) => {
   return (
     <div id={id} className="w-full">
-      <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Core Expertise</h2>
-      <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+      <h2 className="text-3xl font-extrabold lg:text-5xl text-center">Core Expertise</h2>
+      <ChartContainer config={chartConfig} className="min-h-[200px] w-full mt-10">
         <BarChart accessibilityLayer data={chartData}>
           <CartesianGrid vertical={false} />
           <XAxis

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Hero } from "./components/hero";
 import { Navbar } from "./components/navbar";
 import { Expertise } from "./components/expertise";
+import { Services } from "./components/services";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <Hero id="about" />
           <Expertise id="expertise" />
+          <Services id="services" />
         </main>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
           <a
