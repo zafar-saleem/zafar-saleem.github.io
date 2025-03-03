@@ -9,7 +9,7 @@ export const contents = [
     action: {
       label: "Contact me",
       url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
-      classes: "bg-orange-600 text-white hover:bg-orange-700",
+      classes: "bg-orange-600 text-white hover:bg-orange-500 hover:text-white",
     }
   },
   {
@@ -22,7 +22,7 @@ export const contents = [
     action: {
       label: "Contact me",
       url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
-      classes: "bg-green-600 text-white hover:bg-green-700",
+      classes: "bg-green-600 text-white hover:bg-green-500 hover:text-white",
     }
   },
   {
@@ -35,7 +35,7 @@ export const contents = [
     action: {
       label: "Contact me",
       url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
-      classes: "bg-purple-600 text-white hover:bg-purple-700",
+      classes: "bg-purple-600 text-white hover:bg-purple-500 hover:text-white",
     }
   },
 ]
