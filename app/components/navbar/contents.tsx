@@ -9,8 +9,8 @@ export const menu = [
     url: "#about",
   },
   {
-    title: "Skills",
-    url: "#skills",
+    title: "Expertise",
+    url: "#expertise",
   },
   {
     title: "Services",
