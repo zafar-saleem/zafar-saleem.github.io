@@ -1,9 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { contents } from "./contents";
 
-const Testimonial = () => {
+const Testimonial = ({ id }: { id: string }) => {
   return (
-    <section className="mt-20 w-full">
+    <section className="mt-20 w-full" id={id}>
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center">Testimonials</h2>
       <div className="container mt-10 m-auto">
         <div className="flex flex-col items-center text-center">

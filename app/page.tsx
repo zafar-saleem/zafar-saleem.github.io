@@ -16,7 +16,7 @@ export default function Home() {
           <Expertise id="expertise" />
           <Services id="services" />
           <Portfolio id="casestudies" />
-          <Testimonial />
+          <Testimonial id="testimonials" />
           <Footer />
         </main>
       </div>
