@@ -5,17 +5,15 @@ import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
 import {
   ChartConfig,
   ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
 } from "@/components/ui/chart"
 
 const chartData = [
-  { skill: "JavaScript", desktop: 99, },
-  { skill: "Reactjs", desktop: 95, },
-  { skill: "Nextjs", desktop: 94, },
-  { skill: "TypeScript", desktop: 85, },
-  { skill: "HTML", desktop: 99, },
-  { skill: "CSS", desktop: 99, },
+  { skill: "JavaScript", desktop: 9, },
+  { skill: "Reactjs", desktop: 9, },
+  { skill: "Nextjs", desktop: 9, },
+  { skill: "TypeScript", desktop: 8, },
+  { skill: "HTML", desktop: 9, },
+  { skill: "CSS", desktop: 9, },
 ]
 
 const chartConfig = {
@@ -39,7 +37,6 @@ export const Expertise = ({ id }: { id: string }) => {
             axisLine={false}
             tickFormatter={(value) => value.slice(0, 10)}
           />
-          <ChartTooltip content={<ChartTooltipContent />} />
           <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
         </BarChart>
       </ChartContainer>
