@@ -11,8 +11,6 @@ import {
 import {
   ChartConfig,
   ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
 } from "@/components/ui/chart"
 
 const chartData = [
@@ -59,10 +57,6 @@ export const Expertise = ({ id }: { id: string }) => {
                 hide
               />
               <XAxis dataKey="desktop" type="number" hide />
-              <ChartTooltip
-                cursor={false}
-                content={<ChartTooltipContent indicator="line" />}
-              />
               <Bar
                 dataKey="desktop"
                 layout="vertical"
