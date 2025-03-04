@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { contents } from "./contents";
+import Image from "next/image";
 
 export const Services = ({ id }: { id: string }) => {
   return (
@@ -18,6 +19,7 @@ export const Services = ({ id }: { id: string }) => {
           contents.map((item, index) => (
             <Card key={`${item.title}-${index}`}>
               <CardHeader>
+                <Image src={item.icon} width={75} height={75} alt="icon" className="m-auto mb-5" />
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription>{item.desc}</CardDescription>
               </CardHeader>
@@ -30,7 +32,10 @@ export const Services = ({ id }: { id: string }) => {
               </CardContent>
               <CardFooter>
               <Button asChild size="lg" className={`w-full ${item.action.classes}`} variant="ghost">
-                <a href={item.action.url}>{item.action.label}</a>
+                <a href={item.action.url} className="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer font-medium text-white-600 text-white">
+                  <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-0 bg-indigo-600 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                  <span className="relative text-white-600 transition duration-300 group-hover:text-white ease">{item.action.label}</span>
+                </a>
               </Button>
               </CardFooter>
             </Card>
@@ -40,3 +45,5 @@ export const Services = ({ id }: { id: string }) => {
     </div>
   )
 }
+
+    
