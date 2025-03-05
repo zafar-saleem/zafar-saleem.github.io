@@ -3,6 +3,7 @@ import slimming from "./assets/slimming.png";
 import tayara from "./assets/tayara.png";
 import westwing from "./assets/westwing.png";
 import mudah from "./assets/mudah.png";
+import portfolio from "./assets/portfolio.png";
 
 export const contents = [
   {
@@ -10,12 +11,6 @@ export const contents = [
     src: mudah,
     link: "https://mudah.my/",
     alt: "Mudah Marketplace Case Study",
-  },
-  {
-    title: "kritzer Portfolio",
-    src: kritzer,
-    link: "https://www.la-kritzer.ch/",
-    alt: "Kritzer Portfolio Case Study",
   },
   {
     title: "Slimming World Fitness",
@@ -34,5 +29,17 @@ export const contents = [
     src: westwing,
     link: "https://westwing.de",
     alt: "E-Commerce Case Study",
+  },
+  {
+    title: "Portfolio Website",
+    src: portfolio,
+    link: "https://zafar-saleem.github.io",
+    alt: "Personal Portfolio Website Case Study",
+  },
+  {
+    title: "kritzer Portfolio",
+    src: kritzer,
+    link: "https://www.la-kritzer.ch/",
+    alt: "Kritzer Portfolio Case Study",
   }
 ];
