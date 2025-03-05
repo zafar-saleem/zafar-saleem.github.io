@@ -9,7 +9,7 @@ export const contents = {
       links: [
         { text: "About", url: "#about" },
         { text: "Expertise", url: "#expertise" },
-        { text: "Portfolio", url: "#portfolio" },
+        { text: "Case Studies", url: "#casestudies" },
         { text: "Testimonials", url: "#testimonials" },
       ],
     },
