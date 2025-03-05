@@ -16,7 +16,7 @@ export const contents = {
     {
       links: [
         { text: "Blog", url: "https://medium.com/@zafarsaleem" },
-        { text: "Schedule Meeting", url: "https://calendly.com/zsaleem/meeting" },
+        { text: "Schedule Meeting", url: "https://calendly.com/zafarsaleem/30min" },
         { text: "Contact me", url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]" },
       ],
     },

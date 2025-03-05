@@ -30,7 +30,7 @@ export const menu = [
   },
   {
     title: "Schedule Meeting",
-    url: "https://calendly.com/zsaleem/meeting",
+    url: "https://calendly.com/zafarsaleem/30min",
   },
   {
     title: "Contact me",
