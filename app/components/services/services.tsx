@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -45,5 +45,3 @@ export const Services = ({ id }: { id: string }) => {
     </div>
   )
 }
-
-    
