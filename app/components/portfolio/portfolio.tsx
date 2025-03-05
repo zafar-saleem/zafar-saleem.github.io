@@ -31,7 +31,6 @@ export const Portfolio = ({id}: { id: string }) => {
                     <CardTitle className="text-center">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    {/* <span className="text-3xl font-semibold">item</span> */}
                     <Link href={item.link}>
                       <Image src={item.src} width={250} height={138} alt={item.alt} />
                     </Link>
