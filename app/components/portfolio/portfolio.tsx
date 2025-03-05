@@ -20,7 +20,7 @@ export const Portfolio = ({id}: { id: string }) => {
         opts={{
           align: "start",
         }}
-        className="w-full mt-10"
+        className="w-full mt-10 case-studies"
       >
         <CarouselContent>
           {contents.map((item, index) => (
