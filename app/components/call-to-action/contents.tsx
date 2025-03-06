@@ -4,7 +4,7 @@ export const contents = {
   buttons: {
     secondary: {
       text: "Schedule a Call",
-      url: "https://calendly.com/zsaleem/meeting",
+      url: "https://calendly.com/zafarsaleem/30min",
     },
   },
 }
