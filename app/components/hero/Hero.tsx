@@ -15,7 +15,7 @@ export const Hero = ({ id }: { id: string }) => {
               ))
             }
         </div>
-        <Button asChild size="lg" className="mt-10 bg-[#c97471] hover:bg-yellow-700/75 shadow-lg">
+        <Button asChild size="lg" className="mt-10 bg-slate-700 hover:bg-slate-500 shadow-lg">
           <a href={contents.button.url}>{contents.button.text}</a>
         </Button>
       </div>
