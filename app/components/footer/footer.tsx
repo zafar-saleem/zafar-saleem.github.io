@@ -2,7 +2,7 @@ import Link from "next/link";
 import { contents } from "./contents";
 import Image from "next/image";
 
-const message = "Hey! I'm excited you want me to help you with your next exciting project. Let me know where do you need help?";
+const message = "Hey Zafar! I need you to help me with my next project.";
 
 const Footer = () => {
   return (
