@@ -36,7 +36,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
-            <p>{contents.copyright}</p>
+            <p className="text-center w-full">{contents.copyright}</p>
           </div>
         </footer>
       </div>
