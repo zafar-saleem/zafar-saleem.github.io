@@ -2,6 +2,8 @@ import Link from "next/link";
 import { contents } from "./contents";
 import Image from "next/image";
 
+const message = "Hey! I'm excited you want me to help you with your next exciting project. Let me know where do you need help?";
+
 const Footer = () => {
   return (
     <section className="py-32 mt-10">
@@ -37,7 +39,7 @@ const Footer = () => {
           </div>
           <div className="mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
             <p className="text-center w-full">{contents.copyright}</p>
-            <Link href="https://wa.me/+351910892069" className="whatsapp">
+            <Link href={`https://wa.me/+351910892069?text=${message}`} className="whatsapp">
               <Image 
                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmYWZhZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tZXNzYWdlLWNpcmNsZSI+PHBhdGggZD0iTTcuOSAyMEE5IDkgMCAxIDAgNCAxNi4xTDIgMjJaIi8+PC9zdmc+"
                 width={24}
