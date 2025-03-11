@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   Menu,
 } from "lucide-react";
@@ -20,8 +22,17 @@ import {
 import { logo, menu } from "./contents";
 import { renderMenuItem } from "./components/desktop-menu-item";
 import { renderMobileMenuItem } from "./components/mobile-menu-item";
+import React from "react";
+import { pageview } from "@/utilities";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  
+  React.useEffect(() => {
+    pageview(pathname);
+  }, [pathname]);
+
   return (
     <div className="py-4">
       <div className="container">
