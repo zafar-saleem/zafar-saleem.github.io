@@ -46,7 +46,7 @@ const Footer = () => {
                 height={24}
                 alt="Whats App Contact | Freelance Zafar Saleem"
               />
-              WhatsApp me
+              WhatsApp
             </Link>
           </div>
         </footer>

@@ -157,7 +157,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   right: 20px;
   z-index: 50;
   opacity: 0.9;
@@ -166,4 +166,10 @@
   background-color: #16BE45;
   padding: 0.7rem 1.5rem;
   border-radius: 10rem;
+  box-shadow: 0 0 15px 0 #646060;
+
+  &:hover {
+    background-color: #16BE45;
+    opacity: 1;
+  }
 }
