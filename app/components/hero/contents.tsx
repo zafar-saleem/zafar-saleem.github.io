@@ -7,7 +7,7 @@ export const contents = {
     "Don't have e-commerce website? I will built it for you."
   ],
   button: {
-    text: "Contact Me",
+    text: "Let's discuss it",
     url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
   },
 }

@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -30,14 +28,6 @@ export const Services = ({ id }: { id: string }) => {
                   ))
                 }
               </CardContent>
-              <CardFooter>
-              <Button asChild size="lg" className={`w-full ${item.action.classes}`} variant="ghost">
-                <a href={item.action.url} className="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer font-medium text-white-600 text-white">
-                  <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-0 bg-indigo-600 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                  <span className="relative text-white-600 transition duration-300 group-hover:text-white ease">{item.action.label}</span>
-                </a>
-              </Button>
-              </CardFooter>
             </Card>
           ))
         }
