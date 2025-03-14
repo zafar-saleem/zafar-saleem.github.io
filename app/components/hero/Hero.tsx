@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { contents } from "./contents";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero = ({ id }: { id: string }) => {
   return (
-    <section className="py-32">
+    <section className="py-32" id={id}>
       <div className="container">
         <div className={`grid items-center gap-8 lg:grid-cols-2`}>
           <div className="mx-auto text-center lg:text-left flex max-w-screen-lg flex-col gap-6">
