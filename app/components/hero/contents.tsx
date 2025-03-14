@@ -1,3 +1,5 @@
+import HeroImage from "./assets/hero-freelance-zafar-image.webp";
+
 export const contents = {
   heading: "Hi, I'M Zafar, Freelance Developer",
   descs: [
@@ -9,5 +11,9 @@ export const contents = {
   button: {
     text: "Let's discuss it",
     url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
+  },
+  image: {
+    src: HeroImage,
+    alt: "Hero image of Freelancer Frontend Engineer Zafar",
   },
 }
