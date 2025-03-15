@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react"
 
 import { Card, CardContent } from "@/components/ui/card"
@@ -10,6 +12,7 @@ import {
 } from "@/components/ui/carousel"
 import { contents } from "./contents"
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
+import Autoplay from "embla-carousel-autoplay"
 
 export function Testimonial({ id }: { id: string }) {
   return (
@@ -17,6 +20,11 @@ export function Testimonial({ id }: { id: string }) {
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-20 w-full">Testimonials</h2>    
       <section className="mt-10 w-full" id={id}>
         <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}  
           opts={{
             align: "start",
             loop: true,
