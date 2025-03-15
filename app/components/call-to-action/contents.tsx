@@ -3,7 +3,7 @@ export const contents = {
   description: "Click below button to schedule a call with me.",
   buttons: {
     secondary: {
-      text: "Schedule a Call",
+      text: "Let's schedule a call",
       url: "https://calendly.com/zafarsaleem/30min",
     },
   },
