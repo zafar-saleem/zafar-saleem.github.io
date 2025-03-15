@@ -21,16 +21,8 @@ export const menu = [
     url: "#casestudies",
   },
   {
-    title: "Testimonials",
-    url: "#testimonials",
-  },
-  {
     title: "Blog",
     url: "https://medium.com/@zafarsaleem",
-  },
-  {
-    title: "Schedule Meeting",
-    url: "https://calendly.com/zafarsaleem/30min",
   },
   {
     title: "Contact me",
