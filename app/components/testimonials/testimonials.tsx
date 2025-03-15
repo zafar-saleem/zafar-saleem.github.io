@@ -39,6 +39,9 @@ export function Testimonial({ id }: { id: string }) {
                             <AvatarImage src={item.author.avatar.src} alt={item.author.avatar.alt} />
                             <AvatarFallback>{item.author.name}</AvatarFallback>
                           </Avatar>
+                          <div className="text-left">
+                            <p className="text-sm font-medium md:text-base">{item.author.name}</p>
+                          </div>
                         </div>
                       </div>
                     </CardContent>
