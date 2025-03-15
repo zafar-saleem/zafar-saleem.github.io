@@ -25,7 +25,7 @@ export const menu = [
     url: "https://medium.com/@zafarsaleem",
   },
   {
-    title: "Contact me",
+    title: "Contact",
     url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
   },
 ];
