@@ -9,9 +9,6 @@ const Cta = () => {
           <h3 className="mb-3 max-w-3xl text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
             {contents.heading}
           </h3>
-          <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg">
-            {contents.description}
-          </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             {contents.buttons.secondary && (
               <Button variant="outline" className="w-full sm:w-auto" asChild>
