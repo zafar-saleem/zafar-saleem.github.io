@@ -14,9 +14,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const META_DESCRIPTION = "This is Zafar Saleem web development portfolio website where you can find his software engineering skills and links to his Medium blogs, Github profile, Gitlab profile, Linkedin profile, Instagram profile. Contact me.";
+const META_TITLE = "Freelance Developer | Zafar Saleem, React, Next.js, JavaScript, TypeScript";
+
 export const metadata: Metadata = {
-  title: "Freelance Frontend Engineer | Zafar Saleem",
-  description: "This is Zafar Saleem portfolio website where you can find his technical/software engineering skills and links to his Medium blogs, Github profile, Gitlab profile, Linkedin profile, Instagram profile.",
+  title: META_TITLE,
+  description: META_DESCRIPTION,
+  openGraph: {
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    url: "https://zafar-saleem.github.io",
+    siteName: "Zafar Saleem Freelance Frontend Engineer Portfolio website",
+    images: [
+      {
+        url: "https://zafar-saleem.github.io/og_image.webp",
+        width: 800,
+        height: 600,
+        alt: "Zafar Saleem Portfolio Website",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    images: ["https://zafar-saleem.github.io/og_image.webp"],
+  },
 };
 
 export default function RootLayout({
