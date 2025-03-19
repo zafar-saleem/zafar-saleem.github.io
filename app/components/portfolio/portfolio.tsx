@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,14 +13,21 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { contents } from "./contents";
+import Autoplay from "embla-carousel-autoplay";
 
 export const Portfolio = ({id}: { id: string }) => {
   return (
     <section id={id} className="m-auto mt-15">
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Case Studies</h2>
       <Carousel
+        plugins={[
+          Autoplay({
+            delay: 3000,
+          }),
+        ]}  
         opts={{
           align: "start",
+          loop: true,
         }}
         className="w-full mt-10 case-studies"
       >
