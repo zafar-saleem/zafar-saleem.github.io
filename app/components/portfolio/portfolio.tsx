@@ -44,11 +44,12 @@ export const Portfolio = ({id}: { id: string }) => {
                       <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" />
                     </Link>
                   </CardContent>
-                  <CardFooter className="flex justify-between lg:flex-row flex-col gap-6">
+                  <CardFooter className="flex lg:flex-row">
                     {
-                      item .kpi.map((kpi, i) => (
-                        <article className="text-center py-5 px-5 w-full border rounded-[5] bg-slate-100 text-3xl cursor-pointer shadow-sm transition-bg duration-200 hover:bg-slate-200">
-                          <h2 className="font-semibold">{kpi.title}</h2>
+                      item.kpi.map((kpi, key) => (
+                        <article key={key} className={`text-center px-1 ${key < 2 && item.kpi.length > 1 ? `border-e-[1px]` : null} w-full text-sm lg:text-xl flex flex-col items-center`}>
+                          <Image src={kpi.icon} width={25} height={25} alt="icon" />
+                          <h2 className="font-semibold truncate w-20 lg:w-full">{kpi.title}</h2>
                           <p className="font-extrabold uppercase">{kpi?.metric}</p>
                         </article>
                       ))
