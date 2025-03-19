@@ -24,15 +24,15 @@ export const Portfolio = ({id}: { id: string }) => {
       >
         <CarouselContent>
           {contents.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/1">
               <div className="p-1">
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-center">{item.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <CardContent className="flex">
                     <Link href={item.link}>
-                      <Image src={item.src} width={250} height={138} alt={item.alt} />
+                      <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" />
                     </Link>
                   </CardContent>
                 </Card>

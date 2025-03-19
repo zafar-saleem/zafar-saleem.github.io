@@ -1,9 +1,9 @@
-import kritzer from "./assets/kritzer.png";
-import slimming from "./assets/slimming.png";
-import tayara from "./assets/tayara.png";
-import westwing from "./assets/westwing.png";
-import mudah from "./assets/mudah.png";
-import portfolio from "./assets/portfolio.png";
+import mudah from "./assets/mudah.webp";
+import slimming from "./assets/slimming.webp";
+import tayara from "./assets/tayara.webp";
+import westwing from "./assets/westwing.webp";
+import portfolio from "./assets/portfolio.webp";
+import kritzer from "./assets/kritzer.webp";
 
 export const contents = [
   {
