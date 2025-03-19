@@ -13,12 +13,12 @@ export const menu = [
     url: "#expertise",
   },
   {
-    title: "Services",
-    url: "#services",
-  },
-  {
     title: "Case Studies",
     url: "#casestudies",
+  },
+  {
+    title: "Services",
+    url: "#services",
   },
   {
     title: "Blog",

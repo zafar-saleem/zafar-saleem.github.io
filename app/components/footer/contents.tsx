@@ -10,6 +10,7 @@ export const contents = {
         { text: "About", url: "#about" },
         { text: "Expertise", url: "#expertise" },
         { text: "Case Studies", url: "#casestudies" },
+        { text: "Services", url: "#services" },
         { text: "Testimonials", url: "#testimonials" },
       ],
     },

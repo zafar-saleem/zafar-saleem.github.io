@@ -15,8 +15,8 @@ export default function Home() {
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <Hero id="about" />
           <Expertise id="expertise" />
-          <Services id="services" />
           <Portfolio id="casestudies" />
+          <Services id="services" />
           <Testimonial id="testimonials" />
           <Cta />
           <Footer />
