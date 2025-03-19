@@ -28,7 +28,7 @@ const Footer = () => {
                       className="font-medium hover:text-primary"
                     >
                       <Link href={link.url} className="flex flex-rows gap-3">
-                        {'logo' in link && <Image src={link.logo} height={25} width={25} alt="logo" />}
+                        {'logo' in link && <Image src={link.logo} height={25} width={25} alt={link.alt} />}
                         {link.text}
                       </Link>
                     </li>
