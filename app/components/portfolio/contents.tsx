@@ -57,7 +57,7 @@ export const contents = [
         icon: BOUNCE_ICON,
       },
       {
-        title: "Page per Visit",
+        title: KPI_TITLES.visit,
         metric: "5.46",
         icon: VISIT_ICON,
       },
