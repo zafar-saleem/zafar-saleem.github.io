@@ -22,7 +22,7 @@ export const Portfolio = ({id}: { id: string }) => {
       <Carousel
         plugins={[
           Autoplay({
-            delay: 3000,
+            delay: 5000,
           }),
         ]}  
         opts={{
@@ -40,14 +40,14 @@ export const Portfolio = ({id}: { id: string }) => {
                     <CardTitle className="text-center">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex">
-                    <Link href={item.link}>
+                    <Link href={item.link} className="shadow-none transition-shadow duration-200 hover:shadow-sm hover:shadow-slate-200">
                       <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" />
                     </Link>
                   </CardContent>
                   <CardFooter className="flex justify-between lg:flex-row flex-col gap-6">
                     {
                       item .kpi.map((kpi, i) => (
-                        <article className="text-center py-5 px-5 w-full border rounded-[5] bg-slate-100 text-3xl">
+                        <article className="text-center py-5 px-5 w-full border rounded-[5] bg-slate-100 text-3xl cursor-pointer shadow-sm transition-bg duration-200 hover:bg-slate-200">
                           <h2 className="font-semibold">{kpi.title}</h2>
                           <p className="font-extrabold uppercase">{kpi?.metric}</p>
                         </article>
