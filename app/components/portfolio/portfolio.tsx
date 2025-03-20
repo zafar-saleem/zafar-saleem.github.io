@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { contents } from "./contents";
 import Autoplay from "embla-carousel-autoplay";
+import { KPI_Card } from "./components/kpicard";
 
 export const Portfolio = ({id}: { id: string }) => {
   return (
@@ -45,15 +46,7 @@ export const Portfolio = ({id}: { id: string }) => {
                     </Link>
                   </CardContent>
                   <CardFooter className="flex lg:flex-row">
-                    {
-                      item.kpi.map((kpi, key) => (
-                        <article key={key} className={`text-center ${key === 0 ? `px-2` : ""} ${key < 2 && item.kpi.length > 1 ? `border-e-[1px]` : null} w-full text-sm lg:text-xl flex flex-col items-center`}>
-                          <Image src={kpi.icon} width={25} height={25} alt="icon" />
-                          <h2 className="font-semibold truncate w-20 lg:w-full">{kpi.title}</h2>
-                          <p className="font-extrabold uppercase">{kpi?.metric}</p>
-                        </article>
-                      ))
-                    }
+                    <KPI_Card item={item} />
                   </CardFooter>
                 </Card>
               </div>
