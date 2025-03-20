@@ -11,11 +11,11 @@ export const contents = {
         { text: "Expertise", url: "#expertise" },
         { text: "Case Studies", url: "#casestudies" },
         { text: "Services", url: "#services" },
-        { text: "Testimonials", url: "#testimonials" },
       ],
     },
     {
       links: [
+        { text: "Testimonials", url: "#testimonials" },
         { text: "Blog", url: "https://medium.com/@zafarsaleem" },
         { text: "Schedule Meeting", url: "https://calendly.com/zafarsaleem/30min" },
         { text: "Contact me", url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]" },
