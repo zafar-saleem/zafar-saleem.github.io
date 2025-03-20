@@ -68,7 +68,7 @@ export const Expertise = ({ id }: { id: string }) => {
                   position="insideLeft"
                   offset={8}
                   className="fill-background"
-                  fontSize={12}
+                  fontSize={16}
                 />
               </Bar>
             </BarChart>
