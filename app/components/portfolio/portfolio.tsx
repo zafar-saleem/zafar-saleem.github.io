@@ -42,7 +42,7 @@ export const Portfolio = ({id}: { id: string }) => {
                   </CardHeader>
                   <CardContent className="flex border-b-[1px] pb-5">
                     <Link href={item.link} className="shadow-none transition-shadow duration-200 hover:shadow-sm hover:shadow-slate-200">
-                      <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" />
+                      <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
                     </Link>
                   </CardContent>
                   <CardFooter className="flex lg:flex-row">
