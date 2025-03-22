@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { contents } from "./contents";
+import { contents, social } from "./contents";
 import Image from "next/image";
 import { ContactWhatsApp } from "../whatsapp";
 
@@ -18,6 +18,25 @@ const Footer = () => {
               <p className="mt-4 font-bold">{contents.tagline}</p>
             </div>
             {contents.menuItems.map((section, sectionIdx) => (
+              <div key={sectionIdx}>
+                <h3 className="mb-4 font-bold">{section.title}</h3>
+                <ul className="space-y-4 text-muted-foreground">
+                  {section.links.map((link, linkIdx) => (
+                    <li
+                      key={linkIdx}
+                      className="font-medium hover:text-primary"
+                    >
+                      <Link href={link.url} className="flex flex-rows gap-3">
+                        {'logo' in link && <Image src={link.logo} height={25} width={25} alt={link.alt} />}
+                        {link.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+            {social.menuItems.map((section, sectionIdx) => (
               <div key={sectionIdx}>
                 <h3 className="mb-4 font-bold">{section.title}</h3>
                 <ul className="space-y-4 text-muted-foreground">
