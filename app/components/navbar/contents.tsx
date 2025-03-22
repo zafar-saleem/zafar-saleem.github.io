@@ -13,8 +13,8 @@ export const menu = [
     url: "#skills",
   },
   {
-    title: "Case Studies",
-    url: "#casestudies",
+    title: "Portfolio",
+    url: "#portfolio",
   },
   {
     title: "Services",

@@ -19,7 +19,7 @@ import { KPI_Card } from "./components/kpicard";
 export const Portfolio = ({id}: { id: string }) => {
   return (
     <section id={id} className="m-auto mt-15 max-w-6xl">
-      <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Case Studies</h2>
+      <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Portfolio</h2>
       <Carousel
         plugins={[
           Autoplay({
