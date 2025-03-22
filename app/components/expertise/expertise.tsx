@@ -34,7 +34,7 @@ export const Expertise = ({ id }: { id: string }) => {
     <div id={id} className="w-full">
       <Card>
         <CardHeader>
-          <CardTitle className="text-3xl font-extrabold lg:text-5xl text-center">Core Expertise</CardTitle>
+          <CardTitle className="text-3xl font-extrabold lg:text-5xl text-center">Programming Services</CardTitle>
         </CardHeader>
         <CardContent>
           <ChartContainer config={chartConfig}>

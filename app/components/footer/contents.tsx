@@ -8,7 +8,7 @@ export const contents = {
     {
       links: [
         { text: "About", url: "#about" },
-        { text: "Expertise", url: "#expertise" },
+        { text: "Skills", url: "#skills" },
         { text: "Case Studies", url: "#casestudies" },
         { text: "Services", url: "#services" },
       ],
