@@ -24,6 +24,18 @@ export const contents = {
     {
       title: "Social",
       links: [
+        {
+          text: "Github", 
+          url: "https://github.com/zafar-saleem",
+          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdGh1YiI+PHBhdGggZD0iTTE1IDIydi00YTQuOCA0LjggMCAwIDAtMS0zLjVjMyAwIDYtMiA2LTUuNS4wOC0xLjI1LS4yNy0yLjQ4LTEtMy41LjI4LTEuMTUuMjgtMi4zNSAwLTMuNSAwIDAtMSAwLTMgMS41LTIuNjQtLjUtNS4zNi0uNS04IDBDNiAyIDUgMiA1IDJjLS4zIDEuMTUtLjMgMi4zNSAwIDMuNUE1LjQwMyA1LjQwMyAwIDAgMCA0IDljMCAzLjUgMyA1LjUgNiA1LjUtLjM5LjQ5LS42OCAxLjA1LS44NSAxLjY1LS4xNy42LS4yMiAxLjIzLS4xNSAxLjg1djQiLz48cGF0aCBkPSJNOSAxOGMtNC41MSAyLTUtMi03LTIiLz48L3N2Zz4=",
+          alt: "Zafar Saleem Github.com profile",
+        },
+        {
+          text: "Gitlab", 
+          url: "https://gitlab.com/zsleem",
+          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmODg1NTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1naXRsYWIiPjxwYXRoIGQ9Im0yMiAxMy4yOS0zLjMzLTEwYS40Mi40MiAwIDAgMC0uMTQtLjE4LjM4LjM4IDAgMCAwLS4yMi0uMTEuMzkuMzkgMCAwIDAtLjIzLjA3LjQyLjQyIDAgMCAwLS4xNC4xOGwtMi4yNiA2LjY3SDguMzJMNi4xIDMuMjZhLjQyLjQyIDAgMCAwLS4xLS4xOC4zOC4zOCAwIDAgMC0uMjYtLjA4LjM5LjM5IDAgMCAwLS4yMy4wNy40Mi40MiAwIDAgMC0uMTQuMThMMiAxMy4yOWEuNzQuNzQgMCAwIDAgLjI3LjgzTDEyIDIxbDkuNjktNi44OGEuNzEuNzEgMCAwIDAgLjMxLS44M1oiLz48L3N2Zz4=",
+          alt: "Zafar Saleem Gitlab.com profile",
+        },
         { 
           text: "X (Formerly Twitter)", 
           url: "https://x.com/zafartalks",
@@ -53,18 +65,6 @@ export const contents = {
           url: "https://facebook.com/dakalcodeography",
           logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxZTBmZjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mYWNlYm9vayI+PHBhdGggZD0iTTE4IDJoLTNhNSA1IDAgMCAwLTUgNXYzSDd2NGgzdjhoNHYtOGgzbDEtNGgtNFY3YTEgMSAwIDAgMSAxLTFoM3oiLz48L3N2Zz4=",
           alt: "Zafar Saleem Facebook.com profile",
-        },
-        { 
-          text: "Github", 
-          url: "https://github.com/zafar-saleem",
-          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdGh1YiI+PHBhdGggZD0iTTE1IDIydi00YTQuOCA0LjggMCAwIDAtMS0zLjVjMyAwIDYtMiA2LTUuNS4wOC0xLjI1LS4yNy0yLjQ4LTEtMy41LjI4LTEuMTUuMjgtMi4zNSAwLTMuNSAwIDAtMSAwLTMgMS41LTIuNjQtLjUtNS4zNi0uNS04IDBDNiAyIDUgMiA1IDJjLS4zIDEuMTUtLjMgMi4zNSAwIDMuNUE1LjQwMyA1LjQwMyAwIDAgMCA0IDljMCAzLjUgMyA1LjUgNiA1LjUtLjM5LjQ5LS42OCAxLjA1LS44NSAxLjY1LS4xNy42LS4yMiAxLjIzLS4xNSAxLjg1djQiLz48cGF0aCBkPSJNOSAxOGMtNC41MSAyLTUtMi03LTIiLz48L3N2Zz4=",
-          alt: "Zafar Saleem Github.com profile",
-        },
-        { 
-          text: "Gitlab", 
-          url: "https://gitlab.com/zsleem",
-          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmODg1NTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1naXRsYWIiPjxwYXRoIGQ9Im0yMiAxMy4yOS0zLjMzLTEwYS40Mi40MiAwIDAgMC0uMTQtLjE4LjM4LjM4IDAgMCAwLS4yMi0uMTEuMzkuMzkgMCAwIDAtLjIzLjA3LjQyLjQyIDAgMCAwLS4xNC4xOGwtMi4yNiA2LjY3SDguMzJMNi4xIDMuMjZhLjQyLjQyIDAgMCAwLS4xLS4xOC4zOC4zOCAwIDAgMC0uMjYtLjA4LjM5LjM5IDAgMCAwLS4yMy4wNy40Mi40MiAwIDAgMC0uMTQuMThMMiAxMy4yOWEuNzQuNzQgMCAwIDAgLjI3LjgzTDEyIDIxbDkuNjktNi44OGEuNzEuNzEgMCAwIDAgLjMxLS44M1oiLz48L3N2Zz4=",
-          alt: "Zafar Saleem Gitlab.com profile",
         },
         {
           text: "Blog",
