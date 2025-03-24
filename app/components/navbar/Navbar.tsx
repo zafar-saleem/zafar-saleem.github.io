@@ -42,8 +42,8 @@ const Navbar = () => {
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
             <a href={logo.url} className="flex items-center gap-2 flex flex-col">
+              <Image src={Logo} width={80} height={60} alt="Freelance Company Logo" />
               <span className="text-md font-semibold block">{logo.title}</span>
-              <Image src={Logo} width={60} height={60} alt="Freelance Company Logo" />
             </a>
             <div className="flex items-center">
               <NavigationMenu>
