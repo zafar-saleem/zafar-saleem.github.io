@@ -57,8 +57,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
-            <a href={logo.url} className="flex items-center gap-2">
-              <span className="text-lg font-semibold">{logo.title}</span>
+            <a href={logo.url} className="flex items-center gap-2 flex flex-col">
+              <Image src={Logo} width={80} height={60} alt="Freelance Company Logo" />
+              <span className="text-md font-semibold block">{logo.title}</span>
             </a>
             <Sheet>
               <SheetTrigger asChild>
