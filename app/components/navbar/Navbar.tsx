@@ -25,6 +25,8 @@ import { renderMobileMenuItem } from "./components/mobile-menu-item";
 import React from "react";
 import { pageview } from "@/utilities";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Logo from "./assets/logo.png";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -39,8 +41,9 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
-            <a href={logo.url} className="flex items-center gap-2">
-              <span className="text-lg font-semibold">{logo.title}</span>
+            <a href={logo.url} className="flex items-center gap-2 flex flex-col">
+              <span className="text-md font-semibold block">{logo.title}</span>
+              <Image src={Logo} width={60} height={60} alt="Freelance Company Logo" />
             </a>
             <div className="flex items-center">
               <NavigationMenu>
