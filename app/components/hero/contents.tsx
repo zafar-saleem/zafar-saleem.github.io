@@ -1,4 +1,4 @@
-import HeroImage from "./assets/hero-freelance-zafar-image.webp";
+import HeroImage from "./assets/hero-image-4.webp";
 
 export const contents = {
   heading: "Hi, I'M Zafar, Freelance Developer",

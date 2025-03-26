@@ -26,6 +26,7 @@ const Hero = ({ id }: { id: string }) => {
             className="w-full rounded-md object-contain"
             width={1000}
             height={1000}
+            priority
           />
         </div>
       </div>
