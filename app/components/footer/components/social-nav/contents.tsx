@@ -34,7 +34,7 @@ export const social = {
         {
           text: "Threads",
           url: "https://www.threads.net/@dakalcodeografy",
-          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyOWRiNzYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hdC1zaWduIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI0Ii8+PHBhdGggZD0iTTE2IDh2NWEzIDMgMCAwIDAgNiAwdi0xYTEwIDEwIDAgMSAwLTQgOCIvPjwvc3ZnPg==",
+          logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTkuMjUgOC41MDVjLTEuNTc3LTUuODY3LTctNS41LTctNS41cy03LjUtLjUtNy41IDguOTk1czcuNSA4Ljk5NiA3LjUgOC45OTZzNC40NTguMjk2IDYuNS0zLjkxOGMuNjY3LTEuODU4LjUtNS41NzMtNi01LjU3M2MwIDAtMyAwLTMgMi41YzAgLjk3NiAxIDIgMi41IDJzMy4xNzEtMS4wMjcgMy41LTNjMS02LTQuNS02LjUtNi00IiBjb2xvcj0iY3VycmVudENvbG9yIi8+Cjwvc3ZnPg==",
           alt: "Zafar Saleem Thread.net profile",
         },
         { 
