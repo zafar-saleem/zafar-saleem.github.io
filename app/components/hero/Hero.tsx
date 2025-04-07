@@ -29,7 +29,7 @@ const Hero = ({ id }: { id: string }) => {
             priority
           />
         </div>
-        <div className="flex gap-3 justify-center mt-4">
+        <div className="flex gap-3 justify-center mt-15">
           <div className="flex -space-x-2 overflow-hidden">
             <img
               alt=""
