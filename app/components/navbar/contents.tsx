@@ -9,10 +9,6 @@ export const menu = [
     url: "#about",
   },
   {
-    title: "Skills",
-    url: "#skills",
-  },
-  {
     title: "Portfolio",
     url: "#portfolio",
   },

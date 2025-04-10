@@ -12,7 +12,7 @@ import kritzer from "./assets/kritzer.jpg";
 
 const Hero = ({ id }: { id: string }) => {
   return (
-    <section className="mb-32" id={id}>
+    <section id={id}>
       <div className="container">
         <div className={`grid items-center gap-8 lg:grid-cols-1`}>
           <div className="mx-auto text-center flex max-w-screen-lg flex-col gap-6">
