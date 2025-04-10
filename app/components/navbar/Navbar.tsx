@@ -40,7 +40,7 @@ const Navbar = () => {
     <div className="py-4">
       <div className="container">
         {/* Desktop Menu */}
-        <nav className={`hidden justify-center fixed top-0 right-0 left-0 shadow-md z-1 lg:flex ${styles.navbar}`}>
+        <nav className={`hidden justify-center fixed top-0 right-0 left-0 shadow-md z-2 lg:flex ${styles.navbar}`}>
           <div className="flex items-center gap-6">
             <a href={logo.url} className="flex items-center gap-2 flex">
               <Image src={Logo} width={80} height={60} alt="Freelance Company Logo" />
