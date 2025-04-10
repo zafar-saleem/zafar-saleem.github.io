@@ -27,6 +27,7 @@ import { pageview } from "@/utilities";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Logo from "./assets/logo.png";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -39,9 +40,9 @@ const Navbar = () => {
     <div className="py-4">
       <div className="container">
         {/* Desktop Menu */}
-        <nav className="hidden justify-between lg:flex">
+        <nav className={`hidden justify-center fixed top-0 right-0 left-0 shadow-md z-1 lg:flex ${styles.navbar}`}>
           <div className="flex items-center gap-6">
-            <a href={logo.url} className="flex items-center gap-2 flex flex-col">
+            <a href={logo.url} className="flex items-center gap-2 flex">
               <Image src={Logo} width={80} height={60} alt="Freelance Company Logo" />
               <span className="text-md font-semibold block">{logo.title}</span>
             </a>

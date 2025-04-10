@@ -6,7 +6,7 @@ import { contents } from "./contents";
 
 const Footer = () => {
   return (
-    <section className="py-32 mt-10">
+    <section className="pt-32 mt-10">
       <div className="container">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
