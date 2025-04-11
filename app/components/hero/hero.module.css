@@ -3,13 +3,13 @@
   --end-x-position: -2500px;
   animation: scale ease-in-out forwards;
   animation-timeline: view();
-  animation-range: 0% 100%;
+  animation-range: 0% 400%;
 }
 
 .animate_right {
   animation: scale_right ease-in-out forwards;
   animation-timeline: view();
-  animation-range: 0% 100%;
+  animation-range: 0% 300%;
 }
 
 .container {
