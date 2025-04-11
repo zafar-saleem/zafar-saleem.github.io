@@ -11,7 +11,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import Link from "next/link";
 import { contents } from "./contents";
 import Autoplay from "embla-carousel-autoplay";
 import { KPI_Card } from "./components/kpicard";
@@ -41,12 +40,10 @@ export const Portfolio = ({id}: { id: string }) => {
                     <CardTitle className="text-center">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex border-b-[1px] pb-5">
-                    <Link href={item.link} className="shadow-none transition-shadow duration-200 hover:shadow-sm hover:shadow-slate-200">
-                      <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
-                    </Link>
+                    <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
                   </CardContent>
                   <CardFooter className="flex lg:flex-row">
-                    <KPI_Card item={item} />
+                    <KPI_Card item={item} link={item.link} />
                   </CardFooter>
                 </Card>
               </div>

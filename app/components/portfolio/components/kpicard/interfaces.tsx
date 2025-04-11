@@ -6,8 +6,10 @@ interface IMetrics {
 
 interface IKpi {
   kpi: IMetrics[];
+  link: string;
 }
 
 export interface IKpiCard {
   item: IKpi,
+  link?: string;
 }
