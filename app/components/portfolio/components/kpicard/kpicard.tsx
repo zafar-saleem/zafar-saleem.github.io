@@ -8,7 +8,7 @@ export const KPI_Card = ({ item }: IKpiCard) => {
       {
         item.kpi.map((kpi, key) => (
           <article key={key} className={`text-center ${key === 0 ? `px-2` : ""} ${key < 2 && item.kpi.length > 1 ? `border-e-[1px]` : null} w-full text-sm lg:text-xl flex flex-col items-center`}>
-            <div className="basis-full w-full grid grid-cols-2 items-center">
+            <div className="basis-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 gap-2 md:gap-0 lg:gap-0 2xl:gap-0 items-center">
               <div className="flex flex-col items-center">
                 <Image src={kpi.icon} width={25} height={25} alt="icon" />
                 <h2 className="font-semibold truncate w-20 lg:w-full">{kpi.title}</h2>
