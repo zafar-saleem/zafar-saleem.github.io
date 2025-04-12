@@ -5,7 +5,7 @@ export const contents = {
   descs: [
     "If your project involves online store, I CAN HELP, here is how:",
     "Don't have online store? I will build it for you.",
-    "You need help in Web Portal? I will help build Web Portal for you.",
+    "You need help in web portal? I will help build web portal for you.",
     "Don't have e-commerce website? I will built it for you."
   ],
   button: {
