@@ -28,11 +28,11 @@ export const contents = [
     }
   },
   {
-    title: "Modernizing websites",
-    desc: "Have an out dated website?",
+    title: "Web Portal Development",
+    desc: "Do you need help in web portal?",
     icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmYjIzYTEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1sYXlvdXQtdGVtcGxhdGUiPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSI3IiB4PSIzIiB5PSIzIiByeD0iMSIvPjxyZWN0IHdpZHRoPSI5IiBoZWlnaHQ9IjciIHg9IjMiIHk9IjE0IiByeD0iMSIvPjxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjciIHg9IjE2IiB5PSIxNCIgcng9IjEiLz48L3N2Zz4=",
     contents: [
-      "I revamp and modernize websites",
+      "I will build web portal",
       "I take care of the entire process"
     ],
     action: {
