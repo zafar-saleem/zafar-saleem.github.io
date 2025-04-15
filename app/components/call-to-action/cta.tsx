@@ -12,7 +12,7 @@ const Cta = () => {
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             {contents.buttons.secondary && (
               <Button variant="outline" className="w-full sm:w-auto" asChild>
-                <a href={contents.buttons.secondary.url}>{contents.buttons.secondary.text}</a>
+                <a rel="canonical" href={contents.buttons.secondary.url}>{contents.buttons.secondary.text}</a>
               </Button>
             )}
           </div>
