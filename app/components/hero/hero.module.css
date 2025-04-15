@@ -1,15 +1,44 @@
+.btn_cta {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: -2px;
+    left: -2px;
+    width: 103%;
+    height: 110%;
+    background-color: red;
+    border-radius: .525rem;
+    z-index: -1;
+    animation: pulse .5s linear infinite alternate;
+    filter: blur(1px);
+    background-image: linear-gradient(45deg, rgb(199, 54, 6), rgb(63, 241, 39), rgb(137, 100, 248)); 
+  }
+}
+
+@keyframes pulse {
+  from {
+    filter: blur(1px);
+  }
+  to {
+    filter: blur(10px);
+  }
+}
+
 .animate_left {
   --start-x-position: -300px;
   --end-x-position: -2500px;
   animation: scale ease-in-out forwards;
   animation-timeline: view();
-  animation-range: 0% 400%;
+  animation-range: 0% 600%;
 }
 
 .animate_right {
   animation: scale_right ease-in-out forwards;
   animation-timeline: view();
-  animation-range: 0% 300%;
+  animation-range: 0% 600%;
 }
 
 .container {
@@ -67,7 +96,7 @@
 
 @keyframes scale_right {
   from {
-    transform: translateX(-2500px);
+    transform: translateX(-1500px);
   }
   to {
     transform: translateX(-300px);

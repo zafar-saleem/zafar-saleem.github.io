@@ -23,7 +23,7 @@ const Hero = ({ id }: { id: string }) => {
               ))
             }
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-            <Button asChild size="lg" className="bg-slate-700 hover:bg-slate-500 shadow-lg">
+            <Button asChild size="lg" className={`bg-slate-700 hover:bg-slate-500 shadow-lg ${styles.btn_cta}`}>
               <a href={contents.button.url}>{contents.button.text}</a>
             </Button>
             </div>
