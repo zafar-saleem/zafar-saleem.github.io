@@ -237,7 +237,7 @@ html {
       rotate: calc(var(--rotate) * -1);
       width: 55px;
       aspect-ratio: 1;
-      background: url(./assets/avatar.png) no-repeat;
+      /* background: url(./assets/avatar.png) no-repeat; */
       background-size: cover;
     }
 
