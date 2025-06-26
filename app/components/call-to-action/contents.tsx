@@ -1,6 +1,6 @@
 export const contents = {
-  heading: "Need Website Development?",
-  description: "Click below button to schedule a call with me.",
+  heading: "Need Web Development Project?",
+  description: "Click below button to book a call with me.",
   buttons: {
     secondary: {
       text: "let's book a call",

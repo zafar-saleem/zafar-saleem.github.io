@@ -28,9 +28,10 @@ const Cta = () => {
     <section className="pt-32 w-full">
       <div className="container">
         <div className="flex flex-col items-center rounded-lg bg-accent p-8 text-center md:rounded-xl lg:p-16">
-          <h3 className="mb-3 max-w-3xl text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+          <h3 className="max-w-3xl text-2xl font-semibold md:text-4xl">
             {contents.heading}
           </h3>
+          <p className="mb-3 mt-0 md:mb-4 lg:mb-6">{contents.description}</p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             {contents.buttons.secondary && (
               <Button
