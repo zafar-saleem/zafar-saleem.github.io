@@ -1,29 +1,97 @@
 .btn_cta {
+  --bounce: cubic-bezier(.47, 1.64, .41, .8);
+
   position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(5500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+  padding: 2.25rem 3rem;
+  font-size: 1.3rem;
+  width: 15rem;
+  box-shadow:
+    0 0.5rem 1rem 0 rgb(0 0 0 / 0.5),
+    0 0rem 1rem 0 rgb(255 255 255 / 1) inset;
+  text-shadow: 0 0 1rem 0 rgb(0 0 0 / 0.7);
+  outline: 1px solid rgb(109, 109, 109);
+  outline-offset: -1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  margin-inline: auto;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    top: -2px;
-    left: -2px;
-    width: 103%;
-    height: 110%;
-    background-color: red;
-    border-radius: .525rem;
-    z-index: -1;
-    animation: pulse .5s linear infinite alternate;
-    filter: blur(1px);
-    background-image: linear-gradient(45deg, rgb(199, 54, 6), rgb(63, 241, 39), rgb(137, 100, 248)); 
-  }
-}
+  &:hover, &:active {
+    .btn_cta_me, .btn_cta_client {
+      opacity: 1;
+      rotate: 0deg;
+      filter: blur(0);
+    }
 
-@keyframes pulse {
-  from {
-    filter: blur(1px);
+    .btn_cta_me {
+      translate: 160px;
+    }
+
+    .btn_cta_client {
+      translate: -160px;
+    }
+
+    .btn_cta_label {
+      display: block;
+      translate: 0 -20px;
+      opacity: 0;
+      filter: blur(5px);
+    }
+
+    .btn_add {
+      top: 0px;
+    }
   }
-  to {
-    filter: blur(10px);
+
+  & > a {
+    transform: translateZ(50px);
+    translate: 0 0px;
+    opacity: 1;
+
+    & > * {
+      transition: 0.5s var(--bounce);
+      transform: translateZ(50px);
+    }
+
+    .btn_cta_client,
+    .btn_cta_me {
+      position: absolute;
+      background-color: red;
+      display: inline-block;
+      padding-top: 0.75rem;
+      border-radius: 100%;
+      top: -12px;
+      opacity: 0;
+      filter: blur(5px);
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .btn_cta_me {
+      left: -150px;
+      rotate: -90deg;
+      width: 55px;
+      aspect-ratio: 1;
+      background: url(./assets/avatar.png) no-repeat;
+      background-size: cover;
+    }
+
+    .btn_cta_client {
+      right: -150px;
+      rotate: 45deg;
+      width: 55px;
+      aspect-ratio: 1;
+    }
+
+    .btn_add {
+      position: absolute;
+      left: 45%;
+      top: 50px;
+    }
   }
 }
 
