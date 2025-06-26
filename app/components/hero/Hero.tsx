@@ -22,7 +22,7 @@ const Hero = ({ id }: { id: string }) => {
 
   React.useLayoutEffect(() => {
     window.addEventListener("mousemove", (event) => {
-      // @ts-ignore
+      // @ts-expect-error: it does exist here.
       const box = ctaRef?.current?.getBoundingClientRect();
 
       const constraint = 30;
@@ -51,7 +51,7 @@ const Hero = ({ id }: { id: string }) => {
                 className={`bg-slate-700 hover:bg-slate-700 shadow-lg ${styles.btn_cta}`}
                 ref={ctaRef}
                 style={{
-                  // @ts-ignore
+                  // @ts-expect-error: It is a known prop
                   "--rotateX": `${boxPerspective.rotateX}deg`,
                   "--rotateY": `${boxPerspective.rotateY}deg`,
                 }}
