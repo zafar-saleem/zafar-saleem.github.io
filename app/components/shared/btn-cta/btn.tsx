@@ -3,7 +3,12 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import styles from "./styles.module.css";
 
-export const CTAButton = ({ url, text }) => {
+type Props = {
+  url: string;
+  text: string;
+}
+
+export const CTAButton = ({ url, text }: Props) => {
   const ctaRef = React.useRef(null);
   const [boxPerspective, setBoxPerspective] = React.useState({
     rotateX: 0,
