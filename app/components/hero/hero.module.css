@@ -1,5 +1,7 @@
 .btn_cta {
   --bounce: cubic-bezier(.47, 1.64, .41, .8);
+  --rotate: 90deg;
+  --position: -150px;
 
   position: relative;
   transform-style: preserve-3d;
@@ -22,17 +24,17 @@
 
   &:hover, &:active {
     .btn_cta_me, .btn_cta_client {
+      --rotate: 0deg;
       opacity: 1;
-      rotate: 0deg;
       filter: blur(0);
     }
 
     .btn_cta_me {
-      translate: 160px;
+      --position: 10px;
     }
 
     .btn_cta_client {
-      translate: -160px;
+      --position: 15px;
     }
 
     .btn_cta_label {
@@ -44,6 +46,7 @@
 
     .btn_add {
       top: 0px;
+      opacity: 1;
     }
   }
 
@@ -72,8 +75,8 @@
     }
 
     .btn_cta_me {
-      left: -150px;
-      rotate: -90deg;
+      left: var(--position);
+      rotate: calc(var(--rotate) * -1);
       width: 55px;
       aspect-ratio: 1;
       background: url(./assets/avatar.png) no-repeat;
@@ -81,8 +84,8 @@
     }
 
     .btn_cta_client {
-      right: -150px;
-      rotate: 45deg;
+      right: var(--position);
+      rotate: var(--rotate);
       width: 55px;
       aspect-ratio: 1;
     }
@@ -91,6 +94,7 @@
       position: absolute;
       left: 45%;
       top: 50px;
+      opacity: 0;
     }
   }
 }
