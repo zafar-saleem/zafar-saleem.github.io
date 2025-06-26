@@ -154,3 +154,105 @@ html {
     max-width: 320px;
   }
 }
+
+.btn_cta {
+  --bounce: cubic-bezier(.47, 1.64, .41, .8);
+  --rotate: 90deg;
+  --position: -150px;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(5500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+  padding: 2.25rem 3rem;
+  font-size: 1.3rem;
+  width: 15rem;
+  box-shadow:
+    0 0.5rem 1rem 0 rgb(0 0 0 / 0.5),
+    0 0rem 1rem 0 rgb(255 255 255 / 1) inset;
+  text-shadow: 0 0 1rem 0 rgb(0 0 0 / 0.7);
+  outline: 1px solid rgb(109, 109, 109);
+  outline-offset: -1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  margin-inline: auto;
+
+  &:hover, &:active {
+    .btn_cta_me, 
+    .btn_cta_client {
+      --rotate: 0deg;
+      opacity: 1;
+      filter: blur(0);
+    }
+
+    .btn_cta_me {
+      --position: 10px;
+    }
+
+    .btn_cta_client {
+      --position: 15px;
+    }
+
+    .btn_cta_label {
+      display: block;
+      translate: 0 -20px;
+      opacity: 0;
+      filter: blur(5px);
+    }
+
+    .btn_add {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
+  & > a {
+    transform: translateZ(50px);
+    translate: 0 0px;
+    opacity: 1;
+
+    & > * {
+      transition: 0.3s ease-in-out;
+      transform: translateZ(50px);
+    }
+
+    .btn_cta_client,
+    .btn_cta_me {
+      position: absolute;
+      background-color: red;
+      display: inline-block;
+      padding-top: 0.75rem;
+      border-radius: 100%;
+      top: -12px;
+      opacity: 0;
+      filter: blur(5px);
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .btn_cta_me {
+      left: var(--position);
+      rotate: calc(var(--rotate) * -1);
+      width: 55px;
+      aspect-ratio: 1;
+      background: url(./assets/avatar.png) no-repeat;
+      background-size: cover;
+    }
+
+    .btn_cta_client {
+      right: var(--position);
+      rotate: var(--rotate);
+      width: 55px;
+      aspect-ratio: 1;
+    }
+
+    .btn_add {
+      position: absolute;
+      left: 45%;
+      top: 50px;
+      opacity: 0;
+    }
+  }
+}

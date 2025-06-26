@@ -48,7 +48,7 @@ const Hero = ({ id }: { id: string }) => {
               <Button
                 asChild
                 size="lg"
-                className={`bg-slate-700 hover:bg-slate-700 shadow-lg ${styles.btn_cta}`}
+                className={`bg-slate-700 hover:bg-slate-700 shadow-lg btn_cta`}
                 ref={ctaRef}
                 style={{
                   // @ts-expect-error: It is a known prop
@@ -58,10 +58,10 @@ const Hero = ({ id }: { id: string }) => {
               >
                 <div>
                   <a href={contents.button.url}>
-                    <span className={styles.btn_cta_me}></span>  
-                    <span className={styles.btn_cta_label}>{contents.button.text}</span>
-                    <span className={styles.btn_add}>+</span>
-                    <span className={styles.btn_cta_client}>You</span>  
+                    <span className="btn_cta_me"></span>  
+                    <span className="btn_cta_label">{contents.button.text}</span>
+                    <span className="btn_add">+</span>
+                    <span className="btn_cta_client">You</span>  
                   </a>
                 </div>
               </Button>
