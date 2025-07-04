@@ -10,7 +10,7 @@ export const contents = {
   ],
   button: {
     text: "Let's discuss it",
-    url: "mailto:zafarsaleem3@gmail.com?subject=I would like to hire you for [enter project name/position]",
+    url: "mailto:zafarsaleem3@gmail.com?subject=Hey Zafar, I'd like to discuss my project with you & get your rates",
   },
   image: {
     src: HeroImage,
