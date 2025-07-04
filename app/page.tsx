@@ -3,7 +3,6 @@ import { Navbar } from "./components/navbar";
 import { Services } from "./components/services";
 import { Footer } from "./components/footer";
 import { Portfolio } from "./components/portfolio";
-import { Testimonial } from "./components/testimonials";
 import { Cta } from "./components/call-to-action";
 
 export default function Home() {
