@@ -1,12 +1,12 @@
 import HeroImage from "./assets/hero-image.webp";
 
 export const contents = {
-  heading: "Hi, I'M Zafar, Freelance Developer",
+  heading: "Hi, I'M Zafar, Frontend Developer",
   descs: [
-    "If your project involves online store, I CAN HELP, here is how:",
-    "Don't have online store? I will build it for you.",
-    "You need help in web portal? I will help build web portal for you.",
-    "Don't have e-commerce website? I will built it for you."
+    "I build web applications, web portals",
+    "websites, landing pages & dashboards",
+    "Here is how my clients' rate my work",
+    "👇"
   ],
   button: {
     text: "Let's discuss it",

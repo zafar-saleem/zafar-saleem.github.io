@@ -23,11 +23,11 @@ const Hero = ({ id }: { id: string }) => {
                 <p key={index} className="text-balance text-muted-foreground lg:text-lg">{content}</p>
               ))
             }
+            <Ratings />
             <div className="flex w-full flex-col justify-center align-center gap-2 sm:flex-row">
               <CTAButton url={contents.button.url} text={contents.button.text} />
             </div>
           </div>
-          <Ratings />
           <div className={`${styles.container} hidden lg:block xlg:block`}>
             <div className={`${styles.row} ${styles.row_one} ${styles.scale} ${styles.animate_left} ${styles.timeline}`}>
               <Image priority src={portfolio} width={250} height={150} alt="portfolio" className={styles.item} />
