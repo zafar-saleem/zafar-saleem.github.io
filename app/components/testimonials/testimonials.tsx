@@ -17,7 +17,7 @@ import Autoplay from "embla-carousel-autoplay"
 export function Testimonial({ id }: { id: string }) {
   return (
     <>
-      <h2 className="text-3xl font-extrabold lg:text-5xl text-center mb-10 w-full">Testimonials</h2>    
+      <h2 className="text-3xl font-extrabold lg:text-5xl text-center mb-10 w-full">What my clients says</h2>
       <section className="mt-10 mb-25 w-full" id={id}>
         <Carousel
           plugins={[
