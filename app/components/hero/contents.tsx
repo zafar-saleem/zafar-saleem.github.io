@@ -3,13 +3,11 @@ import HeroImage from "./assets/hero-image.webp";
 export const contents = {
   heading: "Hi, I'M Zafar, Frontend Developer",
   descs: [
-    "I build web applications, web portals",
-    "websites, landing pages & dashboards",
-    "Here is how my clients' rate my work",
-    "👇"
+    "I help you build your SaaS websites",
+    "landing pages & dashboards",
   ],
   button: {
-    text: "Let's discuss it",
+    text: "Let's book a call",
     url: "mailto:zafarsaleem3@gmail.com?subject=Hey Zafar, I'd like to discuss my project with you & get your rates",
   },
   image: {

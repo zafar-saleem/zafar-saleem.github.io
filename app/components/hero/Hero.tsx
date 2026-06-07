@@ -17,14 +17,14 @@ const Hero = ({ id }: { id: string }) => {
       <div className="container">
         <div className={`grid items-center gap-8 lg:grid-cols-1`}>
           <div className="mx-auto text-center flex max-w-screen-lg flex-col gap-6">
-            <h1 className="text-3xl font-extrabold lg:text-6xl mb-5 text-center">{contents.heading}</h1>
+            <h1 className="text-3xl font-extrabold lg:text-6xl text-center">{contents.heading}</h1>
             {
               contents.descs.map((content, index) => (
-                <p key={index} className="text-balance text-muted-foreground lg:text-lg">{content}</p>
+                <p key={index} className="text-balance text-muted-foreground lg:text-lg m-0 p-0">{content}</p>
               ))
             }
             <Ratings />
-            <div className="flex w-full flex-col justify-center align-center gap-2 sm:flex-row">
+            <div className="flex w-full flex-col justify-center align-center sm:flex-row mt-10 mb-10">
               <CTAButton url={contents.button.url} text={contents.button.text} />
             </div>
           </div>

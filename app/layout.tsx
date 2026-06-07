@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const META_DESCRIPTION = "This is Zafar Saleem web development portfolio website where you can find his software engineering skills and links to his Medium blogs, Github profile, Gitlab profile, Linkedin profile, Instagram profile. Contact me.";
-const META_TITLE = "Freelance Developer | Zafar Saleem, React, Next.js, JavaScript, TypeScript";
+const META_DESCRIPTION = "I build SaaS Websites & Landing Pages as a React.js & Next.js Specialist";
+const META_TITLE = "Zafar Saleem | I build SaaS Websites & Landing Pages in React.js &Next.js";
 
 export const metadata: Metadata = {
   title: META_TITLE,

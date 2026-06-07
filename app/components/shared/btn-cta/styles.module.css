@@ -2,10 +2,9 @@
   --bounce: cubic-bezier(.47, 1.64, .41, .8);
   --rotate: 90deg;
   --position: -150px;
+  --bounce: cubic-bezier(.47, 1.64, .41, .8);
 
   position: relative;
-  transform-style: preserve-3d;
-  transform: perspective(5500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
   padding: 2.25rem 3rem;
   font-size: 1.3rem;
   width: 15rem;
@@ -55,7 +54,7 @@
     opacity: 1;
 
     & > * {
-      transition: 0.5s ease-in-out;
+      transition: 0.5s var(--bounce);
       transform: translateZ(50px);
     }
 
