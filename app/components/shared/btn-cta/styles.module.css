@@ -21,7 +21,7 @@
   margin-inline: auto;
 
   .btn_cta_me, .btn_cta_client {
-    transition: 0.5s var(--bounce);
+    transition: 0.3s var(--bounce);
   }
 
   &:hover, &:active {
@@ -58,7 +58,7 @@
     opacity: 1;
 
     & > * {
-      transition: 0.5s var(--bounce);
+      transition: 0.3s var(--bounce);
       transform: translateZ(50px);
     }
 
