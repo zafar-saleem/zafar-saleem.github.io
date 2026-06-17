@@ -20,6 +20,17 @@ import project from "./assets/Project Card Component.png";
 import schedule from "./assets/Schedule List.png";
 import seat from "./assets/Seat Selector.png";
 import walk from "./assets/Walk Tracker Component.png";
+import create from "./assets/Create New Menu.png";
+import fitness from "./assets/Fitness.png";
+import chat from "./assets/Live Chat.png";
+import macros from "./assets/Macros.png";
+import payment from "./assets/Payment.png";
+import pricingSection from "./assets/Pricing.png";
+import profileCard from "./assets/Profile Card.png";
+import RealEstateCard  from "./assets/Real Estate Card.png";
+import RealEstateFilter from "./assets/Real Estate Filter.png";
+import services  from "./assets/Services Section.png";
+import team from "./assets/Team Management.png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -31,6 +42,149 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
+  {
+    title: "",
+    src: team,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: services,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: RealEstateFilter,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: RealEstateCard,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: profileCard,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: pricingSection,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: payment,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: macros,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: chat,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: fitness,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: create,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
   {
     title: "",
     src: walk,
