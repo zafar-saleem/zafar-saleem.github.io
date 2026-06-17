@@ -19,7 +19,24 @@ export const Portfolio = ({id}: { id: string }) => {
   return (
     <section id={id} className="m-auto mt-15 max-w-6xl">
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Portfolio</h2>
-      <Carousel
+      {contents.map((item, index) => (
+        // <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1">
+          <div className="" key={index}>
+            <Card className="mb-5 mt-5">
+              <CardHeader>
+                <CardTitle className="text-center">{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="flex">
+                <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
+              </CardContent>
+              {/* <CardFooter className="flex lg:flex-row">
+                <KPI_Card item={item} link={item.link} />
+              </CardFooter> */}
+            </Card>
+          </div>
+        // </CarouselItem>
+      ))}
+      {/* <Carousel
         plugins={[
           Autoplay({
             delay: 5000,
@@ -52,7 +69,7 @@ export const Portfolio = ({id}: { id: string }) => {
         </CarouselContent>
         <CarouselPrevious className="cursor-pointer" />
         <CarouselNext className="cursor-pointer" />
-      </Carousel>
+      </Carousel> */}
     </section>
   )
 }

@@ -5,6 +5,21 @@ import westwing from "./assets/westwing.webp";
 import portfolio from "./assets/portfolio.webp";
 import kritzer from "./assets/kritzer.webp";
 import corotos from "./assets/corotos.webp";
+import activity from "./assets/Activity Tracker Component.png";
+import airline from "./assets/Airline Seat Selector.png";
+import analytics from "./assets/Analytics Component.png";
+import budget from "./assets/Budget Management Card.png";
+import buy from "./assets/Buy Now Reactjs Component.png";
+import cinema from "./assets/Cinema Ticket Seat Selector.png";
+import coffee from "./assets/Coffee Shot Selector.png";
+import daily from "./assets/Daily Coal Card.png";
+import net from "./assets/Net Profit Chart Component.png";
+import pricing from "./assets/Pricing Section.png";
+import profile from "./assets/Profile Details Component.png";
+import project from "./assets/Project Card Component.png";
+import schedule from "./assets/Schedule List.png";
+import seat from "./assets/Seat Selector.png";
+import walk from "./assets/Walk Tracker Component.png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -16,6 +31,201 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
+  {
+    title: "",
+    src: walk,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: seat,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: schedule,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: project,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: profile,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: pricing,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: net,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: daily,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: coffee,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: cinema,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: buy,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: budget,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: analytics,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: airline,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: activity,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
   {
     title: "Mudah Marketplace",
     src: mudah,
