@@ -20,56 +20,14 @@ export const Portfolio = ({id}: { id: string }) => {
     <section id={id} className="m-auto mt-15 max-w-6xl">
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Portfolio</h2>
       {contents.map((item, index) => (
-        // <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1">
-          <div className="" key={index}>
-            <Card className="mb-5 mt-5">
-              <CardHeader>
-                <CardTitle className="text-center">{item.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex">
-                <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
-              </CardContent>
-              {/* <CardFooter className="flex lg:flex-row">
-                <KPI_Card item={item} link={item.link} />
-              </CardFooter> */}
-            </Card>
-          </div>
-        // </CarouselItem>
+        <div className="" key={index}>
+          <Card className="mb-5 mt-5">
+            <CardContent className="flex">
+              <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
+            </CardContent>
+          </Card>
+        </div>
       ))}
-      {/* <Carousel
-        plugins={[
-          Autoplay({
-            delay: 5000,
-          }),
-        ]}
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full mt-10 case-studies"
-      >
-        <CarouselContent>
-          {contents.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1">
-              <div className="">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-center">{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex border-b-[1px] pb-5">
-                    <Image src={item.src} width={250} height={0} alt={item.alt} className="w-full" priority blurDataURL="/blur.jpg" placeholder="blur" />
-                  </CardContent>
-                  <CardFooter className="flex lg:flex-row">
-                    <KPI_Card item={item} link={item.link} />
-                  </CardFooter>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="cursor-pointer" />
-        <CarouselNext className="cursor-pointer" />
-      </Carousel> */}
     </section>
   )
 }
