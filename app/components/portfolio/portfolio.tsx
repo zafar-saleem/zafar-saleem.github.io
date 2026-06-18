@@ -2,18 +2,10 @@
 
 import * as React from "react";
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { contents } from "./contents";
-import Autoplay from "embla-carousel-autoplay";
-import { KPI_Card } from "./components/kpicard";
+
 
 export const Portfolio = ({id}: { id: string }) => {
   return (
