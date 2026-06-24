@@ -57,6 +57,7 @@ export const contents = [
     src: saved_items,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -70,6 +71,7 @@ export const contents = [
     src: progressive,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-black",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -83,6 +85,7 @@ export const contents = [
     src: car,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -96,6 +99,7 @@ export const contents = [
     src: measure,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -109,6 +113,7 @@ export const contents = [
     src: leisure,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -122,6 +127,7 @@ export const contents = [
     src: cart,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -135,6 +141,7 @@ export const contents = [
     src: hero_mobile,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -148,6 +155,7 @@ export const contents = [
     src: hero_desktop,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -161,6 +169,7 @@ export const contents = [
     src: bento_mobile,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -174,6 +183,7 @@ export const contents = [
     src: bento_desktop,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -187,6 +197,7 @@ export const contents = [
     src: team,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -200,6 +211,7 @@ export const contents = [
     src: services,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -213,6 +225,7 @@ export const contents = [
     src: RealEstateFilter,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -226,6 +239,7 @@ export const contents = [
     src: RealEstateCard,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -239,6 +253,7 @@ export const contents = [
     src: profileCard,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -252,6 +267,7 @@ export const contents = [
     src: pricingSection,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -265,6 +281,7 @@ export const contents = [
     src: payment,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -278,6 +295,7 @@ export const contents = [
     src: macros,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -291,6 +309,7 @@ export const contents = [
     src: chat,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -304,6 +323,7 @@ export const contents = [
     src: fitness,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -317,6 +337,7 @@ export const contents = [
     src: create,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -330,6 +351,7 @@ export const contents = [
     src: walk,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -343,6 +365,7 @@ export const contents = [
     src: seat,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -356,6 +379,7 @@ export const contents = [
     src: schedule,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -369,6 +393,7 @@ export const contents = [
     src: project,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -382,6 +407,7 @@ export const contents = [
     src: profile,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -395,6 +421,7 @@ export const contents = [
     src: pricing,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -408,6 +435,7 @@ export const contents = [
     src: net,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -421,6 +449,7 @@ export const contents = [
     src: daily,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -434,6 +463,7 @@ export const contents = [
     src: coffee,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -447,6 +477,7 @@ export const contents = [
     src: cinema,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-[#2e2e2e]",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -460,6 +491,7 @@ export const contents = [
     src: buy,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -473,6 +505,7 @@ export const contents = [
     src: budget,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -486,6 +519,7 @@ export const contents = [
     src: analytics,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -499,6 +533,7 @@ export const contents = [
     src: airline,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -512,6 +547,7 @@ export const contents = [
     src: activity,
     link: "",
     alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -525,6 +561,7 @@ export const contents = [
     src: mudah,
     link: "https://mudah.my/",
     alt: "Mudah Marketplace Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -538,6 +575,7 @@ export const contents = [
     src: slimming,
     link: "https://slimmingworld.co.uk",
     alt: "Slimming World Health Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -551,6 +589,7 @@ export const contents = [
     src: tayara,
     link: "https://tayara.tn",
     alt: "Marketplace Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -564,6 +603,7 @@ export const contents = [
     src: corotos,
     link: "https://corotos.com.do",
     alt: "Marketplace Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -577,6 +617,7 @@ export const contents = [
     src: westwing,
     link: "https://westwing.de",
     alt: "E-Commerce Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -590,6 +631,7 @@ export const contents = [
     src: portfolio,
     link: "https://zafar-saleem.github.io",
     alt: "Personal Portfolio Website Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: "Metrics",
@@ -603,6 +645,7 @@ export const contents = [
     src: kritzer,
     link: "https://www.la-kritzer.ch/",
     alt: "Kritzer Portfolio Case Study",
+    color: "bg-white",
     kpi: [
       {
         title: "Metrics",
