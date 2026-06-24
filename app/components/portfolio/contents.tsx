@@ -38,6 +38,9 @@ import hero_mobile from "./assets/Hero Website Mobile.png";
 import cart from "./assets/Cart .png";
 import leisure from "./assets/Leisure Activity Card.png";
 import measure from "./assets/Measure Growth.png";
+import car from "./assets/Car Rental Booking.png";
+import progressive from "./assets/Progressive Card Stack.png";
+import saved_items from "./assets/Saved Shopping Items .png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -49,6 +52,45 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
+  {
+    title: "",
+    src: saved_items,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: progressive,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: car,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
   {
     title: "",
     src: measure,
