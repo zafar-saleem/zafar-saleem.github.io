@@ -41,6 +41,13 @@ import measure from "./assets/Measure Growth.png";
 import car from "./assets/Car Rental Booking.png";
 import progressive from "./assets/Progressive Card Stack.png";
 import saved_items from "./assets/Saved Shopping Items .png";
+import device from "./assets/Devices Analytics.png";
+import feature_desktop from "./assets/Features Section Desktop.png";
+import feature_mobile from "./assets/Features Section Mobile.png";
+import booking_desktop from "./assets/Travel Booking Website Desktop.png";
+import booking_mobile from "./assets/Travel Booking Website Mobile.png";
+import product_category_mob from "./assets/Product Category Mobile.png";
+import product_category_des from "./assets/Product Category Desktop.png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -52,6 +59,104 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
+  {
+    title: "",
+    src: product_category_des,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: product_category_mob,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: booking_mobile,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: booking_desktop,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: feature_mobile,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: feature_desktop,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: device,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
   {
     title: "",
     src: saved_items,
