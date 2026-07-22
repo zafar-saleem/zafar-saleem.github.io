@@ -12,10 +12,10 @@ export const menu = [
     title: "Portfolio",
     url: "#portfolio",
   },
-  {
-    title: "Services",
-    url: "#services",
-  },
+  // {
+  //   title: "Services",
+  //   url: "#services",
+  // },
   {
     title: "Blog",
     url: "https://medium.com/@zafarsaleem",
