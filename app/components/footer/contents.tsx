@@ -4,5 +4,5 @@ export const contents = {
     url: "https://zafar-saleem.github.io",
   },
   tagline: "React.js & Next.js Specialist",
-  copyright: "© 2025 Copyright. All rights reserved.",
+  copyright: "© 2026 Copyright. All rights reserved.",
 }
