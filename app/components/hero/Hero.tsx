@@ -17,7 +17,11 @@ const Hero = ({ id }: { id: string }) => {
       <div className="container">
         <div className={`grid items-center gap-8 lg:grid-cols-1`}>
           <div className="mx-auto text-center flex max-w-screen-lg flex-col gap-4">
-            <h1 className="text-3xl font-extrabold lg:text-6xl text-center">{contents.heading}</h1>
+            {
+              contents.heading.map((content, index) => (
+                <h1 key={index} className="text-3xl font-extrabold lg:text-6xl text-center">{content}</h1>
+              ))
+            }
             <div>
               {
                 contents.descs.map((content, index) => (

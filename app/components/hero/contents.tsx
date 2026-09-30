@@ -1,11 +1,13 @@
 import HeroImage from "./assets/hero-image.webp";
 
 export const contents = {
-  heading: "Hi, I'M Zafar, I Build SaaS Websites & Landing Pages Developer",
+  heading: [
+    "I Build Microsites,", " Landing Pages & Websites",
+  ],
+  // heading: "Hi, I'M Zafar, I Build Microsites, Landing Pages & Websites",
   descs: [
     "Frontend Engineer specialized in building",
-    "high performance websites and landing pages",
-    "with React, Next.js and TypeScript.",
+    "high performance microsites, websites and landing pages",
   ],
   button: {
     text: "Let's book a call",
