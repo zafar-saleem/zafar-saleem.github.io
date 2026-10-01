@@ -46,6 +46,10 @@ import management from "./assets/Management.png";
 import pricing_mobile from "./assets/Pricing Mobile.png";
 import team_desktop from "./assets/Team Section.png";
 import project_desktop from "./assets/Porject Overview Desktop.png";
+import agency from "./assets/Agency.png";
+import coaching from "./assets/coaching.png";
+import RealEstate from "./assets/Real Estate.png";
+import tribes from "./assets/Tribes.png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -57,6 +61,62 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
+  {
+    title: "",
+    src: tribes,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: RealEstate,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: coaching,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-white",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
+  {
+    title: "",
+    src: agency,
+    link: "",
+    alt: "Activity Tracker Component Case Study",
+    color: "bg-black",
+    kpi: [
+      {
+        title: KPI_TITLES.traffic,
+        metric: "1.9m",
+        icon: TRAFFIC_ICON,
+      },
+    ],
+  },
   {
     title: "",
     src: project_desktop,
