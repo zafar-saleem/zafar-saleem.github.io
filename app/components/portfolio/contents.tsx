@@ -32,35 +32,20 @@ import RealEstateFilter from "./assets/Real Estate Filter.png";
 import services  from "./assets/Services Section.png";
 import team from "./assets/Team Management.png";
 import bento_desktop from "./assets/Bento Website Desktop.png";
-import bento_mobile from "./assets/Bento Website Mobile.png";
 import hero_desktop from "./assets/Hero Website Desktop.png";
-import hero_mobile from "./assets/Hero Website Mobile.png";
 import cart from "./assets/Cart .png";
 import leisure from "./assets/Leisure Activity Card.png";
 import measure from "./assets/Measure Growth.png";
-import car from "./assets/Car Rental Booking.png";
-import progressive from "./assets/Progressive Card Stack.png";
 import saved_items from "./assets/Saved Shopping Items .png";
 import device from "./assets/Devices Analytics.png";
 import feature_desktop from "./assets/Features Section Desktop.png";
-import feature_mobile from "./assets/Features Section Mobile.png";
-import booking_desktop from "./assets/Travel Booking Website Desktop.png";
-import booking_mobile from "./assets/Travel Booking Website Mobile.png";
-import product_category_mob from "./assets/Product Category Mobile.png";
 import product_category_des from "./assets/Product Category Desktop.png";
 import analytics_desktop from "./assets/Analytics Desktop.png";
-import analytics_mobile from "./assets/Analytics Mobile.png";
-import built_for from "./assets/Built For.png";
-import wallet_dark from "./assets/Connect Wallet Dark.png";
 import wallet_light from "./assets/Connect Wallet Light.png";
 import management from "./assets/Management.png";
 import pricing_mobile from "./assets/Pricing Mobile.png";
-import pricing_desktop from "./assets/Pricing Page Desktop.png";
-import pricing_section_mobile from "./assets/Pricing Page Mobile.png";
-import team_mobile from "./assets/Team Mobile.png";
 import team_desktop from "./assets/Team Section.png";
 import project_desktop from "./assets/Porject Overview Desktop.png";
-import project_mobile from "./assets/Porject Overview Mobile.png";
 
 const KPI_TITLES = {
   traffic: "Traffic",
@@ -72,20 +57,6 @@ const TRAFFIC_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53
 const NOT_FOUND_ICON = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkYjI5MjkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=";
 
 export const contents = [
-  {
-    title: "",
-    src: project_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-black",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
   {
     title: "",
     src: project_desktop,
@@ -106,48 +77,6 @@ export const contents = [
     link: "",
     alt: "Activity Tracker Component Case Study",
     color: "bg-black",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: team_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-black",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: pricing_section_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: pricing_desktop,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
     kpi: [
       {
         title: KPI_TITLES.traffic,
@@ -200,48 +129,6 @@ export const contents = [
   },
   {
     title: "",
-    src: wallet_dark,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: built_for,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: analytics_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
     src: analytics_desktop,
     link: "",
     alt: "Activity Tracker Component Case Study",
@@ -257,62 +144,6 @@ export const contents = [
   {
     title: "",
     src: product_category_des,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: product_category_mob,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: booking_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: booking_desktop,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: feature_mobile,
     link: "",
     alt: "Activity Tracker Component Case Study",
     color: "bg-white",
@@ -368,34 +199,6 @@ export const contents = [
   },
   {
     title: "",
-    src: progressive,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-black",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: car,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
     src: measure,
     link: "",
     alt: "Activity Tracker Component Case Study",
@@ -438,35 +241,7 @@ export const contents = [
   },
   {
     title: "",
-    src: hero_mobile,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
     src: hero_desktop,
-    link: "",
-    alt: "Activity Tracker Component Case Study",
-    color: "bg-white",
-    kpi: [
-      {
-        title: KPI_TITLES.traffic,
-        metric: "1.9m",
-        icon: TRAFFIC_ICON,
-      },
-    ],
-  },
-  {
-    title: "",
-    src: bento_mobile,
     link: "",
     alt: "Activity Tracker Component Case Study",
     color: "bg-white",
