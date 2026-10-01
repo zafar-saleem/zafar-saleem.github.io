@@ -1,0 +1,21 @@
+# Zafar Saleem
+
+> Zafar Saleem is a freelance developer specializing in building high-performance microsites, SaaS websites, and landing pages using React.js, Next.js, and TypeScript.
+
+## Core Expertise & Services
+- **Frontend Development:** React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS.
+- **Specializations:** Microsites, SaaS Websites, High-Performance Landing Pages.
+- **Key Projects & Case Studies:**
+  - Mudah Marketplace Case Study
+  - Slimming World Health Case Study
+  - E-Commerce & Marketplace Case Studies
+  - Activity Tracker Component Case Study
+  - Personal Portfolio & Custom Client Portfolios (e.g., Kritzer Portfolio)
+
+## Main Pages & Resources
+- [Portfolio & Home](https://zafar-saleem.github.io/#portfolio): Main landing page showcasing professional background, featured case studies, and client testimonials.
+- [About](https://zafar-saleem.github.io/#about): Professional background and frontend engineering expertise.
+- [Contact / Schedule Meeting](https://calendly.com/zafarsaleem/30min): Book a call or get in touch for web development and freelance projects.
+
+## Optional
+- [Full Site Map / Optional (if applicable)](https://zafar-saleem.github.io/): Access all sections including blog, portfolio items, and direct communication links (WhatsApp / X / Instagram).
