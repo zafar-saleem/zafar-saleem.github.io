@@ -9,7 +9,7 @@ import { contents } from "./contents";
 
 export const Portfolio = ({id}: { id: string }) => {
   return (
-    <section id={id} className="m-auto mt-15 max-w-6xl">
+    <section id={id} className="m-auto mt-15 max-w-6xl scroll-mt-10">
       <h2 className="text-3xl font-extrabold lg:text-5xl text-center mt-10">Portfolio</h2>
       {contents.map((item, index) => (
         <div className="" key={index}>

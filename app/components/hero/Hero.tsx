@@ -13,7 +13,7 @@ import { CTAButton } from "../shared/btn-cta";
 
 const Hero = ({ id }: { id: string }) => {
   return (
-    <section id={id}>
+    <section id={id} className="scroll-mt-20">
       <div className="container">
         <div className={`grid items-center gap-8 lg:grid-cols-1`}>
           <div className="mx-auto text-center flex max-w-screen-lg flex-col gap-4">
