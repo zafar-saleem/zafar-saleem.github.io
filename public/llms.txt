@@ -1,0 +1,14 @@
+# Zafar Saleem
+
+> Freelance web developer building fast, SEO-friendly landing pages and marketing websites for SaaS startups with React, Next.js, TypeScript and Tailwind CSS.
+
+## Key facts
+- Services: SaaS landing pages, websites and microsites, performance fixes
+- Typical delivery: Figma to live site in 2–3 weeks
+- Pricing: landing pages from $1,500, websites from $3,500, custom projects from $6,000
+- You own the code, domain and content
+- Contact: zafarsaleem3@gmail.com
+
+## Pages
+- [Homepage](https://zafarsaleem.com/): services, pricing, guarantees, FAQs
+- [Selected projects](https://zafarsaleem.com/projects): Mudah, Westwing, Slimming World, Tayara, Kritzer
