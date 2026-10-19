@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zafar Saleem | Personal Website
+
+My personal website and online CV, live at **[zafar-saleem.github.io](https://zafar-saleem.github.io)**.
+
+The site brings together links to my GitHub, LinkedIn, Instagram and Medium profiles, alongside my CV and a list of my technical skills.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (React)
+- [TypeScript](https://www.typescriptlang.org)
+- [styled-components](https://styled-components.com) / CSS (Flexbox)
+- [ESLint](https://eslint.org) for linting
+- [pnpm](https://pnpm.io) for package management
+- Hosted on [GitHub Pages](https://pages.github.com)
+
+## Project Structure
+
+```
+.
+├── public/             # Static assets (images, icons, etc.)
+├── src/                # Application source code
+├── eslint.config.mjs   # ESLint configuration
+├── next.config.ts      # Next.js configuration
+├── tsconfig.json       # TypeScript configuration
+├── pnpm-workspace.yaml # pnpm workspace configuration
+└── package.json
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (LTS recommended)
+- [pnpm](https://pnpm.io/installation) (npm or yarn also work)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/zafar-saleem/zafar-saleem.github.io.git
+cd zafar-saleem.github.io
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run the development server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser. The page reloads automatically as you edit files.
 
-## Learn More
+### Other useful commands
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build   # Create a production build
+pnpm lint    # Run ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The site is published to GitHub Pages at [zafar-saleem.github.io](https://zafar-saleem.github.io). Changes pushed to the `master` branch are what get deployed.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: [@zafar-saleem](https://github.com/zafar-saleem)
+- Website: [zafar-saleem.github.io](https://zafar-saleem.github.io)
+- LinkedIn, Instagram and Medium: see the links on the website
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+All rights reserved unless a license file states otherwise.
