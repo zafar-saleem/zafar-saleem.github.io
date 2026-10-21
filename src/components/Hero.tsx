@@ -4,7 +4,7 @@ import { btnPrimary } from "./ui";
 export default function Hero() {
   return (
     <section aria-labelledby="hero-title" className="sd-exit mx-auto max-w-4xl px-5 pb-12 pt-16 text-center sm:px-8 md:pt-24">
-      <p className="animate-fade-in mx-auto w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">Freelance frontend engineer · React.js & Next.js</p>
+      <p className="animate-fade-in mx-auto w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">Freelance Frontend Engineer · React.js & Next.js</p>
       <h1 id="hero-title" className="animate-fade-in mt-6 text-4xl font-semibold leading-[1.05] sm:text-6xl">
         I build SaaS landing pages that load fast and turn visitors into sign-ups.
       </h1>
