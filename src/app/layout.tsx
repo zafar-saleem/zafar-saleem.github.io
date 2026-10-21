@@ -19,7 +19,7 @@ export const viewport: Viewport = { themeColor: "#f3f8ff", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="antialiased">
+    <html lang="en" className="antialiased" data-scroll-behavior="smooth">
       <body className="font-sans">{children}</body>
     </html>
   );
