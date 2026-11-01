@@ -46,12 +46,22 @@
     }
   }
 }
+/* Header colour follows the hero: dark while it sits over the Vante hero, white once the page content arrives.
+   The hero publishes a view timeline (--vante-hero); the header reads it. Unsupported browsers keep the white base style. */
+@keyframes sd-header-theme {
+  from { background-color: rgb(10 10 11 / 1); color: #f4f1ea; border-color: rgb(244 241 234 / .14); }
+  to   { background-color: rgb(255 255 255 / .9); color: var(--color-ink); border-color: var(--color-sky); }
+}
 @utility sd-header {
-  @media (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: scroll()) {
-      animation: sd-shadow linear both;
-      animation-timeline: scroll(root block);
-      animation-range: 0 160px;
+  @supports (animation-timeline: view()) {
+    animation: sd-header-theme linear both;
+    animation-timeline: --vante-hero;
+    /* hero bottom edge travels from 2 header-heights to 1 header-height below the top of the viewport */
+    animation-range: exit calc(100% - 138px) exit calc(100% - 69px);
+    @media (prefers-reduced-motion: no-preference) {
+      animation: sd-shadow linear both, sd-header-theme linear both;
+      animation-timeline: scroll(root block), --vante-hero;
+      animation-range: 0 160px, exit calc(100% - 138px) exit calc(100% - 69px);
     }
   }
 }
@@ -88,6 +98,7 @@
   }
 }
 
+body { timeline-scope: --vante-hero; }
 html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { background: var(--color-mist); color: var(--color-ink); text-wrap: pretty; }

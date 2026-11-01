@@ -14,7 +14,7 @@ export default function Header({ currentHref }: { currentHref?: string }) {
             <ul className="hidden items-center gap-6 lg:flex">
               {NAV.map((n) => (
                 <li key={n.href}>
-                  <Link href={n.href} aria-current={n.href === currentHref ? "page" : undefined} className={n.href === currentHref ? "font-bold text-brand" : "text-ink/80 hover:text-brand"}>{n.label}</Link>
+                  <Link href={n.href} aria-current={n.href === currentHref ? "page" : undefined} className={n.href === currentHref ? "font-bold text-brand" : "text-current/80 hover:text-brand"}>{n.label}</Link>
                 </li>
               ))}
             </ul>
