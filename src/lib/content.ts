@@ -1,36 +1,4 @@
-import BudgetManagement from "../components/assets/budget-management.png";
-import ProjectManagement from "../components/assets/project-management.png";
-import BentoWebsite from "../components/assets/bento-website.png";
-import Mudah from "../components/assets/mudah.webp";
-import Slimming from "../components/assets/westwing.webp";
-import ActivityTracker from "../components/assets/activity-tracker.png";
-import Agency from "../components/assets/agency.png";
-import AirlineSeat from "../components/assets/airline-seat-selector.png";
-import AnalyticsComponent from "../components/assets/analytics-component.png";
-import BuyNow from "../components/assets/buy-now.png";
-import Cinema from "../components/assets/cinema-ticket-seat-selector.png";
-import Wallet from "../components/assets/connect-wallet.png";
-import CreateNewMenu from "../components/assets/create-new-menu.png";
-import DailyGoal from "../components/assets/daily-goal.png";
-import DevicesAnalytics from "../components/assets/devices-analytics.png";
-import Fitness from "../components/assets/fitness.png";
-import HeroWebsite from "../components/assets/hero-website.png";
-import Kritzer from "../components/assets/kritzer.webp";
-import LeisureActivity from "../components/assets/leisure-activity.png";
-import Macros from "../components/assets/macros.png";
-import MeasureGrowth from "../components/assets/measure-growth.png";
-import NetProfitChart from "../components/assets/net-profit-chart.png";
-import Payment from "../components/assets/payment.png";
-import Pricing from "../components/assets/pricing.png";
-import RealEstate from "../components/assets/real-estate.png";
-import ScheduleList from "../components/assets/schedule-list.png";
-import SeatSelector from "../components/assets/seat-selector.png";
 import Tayara from "../components/assets/tayara.webp";
-import TeamManagement from "../components/assets/team-management.png";
-import Tribes from "../components/assets/tribes.png";
-import WalkTracker from "../components/assets/walk-tracker.png";
-import WeeklyGoals from "../components/assets/weekly-goals.png";
-import Westwing from "../components/assets/westwing.webp";
 
 export const SITE = {
   name: "Zafar Saleem",
