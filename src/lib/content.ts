@@ -36,7 +36,7 @@ export const SITE = {
   name: "Zafar Saleem",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zafar-saleem.github.io",
   email: "zafarsaleem3@gmail.com",
-  bookingUrl: "https://cal.com/zafarsaleem/30min",
+  bookingUrl: "https://calendly.com/zafarsaleem/30min",
   title: "Zafar Saleem · Freelance Frontend Developer for SaaS & SMEs Landing Pages & Microsites",
   description:
     "I build fast, SEO-friendly landing pages for SaaS startups & SMEs. Figma to live site in weeks. Book a free call.",
