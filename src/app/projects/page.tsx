@@ -3,9 +3,8 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import { Footer } from "@/components/Footer";
-import { btnLight, btnPrimary, Section } from "@/components/ui";
-import { cta, PLAYGROUND_URL, PROJECTS, SITE } from "@/lib/content";
-import { ButtonLink } from "@/components/Button";
+import { btnLight, Section } from "@/components/ui";
+import { PROJECTS, SITE } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Selected projects",
