@@ -8,7 +8,11 @@ const THREE_URL = "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module
 const FONTS_URL =
   "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap";
 
+export type VanteTestimonial = { quote: string; name: string; role: string; initials?: string };
+
 export type VanteHeroProps = {
+  /** Client feedback cards (first three are shown, 5 stars each). Visible on landing, they fade out together with the caption. */
+  testimonials?: VanteTestimonial[];
   /** "cover" crops each video to fill its card; "contain" shows the whole video. Default "cover". */
   fit?: "cover" | "contain";
   /** Videos shown on the ribbon and in the final grid (title shows in the hover pill). Defaults to the Vante reel. */
@@ -32,10 +36,11 @@ export default function VanteHero({
   topBar = true,
   offsetTop = 0,
   offsetSelector,
-  label = "Craft in motion",
+  label = "I build websites",
   description,
   videos,
   fit = "cover",
+  testimonials,
 }: VanteHeroProps) {
   const videosKey = videos ? JSON.stringify(videos) : "";
   const ref = useRef<HTMLElement>(null);
@@ -77,15 +82,36 @@ export default function VanteHero({
       <div id="vh-track">
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label}>
-            <span className="hl -my-5" id="vh-l1" aria-hidden="true"><span>CRAFT IN</span></span>
-            <span className="hl my-4" id="vh-l2" aria-hidden="true"><span>WEB</span></span>
+            <span className="hl -my-6" id="vh-l1" aria-hidden="true"><span>I BUILD</span></span>
+            <span className="hl my-5" id="vh-l2" aria-hidden="true"><span>WEBSITES</span></span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
-          <div id="vh-cap" className="">I turn your Figma designs into a fast, SEO-friendly site you can update yourself, live in 2-3 weeks.</div>
+          <div id="vh-cap" className="">I turn your Figma designs into a fast, SEO-friendly websites, live in 2-3 weeks.</div>
           <div id="vh-glow"></div>
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>
+          {testimonials && testimonials.length > 0 && (
+            <ul id="vh-reviews" aria-label="Client feedback" className="max-w-[1240px] mx-auto">
+              {testimonials.slice(0, 3).map((t) => (
+                <li key={t.name} className="mt-0">
+                  <figure className="vh-card">
+                    <div className="vh-stars" role="img" aria-label="5 out of 5 stars">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <svg key={i} viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" /></svg>
+                      ))}
+                    </div>
+                    <blockquote>“{t.quote}”</blockquote>
+                    <figcaption>
+                      <span className="vh-av" aria-hidden="true">{t.initials ?? t.name.slice(0, 2).toUpperCase()}</span>
+                      <span><strong>{t.name}</strong><small>{t.role}</small></span>
+                    </figcaption>
+                  </figure>
+                </li>
+              ))}
+            </ul>
+          )}
           <canvas id="vh-gl" aria-hidden="true"></canvas>
+          <canvas id="vh-glf" aria-hidden="true"></canvas>
           <Link id="vh-hint" href={ctaHref}>START A PROJECT &nbsp;→</Link>
           <div className="top">
             {topBar && (
@@ -96,8 +122,8 @@ export default function VanteHero({
             <div id="vh-pager" aria-hidden="true"><span>←</span><span>→</span></div>
             {topBar && (
               <nav className="acts" aria-label="Studio">
-                <a href="#"><i></i>LET&apos;S TALK</a>
-                <a href="#">MENU<b></b></a>
+                <Link href="#"><i></i>LET&apos;S TALK</Link>
+                <Link href="#">MENU<b></b></Link>
               </nav>
             )}
           </div>

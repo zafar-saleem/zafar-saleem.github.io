@@ -25,6 +25,10 @@ type Card = {
   mat: T.ShaderMaterial;
   mesh: T.Mesh;
   rect: GridRect | null;
+  /** Which canvas layer(s) this card has pixels on: front = parts heading right-to-left, back = the rest. */
+  front: boolean;
+  back: boolean;
+  vis: boolean;
 };
 
 const R2 = "https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/";
@@ -52,13 +56,16 @@ const GZ = 8;
 const FOV = 35;
 const RIB_A = 0.14, RIB_B = 0.63;
 
-const VS = `varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
-const FS = `uniform sampler2D map;uniform vec2 cover;uniform vec3 fill;uniform float aspect,ready,radius;varying vec2 vUv;
+const VS = `attribute float aDir;varying vec2 vUv;varying float vDir;void main(){vUv=uv;vDir=aDir;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
+const FS = `uniform sampler2D map;uniform vec2 cover;uniform vec3 fill;uniform float aspect,ready,radius,pass,useDir;varying vec2 vUv;varying float vDir;
 void main(){
   vec2 q=(abs(vUv-.5)-.5)*vec2(aspect,1.)+radius;
   float d=length(max(q,0.))+min(max(q.x,q.y),0.)-radius;
   float px=fwidth(d),a=1.-smoothstep(-px,px,d);
   if(a<.01)discard;
+  // pass 1 = canvas in front of the review cards: keeps only parts heading right-to-left (vDir<0); pass 0 keeps the rest
+  float dir=useDir>.5?vDir:1.;
+  if(pass>.5?dir>=0.:dir<0.)discard;
   vec2 uv=vUv;if(!gl_FrontFacing)uv.x=1.-uv.x;
   vec2 tuv=(uv-.5)*cover+.5;
   vec2 ins=step(vec2(0.),tuv)*step(tuv,vec2(1.));
@@ -96,9 +103,21 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
   const track = $("track");
 
   /* ---------- renderer ---------- */
+  // Two canvases show the same scene: the back one sits under the review cards, the front one over them.
+  // Each part of the ribbon is drawn on exactly one of them (see the "pass" uniform in the card shader).
+  const canvasF = $<HTMLCanvasElement>("glf");
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
   renderer.setClearColor(0, 0);
   renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+  let rendererF: T.WebGLRenderer;
+  try {
+    rendererF = new THREE.WebGLRenderer({ canvas: canvasF, antialias: true, alpha: true });
+  } catch (e) {
+    renderer.dispose();
+    throw e;
+  }
+  rendererF.setClearColor(0, 0);
+  rendererF.outputColorSpace = THREE.LinearSRGBColorSpace;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(FOV, 1, 0.1, 100);
 
@@ -142,14 +161,15 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     tex.magFilter = THREE.LinearFilter;
     tex.generateMipmaps = false;
     const geo = new THREE.PlaneGeometry(1, 1, NX, NY);
+    geo.setAttribute("aDir", new THREE.BufferAttribute(new Float32Array((NX + 1) * (NY + 1)), 1));
     const mat = new THREE.ShaderMaterial({
       vertexShader: VS, fragmentShader: FS, transparent: true, side: THREE.DoubleSide,
-      uniforms: { map: { value: tex }, cover: { value: new THREE.Vector2(1, 1) }, fill: { value: new THREE.Vector3(0.075, 0.075, 0.075) }, aspect: { value: CARD_W / CARD_H }, ready: { value: 0 }, radius: { value: 0.018 } },
+      uniforms: { map: { value: tex }, cover: { value: new THREE.Vector2(1, 1) }, fill: { value: new THREE.Vector3(0.075, 0.075, 0.075) }, aspect: { value: CARD_W / CARD_H }, ready: { value: 0 }, radius: { value: 0.018 }, pass: { value: 0 }, useDir: { value: 1 } },
     });
     const mesh = new THREE.Mesh(geo, mat);
     mesh.frustumCulled = false;
     scene.add(mesh);
-    const c: Card = { i, title, v, tex, geo, mat, mesh, rect: null };
+    const c: Card = { i, title, v, tex, geo, mat, mesh, rect: null, front: false, back: true, vis: false };
     v.addEventListener("loadeddata", () => {
       const va = v.videoWidth / v.videoHeight, ca = CARD_W / CARD_H;
       if (contain) {
@@ -174,6 +194,8 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     stickTop = parseFloat(getComputedStyle(stage).top) || 0;
     renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
     renderer.setSize(W, H, false);
+    rendererF.setPixelRatio(Math.min(devicePixelRatio, 2));
+    rendererF.setSize(W, H, false);
     camera.aspect = asp;
     camera.fov = asp < 16 / 9 ? (Math.atan(0.561 / asp) * 360) / Math.PI : FOV;
     camera.updateProjectionMatrix();
@@ -199,16 +221,27 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
   /* ---------- pose ---------- */
   const op = new THREE.Vector3(), ot = new THREE.Vector3(), up = new THREE.Vector3(), Y = new THREE.Vector3(0, 1, 0), vp = new THREE.Vector3();
   function poseRibbon(c: Card, head: number) {
-    const pos = c.geo.attributes.position as T.BufferAttribute, centre = head - c.i * STEP;
+    const pos = c.geo.attributes.position as T.BufferAttribute, dirA = c.geo.attributes.aDir as T.BufferAttribute, centre = head - c.i * STEP;
+    let lo = Infinity, hi = -Infinity;
     for (let iy = 0; iy <= NY; iy++) for (let ix = 0; ix <= NX; ix++) {
       const k = iy * (NX + 1) + ix, lu = ix / NX - 0.5, lv = 0.5 - iy / NY;
       at(centre + lu * CARD_W, op, ot);
+      // On-screen horizontal direction of the rail at this point (sign is what matters): > 0 heading left to right,
+      // < 0 right to left. It is the derivative of the projected x (x / depth), so it follows what the eye sees.
+      const dx = ot.x * -op.z + op.x * ot.z;
+      dirA.setX(k, dx);
+      if (dx < lo) lo = dx;
+      if (dx > hi) hi = dx;
       // keep the sheet upright, leaning a little into the turn
       up.copy(Y).addScaledVector(ot, -Y.dot(ot)).normalize();
       vp.copy(op).addScaledVector(up, lv * CARD_H);
       pos.setXYZ(k, vp.x, vp.y, vp.z);
     }
     pos.needsUpdate = true;
+    dirA.needsUpdate = true;
+    c.front = lo < 0;
+    c.back = hi >= 0;
+    c.mat.uniforms.useDir.value = 1;
   }
   function poseGrid(c: Card, q: number) {
     const g = grid(c.i), pos = c.geo.attributes.position as T.BufferAttribute;
@@ -221,9 +254,13 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     }
     pos.needsUpdate = true;
     c.rect = g;
+    c.front = false; // the landed grid sits on the back canvas
+    c.back = true;
+    c.mat.uniforms.useDir.value = 0;
   }
 
   const l1 = $("l1"), l2 = $("l2"), cap = $("cap"), rule = $("rule"), hint = $("hint");
+  const reviews = root.querySelector<HTMLElement>("#vh-reviews");
   const fades = ["pager", "cross", "glow"].map((id) => $(id));
   function render() {
     const pp = p;
@@ -232,7 +269,9 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     const run = mix(-50, 76, span(pp, 0, 0.58));
     l1.style.transform = `translate3d(${run}vw,${rise * 34}vh,0)`;
     l2.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
-    cap.style.opacity = String(1 - span(pp, 0.52, 0.57));
+    const capA = 1 - span(pp, 0.52, 0.57);
+    cap.style.opacity = String(capA);
+    if (reviews) reviews.style.opacity = String(capA); // client cards leave exactly when the caption does
     cap.style.transform = `translate(-50%,calc(-50% + ${rise * 34}vh))`;
     const intro = 1 - span(pp, 0, 0.05);
     hint.style.opacity = String(intro);
@@ -257,7 +296,26 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
         c.rect = null;
       }
     }
-    renderer.render(scene, camera);
+    const b = drawPass(renderer, false);
+    if (!b && drewBack) renderer.clear();
+    drewBack = b;
+    const f = drawPass(rendererF, true);
+    if (!f && drewFront) rendererF.clear();
+    drewFront = f;
+  }
+  let drewBack = false, drewFront = false;
+  /** Draws the cards' back-layer or front-layer pixels on one canvas. Returns whether anything was drawn. */
+  function drawPass(r: T.WebGLRenderer, front: boolean) {
+    let any = false;
+    for (const c of cards) {
+      c.vis = c.mesh.visible;
+      c.mat.uniforms.pass.value = front ? 1 : 0;
+      c.mesh.visible = c.vis && (front ? c.front : c.back);
+      any = any || c.mesh.visible;
+    }
+    if (any) r.render(scene, camera);
+    for (const c of cards) c.mesh.visible = c.vis;
+    return any;
   }
 
   /* ---------- hover ---------- */
@@ -334,5 +392,6 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
       c.mat.dispose();
     }
     renderer.dispose();
+    rendererF.dispose();
   };
 }

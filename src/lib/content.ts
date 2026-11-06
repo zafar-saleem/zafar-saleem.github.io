@@ -5,7 +5,7 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zafar-saleem.github.io",
   email: "zafarsaleem3@gmail.com",
   bookingUrl: "https://calendly.com/zafarsaleem/30min",
-  title: "Zafar Saleem · Freelance Frontend Developer for SaaS & SMEs Landing Pages & Microsites",
+  title: "Zafar Saleem · I build websites, microsites & landing pages for SaaS, SMEs & founders",
   description:
     "I build fast, SEO-friendly landing pages for SaaS startups & SMEs. Figma to live site in weeks. Book a free call.",
 };
@@ -154,10 +154,10 @@ export const TOOLS = ["Figma", "React.js", "Next.js", "TypeScript", "Tailwind CS
 export const REVIEWS = [
   { name: "Nathan F.", role: "Founder, SaaS startup", initials: "NF", text: "Great freelancer! Met expectations for a JavaScript project and was on time. Would recommend to anyone." },
   { name: "John C.", role: "Product lead, B2B software", initials: "JC", text: "Zafar is very customer focused willing to go the extra mile will being using again on future projects." },
+  { name: "Sammy E.", role: "Founder, design agency", initials: "SE", text: "Everythng fine, nice communction great experience. Highly recommended! Thank you" },
   { name: "Jaspal S.", role: "Owner, online business", initials: "JS", text: "Great work, thanks. Helped fix my site quickly and worked through the issues with me clearly. Great communication, fantastic English, very polite, good availability. I look forward to working with you again." },
-  { name: "Ime A.", role: "Marketing manager, SaaS company", initials: "ML", text: "Really great working with Zafar" },
-  { name: "Liam D.", role: "CTO, early-stage startup", initials: "AK", text: "A Gentleman and Efficient. Will hire again." },
-  { name: "Sammy E.", role: "Founder, design agency", initials: "SR", text: "Everythng fine, nice communction great experience. Highly recommended! Thank you" },
+  { name: "Ime A.", role: "Marketing manager, SaaS company", initials: "IA", text: "Really great working with Zafar" },
+  { name: "Liam D.", role: "CTO, early-stage startup", initials: "LD", text: "A Gentleman and Efficient. Will hire again." },
 ];
 
 export const clients = ["https://zafar-assets.zafarsaleem3.workers.dev/mudah.png", "https://zafar-assets.zafarsaleem3.workers.dev/tayara.png", "https://zafar-assets.zafarsaleem3.workers.dev/slimming.png", "https://zafar-assets.zafarsaleem3.workers.dev/westwing.png"];
