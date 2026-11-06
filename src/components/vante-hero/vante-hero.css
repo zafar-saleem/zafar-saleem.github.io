@@ -15,11 +15,11 @@
 .vante #vh-gl{position:absolute;inset:0;width:100%;height:100%;display:block}
 .vante .top{position:absolute;left:32px;right:32px;top:26px;display:flex;align-items:center;justify-content:flex-start;pointer-events:none}
 .vante .acts{margin-left:auto}
-.vante #vh-pager{display:flex;margin:-26px 0 0 28px;pointer-events:auto}
+.vante #vh-pager{display:none;margin:-26px 0 0 28px;pointer-events:auto}
 .vante #vh-pager span{display:grid;place-items:center;width:44px;height:50px;border:1px solid var(--line);border-top:0;margin-left:-1px;font:400 11px 'IBM Plex Mono',monospace;color:var(--mid)}
 .vante #vh-glow{position:absolute;left:0;right:0;top:0;height:42%;background:linear-gradient(rgba(244,241,234,.1),rgba(244,241,234,0))}
-.vante #vh-cross{position:absolute;left:32px;right:32px;top:37.5%;height:1px;background:var(--line)}
-.vante #vh-cross i{position:absolute;left:50%;top:-.62em;margin-left:-.3em;font:400 13px 'IBM Plex Mono',monospace;font-style:normal;color:var(--mid);background:var(--bg);padding:0 .3em;line-height:1.2}
+.vante #vh-cross{display:none;position:absolute;left:32px;right:32px;top:37.5%;height:1px;background:var(--line)}
+.vante #vh-cross i{display:none;position:absolute;left:50%;top:-.62em;margin-left:-.3em;font:400 13px 'IBM Plex Mono',monospace;font-style:normal;color:var(--mid);background:var(--bg);padding:0 .3em;line-height:1.2}
 .vante .logo{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:600;letter-spacing:.09em}
 .vante .logo svg{width:22px;height:18px;fill:var(--ink)}
 .vante .acts{display:flex;align-items:center;gap:7px;pointer-events:auto}

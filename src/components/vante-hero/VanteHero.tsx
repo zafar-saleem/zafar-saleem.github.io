@@ -119,7 +119,7 @@ export default function VanteHero({
                 <svg viewBox="0 0 22 18" aria-hidden="true"><path d="M11 0l11 18h-6.200L11 9.600 6.200 18H0z" /></svg>VANTE
               </div>
             )}
-            <div id="vh-pager" aria-hidden="true"><span>←</span><span>→</span></div>
+            <div id="vh-pager" className="hidden" aria-hidden="true"><span>←</span><span>→</span></div>
             {topBar && (
               <nav className="acts" aria-label="Studio">
                 <Link href="#"><i></i>LET&apos;S TALK</Link>
