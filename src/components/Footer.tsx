@@ -26,6 +26,7 @@ export function Footer() {
             {SOCIALS.map((l) => (
               <li key={l.label}>
                 <Link
+                  data-umami-event="book a free call click" data-umami-event-location="footer"
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer me"

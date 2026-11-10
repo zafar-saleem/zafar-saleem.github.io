@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { SITE } from "@/lib/content";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -30,6 +31,12 @@ export const viewport: Viewport = { themeColor: "#f3f8ff", width: "device-width"
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="antialiased" data-scroll-behavior="smooth">
+      <Script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="31e9d10d-1659-4686-8346-75a2c4c4c7aa"
+        strategy="afterInteractive"
+      />
       <body className="font-sans">{children}</body>
     </html>
   );

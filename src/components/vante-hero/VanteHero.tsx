@@ -112,7 +112,7 @@ export default function VanteHero({
           )}
           <canvas id="vh-gl" aria-hidden="true"></canvas>
           <canvas id="vh-glf" aria-hidden="true"></canvas>
-          <Link id="vh-hint" href={ctaHref}>START A PROJECT &nbsp;→</Link>
+          <Link id="vh-hint" href={ctaHref} data-umami-event="start a project click" data-umami-event-location="hero section">START A PROJECT &nbsp;→</Link>
           <div className="top">
             {topBar && (
               <div className="logo">
