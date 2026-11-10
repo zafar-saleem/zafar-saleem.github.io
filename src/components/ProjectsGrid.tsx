@@ -34,7 +34,7 @@ export default function ProjectsGrid({ projects, bookingUrl }: { projects: Proje
                   {p.tags.map((t) => <li key={t} className="rounded-full bg-mist px-3 py-1 text-ink">{t}</li>)}
                 </ul>
                 <h3 className="mt-3 text-xl font-semibold">{p.name}</h3>
-                {/* <p className="mt-2 text-sm text-muted">{p.brief}</p> */}
+                <p className="mt-2 text-sm text-muted">{p.brief}</p>
                 {/* <Link href="/#contact" className="mt-4 inline-block text-sm font-bold text-brand" aria-label={`Start a project like ${p.name}`}>Start a similar project →</Link> */}
               </div>
             </article>
