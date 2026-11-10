@@ -18,6 +18,6 @@ export function ButtonLink({
   ...props
 }: ComponentProps<"a"> & { variant?: Variant }) {
   return (
-    <a className={`${base} ${variants[variant]} ${className}`} {...props} />
+    <a data-umami-event="book a free call click in footer section" data-umami-event-location="Footer section" className={`${base} ${variants[variant]} ${className}`} {...props} />
   );
 }

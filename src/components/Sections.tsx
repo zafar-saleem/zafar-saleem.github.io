@@ -19,13 +19,13 @@ export function Work() {
                 <h3 className="text-lg font-bold">{p.name}</h3>
                 <p className="text-sm text-muted">{p.label} · Website development</p>
                 <p className="mt-2 text-sm text-muted">{p.brief}</p>
-                <Link data-umami-event="view all projects card click" data-umami-event-location="latest projects section" href={`/projects`} className="mt-3 inline-block text-sm font-semibold text-brand" aria-label={`View ${p.name} in all projects`}>View all projects →</Link>
+                <Link data-umami-event="view all projects card click in latest projects section" data-umami-event-location="latest projects section" href={`/projects`} className="mt-3 inline-block text-sm font-semibold text-brand" aria-label={`View ${p.name} in all projects`}>View all projects →</Link>
               </div>
             </article>
           </li>
         ))}
       </ul>
-      <div className="mt-8 text-center sd-zoom"><Link data-umami-event="view all project button click" data-umami-event-location="latest projects section" href="/projects" className={btnOutline}>View all projects</Link></div>
+      <div className="mt-8 text-center sd-zoom"><Link data-umami-event="view all project button click in latest projects section" data-umami-event-location="latest projects section" href="/projects" className={btnOutline}>View all projects</Link></div>
     </Section>
   );
 }
@@ -82,7 +82,7 @@ export function PremiumCta() {
       <div className="sd-zoom bg-navy px-6 py-14 text-center text-white sm:px-14">
         <h2 className="mx-auto max-w-2xl text-3xl font-extrabold sm:text-4xl">If you sell a premium product, you need a premium landing page.</h2>
         <p className="mx-auto mt-4 max-w-lg text-sm text-white/80">Find out how I build pages that attract the right people and keep them around.</p>
-        <Link data-umami-event="book a premium consultation click" data-umami-event-location="Premium CTA section" href={SITE.bookingUrl} className={`${btnLight} mt-7`}>Book a free consultation</Link>
+        <Link data-umami-event="book a premium consultation click logo click in CTA section" data-umami-event-location="Premium CTA section" href={SITE.bookingUrl} className={`${btnLight} mt-7`}>Book a free consultation</Link>
       </div>
     </Section>
   );
@@ -184,6 +184,7 @@ export function BookCall() {
           Prefer email?{" "}
           <Link
             href={`mailto:${SITE.email}`}
+            data-umami-event="email link click in footer section" data-umami-event-location="Footer section"
             className="font-medium text-white underline underline-offset-4 hover:text-tint"
           >
             {SITE.email}

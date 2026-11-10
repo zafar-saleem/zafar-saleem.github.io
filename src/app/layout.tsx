@@ -36,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         src="https://cloud.umami.is/script.js"
         data-website-id="31e9d10d-1659-4686-8346-75a2c4c4c7aa"
         strategy="afterInteractive"
+        data-domains="localhost:300,https://zafar-saleem.github.io"
       />
       <body className="font-sans">{children}</body>
     </html>
