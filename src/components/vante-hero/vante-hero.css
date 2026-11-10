@@ -53,6 +53,7 @@
 @media (max-width:760px){
   .vante .top{left:18px;right:18px;top:18px}.vante .bot{left:18px;right:18px;bottom:18px;grid-template-columns:1fr auto}.vante .bot .mid{display:none}
   .vante #vh-hint,.vante #vh-pager{display:none}.vante .bot p{max-width:17em;font-size:11px}
+  .vante #vh-hint{display:block}
   /* small screens: one card, no offset */
   .vante #vh-reviews{left:18px;right:18px;top:16px;grid-template-columns:minmax(0,1fr)}
   .vante #vh-reviews>li:not(:nth-child(2)){display:none}

@@ -274,8 +274,8 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     if (reviews) reviews.style.opacity = String(capA); // client cards leave exactly when the caption does
     cap.style.transform = `translate(-50%,calc(-50% + ${rise * 34}vh))`;
     const intro = 1 - span(pp, 0, 0.05);
-    hint.style.opacity = String(intro);
-    hint.style.visibility = intro > 0 ? "visible" : "hidden"; // keep the faded link out of tab order and clicks
+    // hint.style.opacity = String(intro);
+    // hint.style.visibility = intro > 0 ? "visible" : "hidden"; // keep the faded link out of tab order and clicks
     for (const el of fades) el.style.opacity = String(intro);
     rule.style.transform = `scaleX(${ease(span(pp, 0.72, 0.86))})`;
     // ribbon, then the grid

@@ -86,7 +86,7 @@ export default function VanteHero({
             <span className="hl my-5" id="vh-l2" aria-hidden="true"><span>WEBSITES</span></span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
-          <div id="vh-cap" className="">I turn your Figma designs into a fast, SEO-friendly websites, live in 2-3 weeks.</div>
+          <p id="vh-cap" className="">I turn your Figma designs into a fast & SEO-friendly websites.</p>
           <div id="vh-glow"></div>
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>
