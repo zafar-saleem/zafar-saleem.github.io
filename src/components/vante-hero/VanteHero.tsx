@@ -91,7 +91,7 @@ export default function VanteHero({
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>
           {testimonials && testimonials.length > 0 && (
-            <ul id="vh-reviews" aria-label="Client feedback" className="max-w-[1240px] mx-auto">
+            <ul id="vh-reviews" aria-label="Client feedback" className="max-w-[1240px] mt-14 md:mt-0 mx-auto">
               {testimonials.slice(0, 3).map((t) => (
                 <li key={t.name} className="mt-0">
                   <figure className="vh-card">
