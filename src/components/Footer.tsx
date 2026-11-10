@@ -18,18 +18,18 @@ export function Footer() {
   return (
     <footer className="bg-navy text-white border-t border-white/10">
       <div className="container-page max-w-6xl mx-auto flex flex-col gap-4 py-8 text-xs sm:flex-row sm:items-center sm:justify-between">
-        <p>
+        <p className="text-center">
           © {YEAR} {SITE.name}
         </p>
         <nav aria-label="Social and contact">
-          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 item-center justify-center">
             {SOCIALS.map((l) => (
               <li key={l.label}>
                 <Link
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer me"
-                  className="hover:text-white"
+                  className="hover:text-white sm:text-center"
                 >
                   {l.label}
                   <span className="sr-only"> (opens in a new tab)</span>
