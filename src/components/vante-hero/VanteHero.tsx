@@ -82,8 +82,8 @@ export default function VanteHero({
       <div id="vh-track">
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label}>
-            <span className="hl -my-6" id="vh-l1" aria-hidden="true"><span>I BUILD</span></span>
-            <span className="hl my-5" id="vh-l2" aria-hidden="true"><span>WEBSITES</span></span>
+            <span className="hl -my-6" id="vh-l1" aria-hidden="true"><span>I BUILD WEBSITES &</span></span>
+            <span className="hl my-5" id="vh-l2" aria-hidden="true"><span>LANDING PAGES</span></span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
           <p id="vh-cap" className="">I turn your Figma designs into a fast & SEO-friendly websites.</p>

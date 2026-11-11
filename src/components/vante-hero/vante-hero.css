@@ -5,7 +5,7 @@
 .vante{view-timeline:--vante-hero block;view-timeline-inset:0}
 .vante #vh-track{height:900vh}
 .vante .stage{position:sticky;top:var(--vante-top);height:calc(100vh - var(--vante-top));height:calc(100svh - var(--vante-top));overflow:hidden;background:var(--bg)}
-.vante .hl{position:absolute;left:0;right:0;font-weight:400;font-size:clamp(40px,6.7vw,130px);line-height:1;letter-spacing:-.055em;white-space:nowrap;text-align:center;will-change:transform}
+.vante .hl{position:absolute;left:0;right:0;font-weight:400;font-size:clamp(40px,5.7vw,130px);line-height:1;letter-spacing:0em;white-space:nowrap;text-align:center;will-change:transform}
 .vante #vh-l1{top:calc(50% - .98em);transform:translate3d(-50vw,34vh,0)}
 .vante #vh-l2{top:calc(50% + .03em);transform:translate3d(50vw,34vh,0)}
 .vante #vh-l1 span,.vante #vh-l2 span{display:inline-block}
@@ -27,8 +27,9 @@
 .vante .acts a:hover{background:var(--ink);color:var(--bg)}
 .vante .acts a i{width:6px;height:6px;border-radius:50%;background:currentColor}
 .vante .acts a b{display:block;width:13px;height:7px;border-top:1px solid currentColor;border-bottom:1px solid currentColor}
-.vante #vh-hint{z-index: -100;position:absolute;left:50%;top:33px;transform:translateX(-50%);font:400 11.5px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:var(--ink);text-decoration:none;white-space:nowrap;padding-bottom:6px;border-bottom:1px solid var(--line)}
-.vante #vh-hint:hover{border-bottom-color:var(--ink)}
+.vante #vh-hint{position:absolute;left:50%;top:33px;transform:translateX(-50%);font:400 11.5px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:var(--ink);text-decoration:none;white-space:nowrap;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.vante #vh-hint::before{content:"";width:0%;height:2px;background-color:#ffffff;position:absolute;bottom:0;transition:width 0.2s;}
+.vante #vh-hint:hover::before{width:100%}
 .vante a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 .vante .bot{position:absolute;left:32px;right:32px;bottom:26px;display:grid;grid-template-columns:1fr auto 1fr;align-items:end;font-size:12.5px;line-height:1.35;pointer-events:none}
 .vante .bot p{color:var(--ink);max-width:21em}
@@ -69,9 +70,9 @@
 .vante[data-failed] #vh-cap{transform:translate(-50%,calc(-50% + 3.2em))}
 /* Stacking inside the stage: back canvas (0) < client cards (50) < front canvas (100) < overlay UI (101).
    ribbon.ts draws the parts of the ribbon heading right-to-left on the front canvas and the rest on the back one. */
-.vante #vh-gl{z-index:0}
+.vante #vh-gl{z-index:1;pointer-events: none}
 .vante #vh-reviews{z-index:50}
 .vante #vh-glf{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:100;pointer-events:none}
-.vante #vh-hint,.vante .top,.vante .bot,.vante #vh-name{z-index:101}
+.vante .top,.vante .bot,.vante #vh-name{z-index:101}
 .vante .top,.vante .bot,.vante #vh-name{z-index:101}
 .vante[data-failed] #vh-glf{display:none}
