@@ -1,13 +1,13 @@
 import { NAV, SITE } from "@/lib/content";
 import Link from "next/link";
 import { btnPrimary } from "./ui";
-
+// #091f45
 export default function Header({ currentHref }: { currentHref?: string }) {
   return (
     <>
       <div aria-hidden className="sd-progress fixed inset-x-0 top-0 z-50 h-1 bg-brand" />
       <Link href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2">Skip to content</Link>
-      <header className="sd-header sticky top-0 z-40 w-full border-b border-sky bg-white/90 backdrop-blur">
+      <header className="sd-header sticky top-0 z-40 w-full border-b border-sky backdrop-blur">
         <div className="flex w-full mx-auto items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
           <Link href="/" className="text-base font-extrabold tracking-tight" data-umami-event="logo click in header" data-umami-event-location="header">{SITE.name}</Link>
           <nav aria-label="Main" className="flex items-center gap-6 text-sm">
