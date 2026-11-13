@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import { About, BookCall, Faqs, Feature, Guarantees, PremiumCta, Pricing, Reviews, Services, Work } from "@/components/Sections";
+import { About, BookCall, Faqs, Feature, Guarantees, PremiumCta, Pricing, Reviews, Services, Types, Work } from "@/components/Sections";
 import { Contact, Footer } from "@/components/Footer";
 import { FAQS, SITE } from "@/lib/content";
 import { Clients } from "@/components/Clients";
@@ -24,14 +24,15 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <Header />
+      {/* <Header /> */}
       <main id="main">
         <Hero />
         <Clients />
         <Work />
-        <Feature />
+        {/* <Feature /> */}
         <About />
         <Services />
+        <Types />
         <PremiumCta />
         <Reviews />
         <Guarantees />
@@ -40,7 +41,6 @@ export default function Home() {
         <BookCall />
         {/* <Contact /> */}
       </main>
-      <Footer />
     </>
   );
 }

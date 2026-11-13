@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { cta, FAQS, GUARANTEES, PLANS, PROJECTS, REVIEWS, SERVICES, SITE, TOOLS } from "@/lib/content";
+import { cta, FAQS, GUARANTEES, PLANS, PROJECTS, REVIEWS, SERVICES, SITE, TOOLS, TYPES } from "@/lib/content";
 import { btnLight, btnOutline, btnPrimary, card, Heading, Section } from "./ui";
 import { ButtonLink } from "./Button";
 
@@ -19,7 +19,7 @@ export function Work() {
                 <h3 className="text-lg font-bold">{p.name}</h3>
                 <p className="text-sm text-muted">{p.label} · Website development</p>
                 <p className="mt-2 text-sm text-muted">{p.brief}</p>
-                <Link data-umami-event="view all projects card click in latest projects section" data-umami-event-location="latest projects section" href={`/projects`} className="mt-3 inline-block text-sm font-semibold text-brand" aria-label={`View ${p.name} in all projects`}>View all projects →</Link>
+                <Link data-umami-event="view all projects card click in latest projects section" data-umami-event-location="latest projects section" href={p.href} className="mt-3 inline-block text-sm font-semibold text-brand" aria-label={`View ${p.name} in all projects`}>View live website →</Link>
               </div>
             </article>
           </li>
@@ -51,9 +51,10 @@ export function About() {
         </div>
         <div className="sd-reveal mb-auto">
           <p className="w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">About</p>
-          <h2 id="about-h" className="mt-3 text-3xl font-extrabold sm:text-4xl">Hi, I’m Zafar.</h2>
-          <p className="mt-4 text-muted">I’m a freelance web developer working remotely with SaaS and product teams from Lisbon, Portugal. I build with React.js and Next.js so your site is fast, searchable and easy to maintain.</p>
-          <p className="mt-3 text-muted">I’ve spent years shipping marketing sites and web apps. I enjoy turning a design into a page that loads instantly, and clients keep coming back because I communicate clearly and deliver on time.</p>
+          <h2 id="about-h" className="mt-3 text-3xl font-extrabold sm:text-4xl">Meet Your Landing Page Development Partner</h2>
+          <p className="mt-4 text-muted">I am Zafar, an independent landing page developer based in Lisbon, Portugal. I work with startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.</p>
+          <p className="mt-3 text-muted">Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.</p>
+          <p className="mt-3 text-muted">I handle the technical development, responsive implementation and launch, so you can focus on running your business.</p>
         </div>
       </div>
     </Section>
@@ -63,11 +64,27 @@ export function About() {
 export function Services() {
   return (
     <Section id="services" labelledBy="svc-h" className="sd-zoom">
-      <Heading id="svc-h" center sub="Everything a SaaS marketing site needs, handled by one developer.">Services that grow your conversions.</Heading>
+      <Heading id="svc-h" center sub="Everything you need to launch a professional landing page, handled by one developer.">Landing Page Development</Heading>
       <ul className="grid gap-5 md:grid-cols-3">
         {SERVICES.map((s) => (
           <li key={s.title} className={`${card} sd-reveal sd-zoom`}>
             <h3 className="font-bold">{s.title}</h3>
+            <p className="mt-2 text-sm text-muted">{s.text}</p>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
+}
+
+export function Types() {
+  return (
+    <Section id="services" labelledBy="svc-h" className="sd-zoom flex flex-col gap-6">
+      <Heading id="svc-h" center sub="Every business has a different goal. Whether you're launching a product, attracting new customers or generating more enquiries, I build custom landing pages designed around what you want visitors to do next.">What type of landing page do you need?</Heading>
+      <ul className="grid gap-5 md:grid-cols-3">
+        {TYPES.map((s, i) => (
+          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `col-span-3` : `col-span-1`}`}>
+            <h3 className="font-bold text-center">{s.title}</h3>
             <p className="mt-2 text-sm text-muted">{s.text}</p>
           </li>
         ))}
@@ -112,7 +129,7 @@ export function Reviews() {
 export function Guarantees() {
   return (
     <Section labelledBy="g-h" className="!pt-0">
-      <Heading id="g-h" center sub="Clear terms, so there are no surprises.">My guarantees</Heading>
+      <Heading id="g-h" center sub="From the first conversation to launch, I keep the process straightforward. You bring your business goals and ideas; I handle the landing page development, technical details and launch.">How I develop your landing page?</Heading>
       <ul className="grid gap-5 md:grid-cols-3">
         {GUARANTEES.map((g) => (
           <li key={g.title} className={`${card} sd-reveal sd-zoom`}><h3 className="font-bold">{g.title}</h3><p className="mt-2 text-sm text-muted">{g.text}</p></li>
@@ -149,12 +166,16 @@ export function Faqs() {
   return (
     <Section id="faq" labelledBy="faq-h">
       <Heading id="faq-h">FAQs</Heading>
-      <ul className="grid gap-5 md:grid-cols-2">
+      <ul className="grid gap-5 md:grid-cols-1">
         {FAQS.map((f, i) => (
           <li key={f.q} className={`${card} sd-reveal sd-zoom`}>
             <p className="text-xs font-bold text-brand">{String(i + 1).padStart(2, "0")}</p>
             <h3 className="mt-1 font-bold">{f.q}</h3>
-            <p className="mt-2 text-sm text-muted">{f.a}</p>
+            {
+              f.a.map(ans => (
+                <p className="mt-2 text-sm text-muted">{ans}</p>
+              ))
+            }
           </li>
         ))}
       </ul>

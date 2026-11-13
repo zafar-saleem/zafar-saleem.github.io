@@ -82,11 +82,11 @@ export default function VanteHero({
       <div id="vh-track">
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label}>
-            <span className="hl -my-6" id="vh-l1" aria-hidden="true"><span>I BUILD WEBSITES &</span></span>
-            <span className="hl my-5" id="vh-l2" aria-hidden="true"><span>LANDING PAGES</span></span>
+            <span className="hl -my-8" id="vh-l1" aria-hidden="true">Landing Page Development For</span>
+            <span className="hl my-7" id="vh-l2" aria-hidden="true"> Businesses That Want More Customers</span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
-          <p id="vh-cap" className="">I turn your Figma designs into a fast & SEO-friendly websites.</p>
+          <p id="vh-cap">I help startup founders, SaaS companies and small businesses turn their ideas, designs and offers into fast, professional landing pages that generate leads, sign-ups and enquiries.</p>
           <div id="vh-glow"></div>
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>

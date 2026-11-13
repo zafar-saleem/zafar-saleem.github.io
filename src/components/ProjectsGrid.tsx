@@ -14,7 +14,7 @@ export default function ProjectsGrid({ projects, bookingUrl }: { projects: Proje
       <div role="group" aria-label="Filter projects by category" className="flex flex-wrap gap-3">
         {FILTERS.map((f) => (
           <button key={f.id} type="button" aria-pressed={active === f.id} onClick={() => setActive(f.id)}
-            className={`rounded-full border px-5 py-2.5 text-sm font-bold transition-colors ${active === f.id ? "border-ink bg-ink text-white" : "border-sky bg-white text-ink hover:border-brand hover:text-brand"}`}>
+            className={`cursor-pointer rounded-full border px-5 py-2.5 text-sm font-bold transition-colors ${active === f.id ? "border-ink bg-ink text-white" : "border-sky bg-white text-ink hover:border-brand hover:text-brand"}`}>
             {f.label}
           </button>
         ))}
@@ -44,7 +44,7 @@ export default function ProjectsGrid({ projects, bookingUrl }: { projects: Proje
           <aside aria-labelledby="next-h" className="flex min-h-80 flex-col justify-center bg-navy p-8 text-white">
             <h3 id="next-h" className="text-2xl font-semibold">Your SaaS website could be next.</h3>
             <p className="mt-3 text-sm text-white/80">Book a free 30-minute call and let’s plan your landing page.</p>
-            <Link href={bookingUrl} className={`${btnLight} mt-6 w-fit`}>Book a call</Link>
+            <Link href={bookingUrl} className={`${btnLight} mt-6 w-fit`} data-umami-event="book a call click in on work page" data-umami-event-location="work page">Book a call</Link>
           </aside>
         </li>
       </ul>

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { SITE } from "@/lib/content";
 import "./globals.css";
 import Script from "next/script";
+import { Footer } from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -36,9 +38,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         src="https://cloud.umami.is/script.js"
         data-website-id="31e9d10d-1659-4686-8346-75a2c4c4c7aa"
         strategy="afterInteractive"
-        data-domains="localhost:300,https://zafar-saleem.github.io"
+        data-domains="localhost:3000,http://localhost:3000"
       />
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

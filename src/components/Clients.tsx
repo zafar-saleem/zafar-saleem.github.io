@@ -14,12 +14,12 @@ export function Clients() {
         <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
           {clients.map((c) => (
             <li
-              key={c}
+              key={c.logo}
               className="font-display text-lg font-bold tracking-tight text-[#5b6178]"
             >
               <Image
-                src={c}
-                alt=""
+                src={c.logo}
+                alt={c.alt}
                 width={100}
                 height={100}
                 loading="eager"

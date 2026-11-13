@@ -32,7 +32,7 @@ export default function ProjectsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <Header currentHref="/projects" />
+      {/* <Header currentHref="/projects" /> */}
       <main id="main">
         <Section labelledBy="projects-h" className="!pb-8 !pt-14">
           <div className="sd-exit">
@@ -55,7 +55,6 @@ export default function ProjectsPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
