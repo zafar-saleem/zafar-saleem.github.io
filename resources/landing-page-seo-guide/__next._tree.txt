@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0d6ypabvwxl6d.css","style"]
+:HL["/_next/static/chunks/0-u9x9_tybktd.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"landing-page-seo-guide","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"resources","h":131168,"c":"$Q2"}]]
-0:{"b":"5qkO1OUt6ZOFh7HsNQgGL","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"Fx9ZgKmgyYZ4PNMV4vjXZ","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
