@@ -22,6 +22,7 @@ export const NAV: NavItem[] = [
     // ],
   },
   { href: "/projects", label: "Work" },
+  { href: "/resources", label: "Blog" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -229,89 +230,26 @@ export const PLANS = [
 
 export const FAQS = [
   { q: "How much does landing page development cost?", a: [
-    "The cost of a custom landing page depends on its complexity, number of sections, design requirements, functionality and integrations. A straightforward lead generation landing page will generally require less work than a SaaS landing page with multiple product sections, advanced forms or third-party integrations.",
-    "The process includes planning, development, responsive testing, revisions and launch preparation. I'll confirm the estimated delivery date and project milestones before work begins."
+    "The cost depends on your landing page's complexity, number of sections, design requirements and functionality. I provide a fixed-scope quote after understanding your requirements, so you know exactly what's included and what to expect before development begins.",
   ] },
   { q: "How long does it take to develop a landing page?", a: [
-    "Most landing page projects take approximately 2–3 weeks from the start of development to launch, depending on the page's complexity, content readiness and feedback turnaround.",
-    "I provide a fixed-scope quote after understanding your requirements, so you know what's included, what it costs and when it will be delivered before development begins. Get in touch with your project details to receive a tailored estimate."
-  ] },
-  { q: "What is included in your landing page development service?", a: [
-    "My landing page development service covers the technical work needed to take your page from an approved design or agreed structure to a live website.",
-    "Depending on your project, this includes:",
-    "Custom landing page development. Responsive layouts for mobile, tablet and desktop. Implementation of your approved design or Figma file. Clear calls to action and lead capture forms. Performance optimisation and fast loading. SEO-friendly page structure and metadata. Basic accessibility and cross-browser checks. Testing, deployment and handover.",
-    "The exact scope is agreed before development starts."
+    "Most landing page projects take approximately 2–3 weeks, depending on the complexity, content readiness and feedback turnaround. I'll confirm the expected timeline and project milestones before development starts.",
   ] },
   { q: "Can you build a landing page from my Figma design?", a: [
-    "Yes. I can convert your Figma design into a responsive, production-ready landing page using technologies such as Next.js, React, TypeScript and Tailwind CSS.",
-    "I'll implement the approved layouts, typography, spacing, colours and interactive elements while making sure the page works across mobile, tablet and desktop screens. If you have a Figma design ready, share it when you enquire so I can assess the scope.",
+    "Yes. I can convert your Figma design into a responsive, production-ready landing page using React, Next.js and TypeScript. I'll implement your approved layouts, typography, colours and interactive elements while ensuring the page works across desktop, tablet and mobile devices.",
   ] },
-  { q: "Will my landing page work on mobile phones and tablets?", a: [
-    "Yes. Every landing page I develop is responsive, meaning its layout adapts to mobile phones, tablets and desktop screens.",
-    "I test important page elements across screen sizes, including navigation, text, images, buttons and enquiry forms, so visitors can use your landing page comfortably regardless of their device.",
+  { q: "Will my landing page be mobile-friendly and SEO-friendly?", a: [
+    "Yes. Every landing page I develop is responsive and built with SEO fundamentals in mind, including semantic HTML, structured headings, metadata, descriptive image alt text and performance optimisation. These practices provide a solid technical foundation but don't guarantee search rankings.",
   ] },
-  { q: "Is your landing page development service SEO-friendly?", a: [
-    "Yes. I build landing pages with SEO fundamentals in mind, including search-friendly HTML structure, semantic headings, page titles, meta descriptions, descriptive image alt text, crawlable content and performance optimisation.",
-    "I can also implement relevant structured data where appropriate. However, SEO-friendly development does not guarantee first-page rankings. Search visibility also depends on keyword competition, content quality, website authority and other ranking factors.",
+  { q: "Can you build a landing page that generates leads or product sign-ups?", a: [
+    "Yes. I develop landing pages around specific business goals, such as generating enquiries, collecting leads, encouraging SaaS sign-ups or booking consultations. This can include clear calls to action, enquiry forms, product information and trust-building elements. Actual conversion results depend on your offer, audience and traffic quality.",
   ] },
-  { q: "Can you build a landing page that generates leads and enquiries?", a: [
-    "Yes. I develop landing pages around a clear business objective, such as generating enquiries, collecting leads, encouraging product sign-ups or booking consultations.",
-    "The implementation can include prominent calls to action, enquiry forms, clear service information, testimonials and other trust-building elements. These help visitors understand your offer and take the next step. Actual conversion results depend on factors such as your offer, audience, traffic quality and messaging.",
-  ] },
-  { q: "Can you build a landing page for my SaaS product or startup?", a: [
-    "Yes. I develop landing pages for SaaS companies, startups and founders who need to explain a product, communicate its value and encourage visitors to take action.",
-    "A SaaS landing page can include product features, benefits, pricing information, product screenshots, testimonials, FAQs and calls to action such as Start a Free Trial, Book a Demo or Create an Account.",
-    "The page structure will depend on your product, target customers and acquisition goals."
-  ] },
-  { q: "Can you create a landing page for Google Ads or social media campaigns?", a: [
-    "Yes. I can develop dedicated landing pages for Google Ads, Meta Ads, LinkedIn campaigns and other marketing channels.",
-    "A campaign landing page focuses on one offer and one primary action, helping visitors move from an advertisement to a relevant enquiry, registration or purchase. I can implement the required forms and agreed tracking integrations as part of the project scope."
-  ] },
-  { q: "Can you add contact forms, booking links and third-party integrations?", a: [
-    "Yes. I can implement functionality such as contact forms, lead capture forms, booking links, newsletter sign-ups and selected third-party integrations.",
-    "The available options depend on the service you use and the technical requirements. If you need a CRM, email marketing platform, analytics tool or booking system connected to your landing page, mention it when requesting a quote."
-  ] },
-  { q: "Can you redesign or improve my existing landing page?", a: [
-    "Yes. I can work with an existing landing page that needs a visual refresh, better mobile responsiveness, improved performance or a more effective page structure.",
-    "I'll first review the current page and understand what you want to improve. Based on the requirements, I can recommend a focused redesign or redevelopment rather than rebuilding parts that already work well."
-  ] },
-  { q: "Will I be able to update my landing page after launch?", a: [
-    "That depends on how your landing page is built and what editing functionality your project requires.",
-    "A standard custom-coded landing page may require a developer to change its content. If you want to update text, images or sections yourself, we can discuss a suitable content management system or editable content setup before development begins.",
-    "I'll explain how your particular setup works during handover."
-  ] },
-  { q: "How many revisions are included in the landing page development service?", a: [
-    "My standard project scope includes one round of revision to refine the agreed landing page after development.",
-    "Revisions cover adjustments within the original project scope. New sections, significant design changes, additional functionality or requests that change the original requirements may need a separate estimate."
-  ] },
-  { q: "Do you provide support after the landing page goes live?", a: [
-    "Yes. I provide 10 days of post-launch bug support for issues related to the delivered work.",
-    "This gives you time to report bugs or unexpected technical problems after launch. New features, additional sections, content changes and work outside the agreed scope are handled separately."
-  ] },
-  { q: "Who owns the landing page after development?", a: [
-    "Once the agreed project payment has been completed, you receive the delivered project files and the agreed handover materials, subject to any third-party licences or service terms.",
-    "Your domain, hosting and third-party accounts should be registered and controlled by you or your business. I'll clarify the handover arrangements and any ongoing service costs before the project starts."
-  ] },
-  { q: "What technologies do you use to develop landing pages?", a: [
-    "I primarily use Next.js, React, TypeScript and Tailwind CSS to build modern, responsive landing pages.",
-    "The technology choice depends on the project's requirements. My focus is on delivering a fast, accessible, maintainable landing page rather than adding unnecessary technical complexity."
-  ] },
-  { q: "Do you work with clients outside Portugal?", a: [
-    "Yes. I'm a freelance landing page developer based in Lisbon, Portugal, and work remotely with founders, startups, SaaS businesses and companies in other locations.",
-    "Projects can be managed remotely through online meetings, email and shared design or project materials. We agree on communication and feedback expectations before development begins."
+  { q: "What happens after my landing page is launched?", a: [
+    "Once your landing page is live, I'll provide the agreed project files and handover information, along with 30 days of post-launch bug support. Any additional features or changes outside the agreed project scope can be discussed separately.",
   ] },
   { q: "How do I get started with a landing page project?", a: [
-    "Getting started is straightforward. Book a free 30-minute call or contact me with a short description of your business and landing page requirements.",
-    "We'll discuss your goals, target audience, design materials, functionality and expected timeline. After understanding the scope, I'll send you a fixed-scope project proposal within 48 hours.",
-    "You can then review the proposal and decide whether you'd like to proceed."
-  ] },
-  { q: "How long does a landing page take?", a: ["Typically 2–3 weeks, depending on scope and how ready your content and designs are."] },
-  { q: "Do you work from Figma designs?", a: ["Yes. I can also work from a brand guide or wireframes if you don't have final designs."] },
-  { q: "What do I need to provide?", a: ["Your Figma designs (or brand guide), copy and images. I'll tell you exactly what's needed on the kickoff call."] },
-  { q: "What happens after launch?", a: ["You get handover docs and 30 days of support. Ongoing retainers are available."] },
-  { q: "How do we get started?", a: ["Book a free call, share your goals, and I'll send a fixed-scope quote within 48 hours."] },
-  { q: "Which technologies do you use?", a: ["Next.js, React and TypeScript with Tailwind CSS, deployed on Vercel or your own hosting. I build for accessibility, Core Web Vitals and structured data from day one."] },
-  { q: "Can you work with teams in other time zones?", a: ["Yes. I work remotely with teams worldwide, agree overlap hours on the first call, and keep progress visible through preview links and written updates."] },
+    "Book a free 30-minute call or contact me with a brief description of your project. We'll discuss your goals, design, functionality and timeline. After understanding your requirements, I'll send you a fixed-scope proposal within 48 hours.",
+  ] }
 ];
 
 export const FOOTER_NAV: NavItem[] = NAV.concat([{ href: "/#faq", label: "FAQ" }]);

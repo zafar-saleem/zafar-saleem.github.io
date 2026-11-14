@@ -82,8 +82,9 @@ export default function VanteHero({
       <div id="vh-track">
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label}>
-            <span className="hl -my-8" id="vh-l1" aria-hidden="true">Landing Page Development For</span>
-            <span className="hl my-7" id="vh-l2" aria-hidden="true"> Businesses That Want More Customers</span>
+            <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Landing Pages For</span>
+            <span className="hl my-7" id="vh-l2" aria-hidden="true"> Businesses That Want </span>
+            <span className="hl my-2" id="vh-l3" aria-hidden="true"> More Customers</span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
           <p id="vh-cap">I help startup founders, SaaS companies and small businesses turn their ideas, designs and offers into fast, professional landing pages that generate leads, sign-ups and enquiries.</p>

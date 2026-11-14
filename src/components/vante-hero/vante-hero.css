@@ -8,6 +8,7 @@
 .vante .hl{position:absolute;left:0;right:0;font-weight:400;font-size:clamp(40px,3.7vw,130px);line-height:1;letter-spacing:0em;white-space:nowrap;text-align:center;will-change:transform}
 .vante #vh-l1{top:calc(50% - .98em);transform:translate3d(-50vw,34vh,0)}
 .vante #vh-l2{top:calc(50% + .03em);transform:translate3d(50vw,34vh,0)}
+.vante #vh-l3{top:calc(50% + 1.43em);transform:translate3d(50vw,34vh,0)}
 .vante #vh-l1 span,.vante #vh-l2 span{display:inline-block}
 .vante #vh-l1 span{margin-right:15vw}
 .vante #vh-l2 span{margin-left:15vw}

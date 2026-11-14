@@ -105,3 +105,11 @@ body { background: var(--color-mist); color: var(--color-ink); text-wrap: pretty
 h1, h2, h3 { text-wrap: balance; letter-spacing: -0.03em; }
 :focus-visible { outline: 3px solid var(--color-brand); outline-offset: 3px; border-radius: 6px; }
 section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
+
+/* FAQ accordion: animate open/close where supported (Chromium); other browsers simply toggle. */
+@supports (interpolate-size: allow-keywords) {
+  :root { interpolate-size: allow-keywords; }
+  .faq-acc::details-content { block-size: 0; overflow: clip; transition: block-size .3s ease, content-visibility .3s allow-discrete; }
+  .faq-acc[open]::details-content { block-size: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .faq-acc::details-content { transition: none; } }

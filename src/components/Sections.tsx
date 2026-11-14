@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FaqAccordion from "./FaqAccordion";
 import Link from "next/link";
 import { cta, FAQS, GUARANTEES, PLANS, PROJECTS, REVIEWS, SERVICES, SITE, TOOLS, TYPES } from "@/lib/content";
 import { btnLight, btnOutline, btnPrimary, card, Heading, Section } from "./ui";
@@ -81,9 +82,9 @@ export function Types() {
   return (
     <Section id="services" labelledBy="svc-h" className="sd-zoom flex flex-col gap-6">
       <Heading id="svc-h" center sub="Every business has a different goal. Whether you're launching a product, attracting new customers or generating more enquiries, I build custom landing pages designed around what you want visitors to do next.">What type of landing page do you need?</Heading>
-      <ul className="grid gap-5 md:grid-cols-3">
+      <ul className="grid gap-5 md:grid-cols-3 grid-cols-1">
         {TYPES.map((s, i) => (
-          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `col-span-3` : `col-span-1`}`}>
+          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `md:col-span-3 col-span-1` : `col-span-1`}`}>
             <h3 className="font-bold text-center">{s.title}</h3>
             <p className="mt-2 text-sm text-muted">{s.text}</p>
           </li>
@@ -166,19 +167,7 @@ export function Faqs() {
   return (
     <Section id="faq" labelledBy="faq-h">
       <Heading id="faq-h">FAQs</Heading>
-      <ul className="grid gap-5 md:grid-cols-1">
-        {FAQS.map((f, i) => (
-          <li key={f.q} className={`${card} sd-reveal sd-zoom`}>
-            <p className="text-xs font-bold text-brand">{String(i + 1).padStart(2, "0")}</p>
-            <h3 className="mt-1 font-bold">{f.q}</h3>
-            {
-              f.a.map(ans => (
-                <p className="mt-2 text-sm text-muted">{ans}</p>
-              ))
-            }
-          </li>
-        ))}
-      </ul>
+      <FaqAccordion items={FAQS} />
     </Section>
   );
 }
