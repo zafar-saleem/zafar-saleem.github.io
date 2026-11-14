@@ -36,7 +36,7 @@ export default function Home() {
         <PremiumCta />
         <Reviews />
         <Guarantees />
-        {/* <Pricing /> */}
+        <Pricing />
         <Faqs />
         <BookCall />
         {/* <Contact /> */}

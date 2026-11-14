@@ -63,7 +63,7 @@ void main(){
   float d=length(max(q,0.))+min(max(q.x,q.y),0.)-radius;
   float px=fwidth(d),a=1.-smoothstep(-px,px,d);
   if(a<.01)discard;
-  // pass 1 = canvas in front of the review cards: keeps only parts heading right-to-left (vDir<0); pass 0 keeps the rest
+  // pass 1 = canvas in front of all hero content: keeps only parts heading right-to-left (vDir<0); pass 0 keeps the rest
   float dir=useDir>.5?vDir:1.;
   if(pass>.5?dir>=0.:dir<0.)discard;
   vec2 uv=vUv;if(!gl_FrontFacing)uv.x=1.-uv.x;
@@ -103,7 +103,7 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
   const track = $("track");
 
   /* ---------- renderer ---------- */
-  // Two canvases show the same scene: the back one sits under the review cards, the front one over them.
+  // Two canvases show the same scene: the back one sits behind all hero content, the front one in front of all of it.
   // Each part of the ribbon is drawn on exactly one of them (see the "pass" uniform in the card shader).
   const canvasF = $<HTMLCanvasElement>("glf");
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });

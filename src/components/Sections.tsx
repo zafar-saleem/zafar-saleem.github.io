@@ -143,7 +143,7 @@ export function Guarantees() {
 export function Pricing() {
   return (
     <Section id="pricing" labelledBy="price-h">
-      <Heading id="price-h" center sub="Simple, flat pricing. The price you see is what you pay.">Let’s find the right fit</Heading>
+      <Heading id="price-h" center sub="Choose the right development package for your project.">Simple, transparent pricing</Heading>
       <ul className="grid gap-5 md:grid-cols-3">
         {PLANS.map((p) => (
           <li key={p.tag} className="sd-reveal sd-zoom">
@@ -154,7 +154,7 @@ export function Pricing() {
               <ul className="mt-5 space-y-2 text-sm text-muted">
                 {p.items.map((i) => <li key={i} className="flex gap-2"><span aria-hidden className="text-brand">✓</span>{i}</li>)}
               </ul>
-              <Link href="#contact" className={`${p.featured ? btnPrimary : btnOutline} mt-6`} aria-label={`Get started with the ${p.tag} plan`}>Get started</Link>
+              <Link data-umami-event={`Get started click in ${p.tag} pricing section`} data-umami-event-location="Pricing section" href={SITE.bookingUrl} className={`${p.featured ? btnPrimary : btnOutline} mt-6`} aria-label={`Get started with the ${p.tag} plan`}>Get started</Link>
             </article>
           </li>
         ))}

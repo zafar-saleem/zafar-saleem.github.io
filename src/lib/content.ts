@@ -21,6 +21,7 @@ export const NAV: NavItem[] = [
     //   { href: "/services/figma-to-code", label: "Figma To Code" },
     // ],
   },
+  { href: "/#pricing", label: "Pricing" },
   { href: "/projects", label: "Work" },
   { href: "/resources", label: "Blog" },
   { href: "/#contact", label: "Contact" },
@@ -223,9 +224,9 @@ export const GUARANTEES = [
 ];
 
 export const PLANS = [
-  { tag: "Landing page", price: "$1,500", featured: false, items: ["Single-page SaaS landing page", "Mobile-first, SEO basics", "Fast load times"] },
-  { tag: "Website", price: "$3,500", featured: true, items: ["Everything in Landing page", "Up to 6 pages", "Blog / CMS setup"] },
-  { tag: "Custom", price: "$6,000+", featured: false, items: ["Complex or long-term builds", "Custom integrations", "Retainer available"] },
+  { tag: "Starter", price: "$1,200", featured: false, items: ["One custom-coded landing page", "Up to 5–6 content sections", "Figma-to-React / Next.js development", "Responsive desktop, tablet and mobile layouts", "Basic on-page SEO implementation", "Contact form integration", "Zero revision rounds"] },
+  { tag: "Business", price: "$2,000", featured: true, items: ["Everything in Starter", "Up to 9–10 content sections", "Advanced responsive layouts", "Custom interactions and animations where appropriate", "Lead capture form and one standard third-party integration", "Performance and cross-browser testing", "Analytics setup based on supplied requirements", "Two revision rounds", "10 days of post-launch bug support"] },
+  { tag: "Custom", price: "$4,000+", featured: false, items: ["Complex or long-term builds", "Custom integrations", "Retainer available"] },
 ];
 
 export const FAQS = [

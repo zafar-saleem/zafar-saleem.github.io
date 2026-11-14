@@ -71,9 +71,11 @@
 .vante[data-failed] #vh-cap{transform:translate(-50%,calc(-50% + 3.2em))}
 /* Stacking inside the stage: back canvas (0) < client cards (50) < front canvas (100) < overlay UI (101).
    ribbon.ts draws the parts of the ribbon heading right-to-left on the front canvas and the rest on the back one. */
-.vante #vh-gl{z-index:1;pointer-events: none}
+/* Ribbon layers: parts heading left to right are drawn on this canvas, BEHIND every other hero layer (headline, caption, glow, cards, links). */
+.vante #vh-gl{z-index:-1;pointer-events:none}
 .vante #vh-reviews{z-index:50}
-.vante #vh-glf{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:100;pointer-events:none}
+/* Parts heading right to left are drawn on this canvas, IN FRONT of every other hero layer (above the 101 used by the top bar, bottom text and name pill). */
+.vante #vh-glf{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:200;pointer-events:none}
 .vante .top,.vante .bot,.vante #vh-name{z-index:101}
 .vante .top,.vante .bot,.vante #vh-name{z-index:101}
 .vante[data-failed] #vh-glf{display:none}
