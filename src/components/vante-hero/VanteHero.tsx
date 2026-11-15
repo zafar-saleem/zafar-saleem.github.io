@@ -81,13 +81,14 @@ export default function VanteHero({
 
       <div id="vh-track">
         <div className="stage" id="vh-stage">
-          <h1 id="vh-title" aria-label={label}>
-            <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Landing Pages For</span>
-            <span className="hl my-7" id="vh-l2" aria-hidden="true"> Businesses That Want </span>
-            <span className="hl my-2" id="vh-l3" aria-hidden="true"> More Customers</span>
+          <h1 id="vh-title" aria-label={label} className="mix-blend-difference text-white">
+            <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Landing Pages</span>
+            <span className="hl my-7" id="vh-l2" aria-hidden="true"> For Businesses That </span>
+            <span className="hl my-2" id="vh-l3" aria-hidden="true"> That Want More </span>
+            <span className="hl my-2 mix-blend-difference" id="vh-l4" aria-hidden="true"> Customers</span>
           </h1>
           {description && <p className="vh-sr">{description}</p>}
-          <p id="vh-cap">I help startup founders, SaaS companies and small businesses turn their ideas, designs and offers into fast, professional landing pages that generate leads, sign-ups and enquiries.</p>
+          <p id="vh-cap" className="mix-blend-difference text-white">I help startup founders, SaaS companies and small businesses turn their ideas, designs and offers into fast, professional landing pages that generate leads, sign-ups and enquiries.</p>
           <div id="vh-glow"></div>
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>

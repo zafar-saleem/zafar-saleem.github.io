@@ -3,13 +3,13 @@ import { REVIEWS, SITE } from "@/lib/content";
 
 const VIDEOS = [
   { title: "Aeroplane Seat Selection", src: "/videos/aeroplane-seat-selection.mp4" },
+  { title: "Cinema Seat Selector", src: "/videos/cinema-seat-selector.mp4" },
   { title: "Budget Card", src: "/videos/budget-card.mp4" },
   { title: "Real Estate", src: "/videos/real-estate-card.mp4" },
   { title: "Calendar", src: "/videos/calendar.mp4" },
   { title: "Measure Growth", src: "/videos/measure-growth.mp4" },
   { title: "Walking Tracker", src: "/videos/walking-tracker.mp4" },
   { title: "Weekly Fitness Tracker", src: "/videos/weekly-fitness-tracker.mp4" },
-  { title: "Cinema Seat Selector", src: "/videos/cinema-seat-selector.mp4" },
 ];
 
 const TESTIMONIALS = REVIEWS.slice(0, 3).map((r) => ({ quote: r.text, name: r.name, role: r.role, initials: r.initials }));

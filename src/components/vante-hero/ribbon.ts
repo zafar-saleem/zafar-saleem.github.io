@@ -259,7 +259,7 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     c.mat.uniforms.useDir.value = 0;
   }
 
-  const l1 = $("l1"), l2 = $("l2"), l3 = $("l3"), cap = $("cap"), rule = $("rule"), hint = $("hint");
+  const l1 = $("l1"), l2 = $("l2"), l3 = $("l3"), l4 = $("l4"), cap = $("cap"), rule = $("rule"), hint = $("hint");
   const reviews = root.querySelector<HTMLElement>("#vh-reviews");
   const fades = ["pager", "cross", "glow"].map((id) => $(id));
   function render() {
@@ -270,6 +270,7 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     l1.style.transform = `translate3d(${run}vw,${rise * 34}vh,0)`;
     l2.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
     l3.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
+    l4.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
     const capA = 1 - span(pp, 0.52, 0.57);
     cap.style.opacity = String(capA);
     if (reviews) reviews.style.opacity = String(capA); // client cards leave exactly when the caption does
