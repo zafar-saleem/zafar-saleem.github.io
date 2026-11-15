@@ -83,7 +83,7 @@ export default function VanteHero({
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label} className="mix-blend-difference text-white">
             <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Landing Pages</span>
-            <span className="hl my-7" id="vh-l2" aria-hidden="true"> For Businesses That </span>
+            <span className="hl my-7" id="vh-l2" aria-hidden="true"> For Businesses </span>
             <span className="hl my-2" id="vh-l3" aria-hidden="true"> That Want More </span>
             <span className="hl my-2 mix-blend-difference" id="vh-l4" aria-hidden="true"> Customers</span>
           </h1>
@@ -102,8 +102,8 @@ export default function VanteHero({
                         <svg key={i} viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" /></svg>
                       ))}
                     </div>
-                    <blockquote>“{t.quote}”</blockquote>
-                    <figcaption>
+                    <blockquote className="mix-blend-difference text-white">“{t.quote}”</blockquote>
+                    <figcaption className="mix-blend-difference text-white">
                       <span className="vh-av" aria-hidden="true">{t.initials ?? t.name.slice(0, 2).toUpperCase()}</span>
                       <span><strong>{t.name}</strong><small>{t.role}</small></span>
                     </figcaption>
@@ -114,7 +114,7 @@ export default function VanteHero({
           )}
           <canvas id="vh-gl" aria-hidden="true"></canvas>
           <canvas id="vh-glf" aria-hidden="true"></canvas>
-          <Link id="vh-hint" href={ctaHref} data-umami-event="start a project click" data-umami-event-location="hero section">START A PROJECT &nbsp;→</Link>
+          <Link className="mix-blend-difference text-white" id="vh-hint" href={ctaHref} data-umami-event="start a project click" data-umami-event-location="hero section">START A PROJECT &nbsp;→</Link>
           <div className="top">
             {topBar && (
               <div className="logo">
@@ -129,8 +129,8 @@ export default function VanteHero({
               </nav>
             )}
           </div>
-          <div className="bot">
-            <p>Freelance Website & Landing Page Developer · React.js & Next.js</p>
+          <div className="bot mix-blend-difference text-white">
+            <p className="mix-blend-difference text-white">Freelance Website & Landing Page Developer · React.js & Next.js</p>
           </div>
           <div id="vh-name" aria-hidden="true"></div>
         </div>

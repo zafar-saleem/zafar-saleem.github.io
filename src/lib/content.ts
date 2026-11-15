@@ -220,7 +220,7 @@ export const GUARANTEES = [
   { title: "02. Plan the page and review the content", text: "We establish the page structure, key sections, messaging and calls to action. If you already have a Figma design, I'll review it. If you don't, we can discuss the structure and assets needed before development." },
   { title: "03. Develop your landing page", text: "I turn the approved design or page structure into a responsive, fast-loading landing page. I focus on clear layouts, mobile usability, accessibility and search-engine-friendly implementation." },
   { title: "04. Test, refine and launch", text: "Before launch, I check the page across screen sizes and browsers, test links and forms, and address any agreed revisions. Once everything is approved, I help get your landing page live." },
-  { title: "05. Handover and post-launch support", text: "You receive a completed landing page and the information you need to manage it. I also provide 30 days of post-launch bug support, so you have help if something covered by the agreed scope needs fixing." },
+  { title: "05. Handover and post-launch support", text: "You receive a completed landing page and the information you need to manage it. I also provide 10 days of post-launch bug support, so you have help if something covered by the agreed scope needs fixing." },
 ];
 
 export const PLANS = [

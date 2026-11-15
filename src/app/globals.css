@@ -113,3 +113,39 @@ section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
   .faq-acc[open]::details-content { block-size: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .faq-acc::details-content { transition: none; } }
+
+/* ---------- How I develop your landing page: scroll-driven timeline ----------
+   The line grows and each numbered circle lights up as it passes a "reading line" about 58% down the viewport.
+   Without scroll-timeline support (or with reduced motion) everything simply shows in its finished state. */
+@keyframes sd-tl-fill { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes sd-tl-node {
+  from { background-color: #fff; border-color: rgb(37 99 235 / .3); color: var(--color-brand); transform: scale(.86); box-shadow: 0 0 0 0 rgb(227 236 255 / 0); }
+  to   { background-color: var(--color-brand); border-color: var(--color-brand); color: #fff; transform: scale(1); box-shadow: 0 0 0 6px var(--color-sky); }
+}
+@keyframes sd-tl-link { from { background-color: rgb(37 99 235 / .2); } to { background-color: var(--color-brand); } }
+
+@utility sd-tl-fill {
+  transform-origin: top;
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: sd-tl-fill linear both;
+      animation-timeline: view(block 58vh 41vh);
+    }
+  }
+}
+@utility sd-tl-node {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: sd-tl-node linear both;
+      animation-timeline: view(block 58vh 41vh);
+    }
+  }
+}
+@utility sd-tl-link {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: sd-tl-link linear both;
+      animation-timeline: view(block 58vh 41vh);
+    }
+  }
+}

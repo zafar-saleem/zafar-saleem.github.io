@@ -5,10 +5,10 @@ export function Clients() {
   return (
     <section
       aria-labelledby="clients-title"
-      className="sd-exit border border-line border-sky bg-white"
+      className="sd-exit bg-[rgb(9,31,69,.5)]"
     >
       <div className="container-page flex flex-col items-center gap-4 py-4 md:flex-row md:justify-center md:gap-10">
-        <h2 id="clients-title" className="text-xs font-normal text-muted">
+        <h2 id="clients-title" className="text-xs font-normal text-white">
           Frontend work for
         </h2>
         <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">

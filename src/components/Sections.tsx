@@ -46,13 +46,10 @@ export function Feature() {
 export function About() {
   return (
     <Section id="about" labelledBy="about-h" className="sd-zoom">
-      <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_2fr]">
-        <div className="sd-drift overflow-hidden bg-sky">
-          <Image src="/images/about/zafar-landingpage-developer-1.jpg" alt="Portrait of Zafar Saleem, freelance web developer" width={400} height={400} className="h-auto w-full" />
-        </div>
+      <div className="grid items-center gap-8 md:grid-cols-1 text-center">
         <div className="sd-reveal mb-auto">
-          <p className="w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">About</p>
-          <h2 id="about-h" className="mt-3 text-3xl font-extrabold sm:text-4xl">Meet Your Landing Page Development Partner</h2>
+          <p className="w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand mx-auto">About</p>
+          <h2 id="about-h" className="mt-3 text-3xl font-extrabold sm:text-4xl w-[40vw] mx-auto">Meet Your Landing Page Development Partner</h2>
           <p className="mt-4 text-muted">I am Zafar, an independent landing page developer based in Lisbon, Portugal. I work with startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.</p>
           <p className="mt-3 text-muted">Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.</p>
           <p className="mt-3 text-muted">I handle the technical development, responsive implementation and launch, so you can focus on running your business.</p>
@@ -84,9 +81,9 @@ export function Types() {
       <Heading id="svc-h" center sub="Every business has a different goal. Whether you're launching a product, attracting new customers or generating more enquiries, I build custom landing pages designed around what you want visitors to do next.">What type of landing page do you need?</Heading>
       <ul className="grid gap-5 md:grid-cols-3 grid-cols-1">
         {TYPES.map((s, i) => (
-          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `md:col-span-3 col-span-1` : `col-span-1`}`}>
+          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `md:col-span-2 col-span-1` : i === 3 ? `md:col-span-2 flex flex-col` : `col-span-1`}`}>
             <h3 className="font-bold text-center">{s.title}</h3>
-            <p className="mt-2 text-sm text-muted">{s.text}</p>
+            <p className={`mt-2 text-sm text-muted ${i === 3 || i === 0 ? `mt-6` : ``}`}>{s.text}</p>
           </li>
         ))}
       </ul>
@@ -131,11 +128,32 @@ export function Guarantees() {
   return (
     <Section labelledBy="g-h" className="!pt-0">
       <Heading id="g-h" center sub="From the first conversation to launch, I keep the process straightforward. You bring your business goals and ideas; I handle the landing page development, technical details and launch.">How I develop your landing page?</Heading>
-      <ul className="grid gap-5 md:grid-cols-3">
-        {GUARANTEES.map((g) => (
-          <li key={g.title} className={`${card} sd-reveal sd-zoom`}><h3 className="font-bold">{g.title}</h3><p className="mt-2 text-sm text-muted">{g.text}</p></li>
-        ))}
-      </ul>
+      {/* Vertical timeline: cards zig-zag around a centre line on desktop and stack beside a left line on mobile.
+          The line fills and each numbered circle lights up as the page scrolls (pure CSS scroll-driven animation). */}
+      <div className="relative">
+        <span aria-hidden="true" className="absolute inset-y-0 left-[19px] w-0.5 bg-brand/20 md:left-[calc(50%-1px)]" />
+        <span aria-hidden="true" className="sd-tl-fill absolute inset-y-0 left-[19px] w-0.5 bg-brand md:left-[calc(50%-1px)]" />
+        <ol className="relative list-none">
+          {GUARANTEES.map((g, i) => {
+            const right = i % 2 === 1; // 1st left, 2nd right, 3rd left, 4th right, 5th left
+            return (
+              <li key={g.title} className={`relative pl-14 md:w-[calc(50%-3rem)] md:pl-0 ${right ? "md:ml-auto" : "md:mr-auto"} ${i > 0 ? "mt-5 md:mt-14" : ""}`}>
+                <span
+                  aria-hidden="true"
+                  className={`sd-tl-node absolute left-0 top-4 z-10 grid size-10 place-items-center rounded-full border-2 border-brand bg-brand text-sm font-bold text-white shadow-[0_0_0_6px_var(--color-sky)] ${right ? "md:-left-[68px]" : "md:left-auto md:-right-[68px]"}`}
+                >
+                  {i + 1}
+                </span>
+                <span aria-hidden="true" className={`sd-tl-link absolute left-10 top-[35px] h-0.5 w-4 bg-brand md:w-7 ${right ? "md:-left-7" : "md:left-auto md:-right-7"}`} />
+                <article className={`${card} sd-reveal sd-zoom`}>
+                  <h3 className="font-bold">{g.title.replace(/^\d+\.\s*/, "")}</h3>
+                  <p className="mt-2 text-sm text-muted">{g.text}</p>
+                </article>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
     </Section>
   );
 }
@@ -190,16 +208,6 @@ export function BookCall() {
         <ButtonLink href={SITE.bookingUrl} variant="light" className="sd-zoom mt-8">
           {cta.button}
         </ButtonLink>
-        <p className="mt-8 text-sm text-night-muted">
-          Prefer email?{" "}
-          <Link
-            href={`mailto:${SITE.email}`}
-            data-umami-event="email link click in footer section" data-umami-event-location="Footer section"
-            className="font-medium text-white underline underline-offset-4 hover:text-tint"
-          >
-            {SITE.email}
-          </Link>
-        </p>
       </div>
     </section>
   );
