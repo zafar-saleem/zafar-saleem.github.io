@@ -5,7 +5,7 @@ export function Clients() {
   return (
     <section
       aria-labelledby="clients-title"
-      className="sd-exit bg-[rgb(9,31,69,.5)]"
+      className="sd-exit bg-white border border-line border-sky"
     >
       <div className="container-page flex flex-col items-center gap-4 py-4 md:flex-row md:justify-center md:gap-10">
         <h2 id="clients-title" className="text-xs font-normal text-white">
@@ -23,6 +23,7 @@ export function Clients() {
                 width={100}
                 height={100}
                 loading="eager"
+                className="object-contain"
               />
             </li>
           ))}
