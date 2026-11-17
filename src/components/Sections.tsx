@@ -54,7 +54,7 @@ export function About() {
           <p className="mx-auto w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">About</p>
           <AboutReveal
             blocks={[
-              { tag: "h2", id: "about-h", text: "Meet Your Landing Page Development Partner", className: "mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl" },
+              { tag: "h2", id: "about-h", text: "Meet Your Website Development Partner", className: "mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl" },
               { tag: "p", text: "I am Zafar, a website developer based in Lisbon, Portugal. I work with small businesses (SMEs), local service providers, indie hackers, startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.", className: "mt-6 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
               { tag: "p", text: "Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
               { tag: "p", text: "I handle the technical development, responsive implementation and launch, so you can focus on running your business.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
