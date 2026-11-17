@@ -55,7 +55,7 @@ export function About() {
           <AboutReveal
             blocks={[
               { tag: "h2", id: "about-h", text: "Meet Your Website Development Partner", className: "mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl" },
-              { tag: "p", text: "I am Zafar, a website developer based in Lisbon, Portugal. I work with small businesses (SMEs), local service providers, indie hackers, startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.", className: "mt-6 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
+              { tag: "p", text: "I am Zafar, a website & landing page developer based in Lisbon, Portugal. I work with small businesses (SMEs), local service providers, indie hackers, startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.", className: "mt-6 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
               { tag: "p", text: "Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
               { tag: "p", text: "I handle the technical development, responsive implementation and launch, so you can focus on running your business.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-xl lg:text-2xl" },
             ]}
@@ -69,7 +69,7 @@ export function About() {
 export function Services() {
   return (
     <Section id="services" labelledBy="svc-h" className="sd-zoom">
-      <Heading id="svc-h" center sub="Everything you need to launch a professional landing page, handled by one developer.">Landing Page Development</Heading>
+      <Heading id="svc-h" center sub="Everything you need to launch a professional landing page, handled by one developer.">Website & Landing Development</Heading>
       <ul className="grid gap-5 md:grid-cols-3">
         {SERVICES.map((s) => (
           <li key={s.title} className={`${card} sd-reveal sd-zoom`}>
@@ -85,12 +85,12 @@ export function Services() {
 export function Types() {
   return (
     <Section id="services" labelledBy="svc-h" className="sd-zoom flex flex-col gap-6">
-      <Heading id="svc-h" center sub="Every business has a different goal. Whether you're launching a product, attracting new customers or generating more enquiries, I build custom landing pages designed around what you want visitors to do next.">What type of landing page do you need?</Heading>
-      <ul className="grid gap-5 md:grid-cols-3 grid-cols-1">
+      <Heading id="svc-h" center sub="Every business has a different goal. Whether you're launching a product, attracting new customers or generating more enquiries, I build custom landing pages designed around what you want visitors to do next.">What Type of Website & Landing Page Do You Need?</Heading>
+      <ul className="grid gap-5 md:grid-cols-2 grid-cols-1">
         {TYPES.map((s, i) => (
-          <li key={s.title} className={`${card} sd-reveal sd-zoom ${i === 0 ? `md:col-span-2 col-span-1` : i === 3 ? `md:col-span-2 flex flex-col` : `col-span-1`}`}>
+          <li key={s.title} className={`${card} sd-reveal sd-zoom`}>
             <h3 className="font-bold text-center">{s.title}</h3>
-            <p className={`mt-2 text-sm text-muted ${i === 3 || i === 0 ? `mt-6` : ``}`}>{s.text}</p>
+            <p className={`mt-2 text-sm text-muted`}>{s.text}</p>
           </li>
         ))}
       </ul>
@@ -113,7 +113,7 @@ export function PremiumCta() {
 export function Reviews() {
   return (
     <Section id="reviews" labelledBy="rev-h">
-      <Heading id="rev-h" center>Hear from my clients</Heading>
+      <Heading id="rev-h" center>Hear From My Clients</Heading>
       <ul className="columns-1 gap-5 sm:columns-2 lg:columns-3">
         {REVIEWS.map((r) => (
           <li key={r.name} className="sd-reveal mb-5 break-inside-avoid sd-zoom">
@@ -134,7 +134,7 @@ export function Reviews() {
 export function Guarantees() {
   return (
     <Section labelledBy="g-h" className="!pt-0">
-      <Heading id="g-h" center sub="From the first conversation to launch, I keep the process straightforward. You bring your business goals and ideas; I handle the landing page development, technical details and launch.">How I develop your landing page?</Heading>
+      <Heading id="g-h" center sub="From the first conversation to launch, I keep the process straightforward. You bring your business goals and ideas; I handle the landing page development, technical details and launch.">How I Develop Your Website Or Landing Page?</Heading>
       {/* Vertical timeline: cards zig-zag around a centre line on desktop and stack beside a left line on mobile.
           The line fills and each numbered circle lights up as the page scrolls (pure CSS scroll-driven animation). */}
       <div className="relative">
@@ -168,7 +168,7 @@ export function Guarantees() {
 export function Pricing() {
   return (
     <Section id="pricing" labelledBy="price-h">
-      <Heading id="price-h" center sub="Choose the right development package for your project.">Simple, transparent pricing</Heading>
+      <Heading id="price-h" center sub="Choose the right development package for your project.">Simple, Transparent Pricing</Heading>
       <ul className="grid gap-5 md:grid-cols-3">
         {PLANS.map((p) => (
           <li key={p.tag} className="sd-reveal sd-zoom">

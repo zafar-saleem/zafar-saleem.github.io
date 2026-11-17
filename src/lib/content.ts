@@ -150,18 +150,18 @@ export const PROJECTS: Project[] = [
 export const PLAYGROUND_URL = "https://github.com/zafarsaleem";
 
 export const SERVICES = [
-  { title: "01. Design-to-development", text: "Turn your Figma designs, wireframes or visual concepts into a fully functional landing page." },
+  { title: "01. Design-to-development", text: "Turn your Figma designs, wireframes or visual concepts into a fully functional website & landing page." },
   { title: "02. Responsive implementation", text: "Deliver a consistent experience across desktops, tablets and mobile devices." },
   { title: "03. Conversion-focused development", text: "Structure the page around your offer, benefits, proof and primary call to action." },
   { title: "04. Performance and SEO", text: "Build lightweight pages with good loading performance, accessible markup and search-friendly structure." },
-  { title: "05. Launch and handover", text: "Deploy your landing page, configure the essential technical elements and provide handover documentation." },
+  { title: "05. Launch and handover", text: "Deploy your website & landing page, configure the essential technical elements and provide handover documentation." },
 ];
 
 export const TYPES = [
-  { title: "SaaS & Startup Landing Pages", sub: "Turn your product into a compelling reason to sign up.", text: "Launching a SaaS product or growing a startup? Get a professional landing page that explains your product, communicates its value and encourages visitors to start a free trial, book a demo or sign up.", best: "SaaS founders, early-stage startups and software companies." },
-  { title: "Lead Generation Landing Pages", sub: "Turn more of your visitors into qualified enquiries.", text: "Need more leads for your business? I develop conversion-focused landing pages with clear messaging, persuasive calls to action and well-placed enquiry forms that make it easier for potential customers to contact you.", best: "Small businesses, service providers and businesses running advertising campaigns." },
-  { title: "Product Launch Landing Pages", sub: "Build interest before your product goes live.", text: "Introducing a new product, service or business? Get a dedicated launch landing page that highlights its benefits, builds anticipation and encourages visitors to join a waiting list, register their interest or make a purchase.", best: "Startup founders, entrepreneurs and businesses launching something new." },
-  { title: "Service Landing Pages", sub: "Make your services easier to understand and buy.", text: "Give your core service the attention it deserves. I build focused service landing pages that communicate what you offer, demonstrate why customers should choose you and guide visitors towards requesting a quote or booking a consultation.", best: "Consultants, agencies, freelancers and local businesses." },
+  { title: "SaaS & Startup Websites & Landing Pages", sub: "Turn your product into a compelling reason to sign up.", text: "Launching a SaaS product or growing a startup? Get a professional website or landing page that explains your product, communicates its value and encourages visitors to start a free trial, book a demo or sign up.", best: "SaaS founders, early-stage startups and software companies." },
+  { title: "Lead Generation Website & Landing Pages", sub: "Turn more of your visitors into qualified enquiries.", text: "Need more leads for your business? I develop conversion-focused websites & landing pages with clear messaging, persuasive calls to action and well-placed enquiry forms that make it easier for potential customers to contact you.", best: "Small businesses, service providers and businesses running advertising campaigns." },
+  { title: "Product Launch Website & Landing Pages", sub: "Build interest before your product goes live.", text: "Introducing a new product, service or business? Get a dedicated launch websites & landing page that highlights its benefits, builds anticipation and encourages visitors to join a waiting list, register their interest or make a purchase.", best: "Startup founders, entrepreneurs and businesses launching something new." },
+  { title: "Service Website & Landing Pages", sub: "Make your services easier to understand and buy.", text: "Give your core service the attention it deserves. I build focused service website & landing pages that communicate what you offer, demonstrate why customers should choose you and guide visitors towards requesting a quote or booking a consultation.", best: "Consultants, agencies, freelancers and local businesses." },
   // { title: "Service Landing Pages", sub: "Make your services easier to understand and buy.", text: "Give your core service the attention it deserves. I build focused service landing pages that communicate what you offer, demonstrate why customers should choose you and guide visitors towards requesting a quote or booking a consultation.", best: "Consultants, agencies, freelancers and local businesses." },
 ];
 
@@ -218,9 +218,9 @@ export const clients = [
 export const GUARANTEES = [
   { title: "01. Understand your business and goals", text: "We start with a conversation about your business, target customers and what you want your landing page to achieve. Whether that's generating leads, getting product sign-ups or booking more enquiries, we define the priorities before development begins." },
   { title: "02. Plan the page and review the content", text: "We establish the page structure, key sections, messaging and calls to action. If you already have a Figma design, I'll review it. If you don't, we can discuss the structure and assets needed before development." },
-  { title: "03. Develop your landing page", text: "I turn the approved design or page structure into a responsive, fast-loading landing page. I focus on clear layouts, mobile usability, accessibility and search-engine-friendly implementation." },
-  { title: "04. Test, refine and launch", text: "Before launch, I check the page across screen sizes and browsers, test links and forms, and address any agreed revisions. Once everything is approved, I help get your landing page live." },
-  { title: "05. Handover and post-launch support", text: "You receive a completed landing page and the information you need to manage it. I also provide 10 days of post-launch bug support, so you have help if something covered by the agreed scope needs fixing." },
+  { title: "03. Develop your website & landing page", text: "I turn the approved design or page structure into a responsive, fast-loading landing page. I focus on clear layouts, mobile usability, accessibility and search-engine-friendly implementation." },
+  { title: "04. Test, refine and launch", text: "Before launch, I check the page across screen sizes and browsers, test links and forms, and address any agreed revisions. Once everything is approved, I help get your website and landing page live." },
+  { title: "05. Handover and post-launch support", text: "You receive a completed website and landing page and the information you need to manage it. I also provide 10 days of post-launch bug support, so you have help if something covered by the agreed scope needs fixing." },
 ];
 
 export const PLANS = [
