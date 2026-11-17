@@ -149,3 +149,142 @@ section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
     }
   }
 }
+
+
+
+
+/* Main scroll section */
+.scroll-section {
+  width: 100%;
+  height: 200vh;
+
+  view-timeline-name: --about-scroll;
+  view-timeline-axis: block;
+}
+
+/* Sticky viewport container */
+.scroll-sticky {
+  position: sticky;
+  top: 2rem;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+@media (max-width: 767px) {
+  .scroll-sticky {
+    position: static;
+    top: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .scroll-section {
+    height: auto;
+  }
+}
+
+/* Text wrapper */
+.scroll-text {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* About label */
+.about-label {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+/* Original paragraph elements */
+.reveal-paragraph {
+  width: 100%;
+  /* margin-top: 1rem; */
+  text-align: center;
+}
+
+.reveal-line-wrapper {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Temporary word elements */
+.reveal-word {
+  display: inline;
+}
+
+/* Individual rendered lines */
+
+.reveal-line {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-align: center;
+
+  /* Text reveal + shine layers */
+  background-image:
+    linear-gradient(
+      to right,
+      #000 50%,
+      #ccc 50%
+    ),
+    linear-gradient(
+      110deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 60%
+    );
+
+  background-size:
+    200% 100%,
+    200% 100%;
+
+  background-position:
+    100% 0,
+    -100% 0;
+
+  background-repeat: no-repeat;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: text-highlight linear both;
+  animation-timeline: --about-scroll;
+
+  animation-range:
+    var(--range-start)
+    var(--range-end);
+}
+
+
+
+@keyframes text-highlight {
+  from {
+    background-position:
+      100% 0,
+      -100% 0;
+  }
+
+  to {
+    background-position:
+      0 0,
+      100% 0;
+  }
+}
