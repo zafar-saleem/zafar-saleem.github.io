@@ -1,8 +1,7 @@
 import Hero from "@/components/Hero";
-import { BookCall, Faqs, Guarantees, PremiumCta, Pricing, Reviews, Services, Types, Work } from "@/components/Sections";
+import { About, BookCall, Faqs, Guarantees, PremiumCta, Pricing, Reviews, Services, Types, Work } from "@/components/Sections";
 import { FAQS, SITE } from "@/lib/content";
 import { Clients } from "@/components/Clients";
-import About from "@/components/About";
 
 const jsonLd = {
   "@context": "https://schema.org",
