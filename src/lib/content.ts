@@ -2,9 +2,9 @@ export const SITE = {
   name: "Zafar Saleem",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zafar-saleem.github.io",
   email: "zafarsaleem3@gmail.com",
-  bookingUrl: "https://calendly.com/zafarsaleem/30min",
-  title: "Freelance Landing Page Developer | Landing Page Development – Zafar Saleem",
-  description: "Need a landing page for your startup or business? I build fast, responsive, SEO-friendly landing pages for SaaS companies, founders and SMEs. From Figma to launch. Let's discuss your project.",
+  bookingUrl: "https://calendly.com/zafarsaleemdev/30min",
+  title: "Freelance Website Developer | Landing Page Development – Zafar Saleem",
+  description: "Need a website for your startup or business? I build fast, responsive, SEO-friendly websites & landing pages for SaaS companies, founders and SMEs. From Figma to launch. Let's discuss your project.",
 };
 
 export type NavItem = { href: string; label: string; children?: NavItem[] };

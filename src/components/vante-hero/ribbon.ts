@@ -202,6 +202,27 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
     tanH = Math.tan((camera.fov * Math.PI) / 360);
     cols = asp < 0.9 ? 2 : 3;
     rows = asp < 0.9 ? 3 : 2;
+    measureRun();
+  }
+  /**
+   * How far (in vw) each headline line must travel to be completely off screen. On desktop the fixed 76vw is
+   * enough, but on a phone the text is wider than the screen, so the distance is measured from the real text.
+   */
+  let runEnd = 76;
+  function measureRun() {
+    const textWidth = (el: HTMLElement) => {
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      return range.getBoundingClientRect().width;
+    };
+    // centred text that is wider than the screen starts at the left edge instead of being centred
+    const left = (el: HTMLElement) => Math.max(0, (W - textWidth(el)) / 2);
+    // line 1 slides right until its left edge passes the right edge of the screen;
+    // lines 2-4 slide left until their right edges pass the left edge
+    const needRight = W - left(l1);
+    const needLeft = Math.max(...[l2, l3, l4].map((el) => left(el) + textWidth(el)));
+    const need = Math.max(needRight, needLeft) + 24;
+    runEnd = Math.max(76, (need / innerWidth) * 100);
   }
   function grid(i: number): GridRect {
     const vh = 2 * GZ * tanH, vw = vh * asp, gw = vw * (cols === 3 ? 0.74 : 0.88), gap = gw * 0.017;
@@ -261,16 +282,24 @@ export function initRibbon(THREE: typeof T, root: HTMLElement, opts: RibbonOptio
 
   const l1 = $("l1"), l2 = $("l2"), l3 = $("l3"), l4 = $("l4"), cap = $("cap"), rule = $("rule"), hint = $("hint");
   const reviews = root.querySelector<HTMLElement>("#vh-reviews");
+  const tag = root.querySelector<HTMLElement>("#vh-tag");
   const fades = ["pager", "cross", "glow"].map((id) => $(id));
   function render() {
     const pp = p;
     // headline runs right across the page in opposite directions
     const rise = 1 - out(span(pp, 0, 0.12));
-    const run = mix(-50, 76, span(pp, 0, 0.58));
+    const run = mix(-50, runEnd, span(pp, 0, 0.58));
     l1.style.transform = `translate3d(${run}vw,${rise * 34}vh,0)`;
     l2.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
     l3.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
     l4.style.transform = `translate3d(${-run}vw,${rise * 34}vh,0)`;
+    if (tag) {
+      // shown while the video cards are on screen: fades in as the first card appears and out again when they leave
+      const a = span(pp, RIB_A, RIB_A + 0.05);
+      tag.style.opacity = String(a);
+      tag.style.visibility = a > 0 ? "visible" : "hidden";
+      tag.style.transform = `translate(-50%,${(1 - a) * 8}px)`;
+    }
     const capA = 1 - span(pp, 0.52, 0.57);
     cap.style.opacity = String(capA);
     if (reviews) reviews.style.opacity = String(capA); // client cards leave exactly when the caption does

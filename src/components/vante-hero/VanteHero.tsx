@@ -82,7 +82,7 @@ export default function VanteHero({
       <div id="vh-track">
         <div className="stage" id="vh-stage">
           <h1 id="vh-title" aria-label={label} className="mix-blend-difference text-white">
-            <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Landing Pages</span>
+            <span className="hl -my-10" id="vh-l1" aria-hidden="true">I Build Websites</span>
             <span className="hl my-7" id="vh-l2" aria-hidden="true"> For Businesses </span>
             <span className="hl my-2" id="vh-l3" aria-hidden="true"> That Want More </span>
             <span className="hl my-2 mix-blend-difference" id="vh-l4" aria-hidden="true"> Customers</span>
@@ -93,7 +93,7 @@ export default function VanteHero({
           <div id="vh-cross"><i>+</i></div>
           <div id="vh-rule"></div>
           {testimonials && testimonials.length > 0 && (
-            <ul id="vh-reviews" aria-label="Client feedback" className="max-w-[1240px] mt-14 md:mt-0 mx-auto">
+            <ul id="vh-reviews" aria-label="Client feedback" className="max-w-[1240px] mt-24 md:mt-6 mx-auto">
               {testimonials.slice(0, 3).map((t) => (
                 <li key={t.name} className="mt-0">
                   <figure className="vh-card">
@@ -115,6 +115,7 @@ export default function VanteHero({
           <canvas id="vh-gl" aria-hidden="true"></canvas>
           <canvas id="vh-glf" aria-hidden="true"></canvas>
           <Link className="mix-blend-difference text-white" id="vh-hint" href={ctaHref} data-umami-event="start a project click" data-umami-event-location="hero section">START A PROJECT &nbsp;→</Link>
+          {/* <span id="vh-tag" className="mix-blend-difference text-white">I Build Websites For Businesses <br /> That Want More Customers</span> */}
           <div className="top">
             {topBar && (
               <div className="logo">

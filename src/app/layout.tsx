@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: SITE.url }],
-  keywords: ["freelance Next.js developer", "SaaS landing page developer", "React developer for hire", "Figma to Next.js", "SEO-friendly website development"],
+  keywords: ["freelance Next.js developer", "SaaS landing page developer", "Website Development", "React developer for hire", "Figma to Next.js", "SEO-friendly website development"],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website", url: SITE.url, siteName: SITE.name, title: SITE.title, description: SITE.description, locale: "en_US",

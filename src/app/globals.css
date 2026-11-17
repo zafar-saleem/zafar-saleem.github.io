@@ -129,7 +129,7 @@ section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
       animation: sd-tl-fill linear both;
-      animation-timeline: view(block 58vh 41vh);
+      animation-timeline: view(block 58% 41%);
     }
   }
 }
@@ -137,7 +137,7 @@ section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
       animation: sd-tl-node linear both;
-      animation-timeline: view(block 58vh 41vh);
+      animation-timeline: view(block 58% 41%);
     }
   }
 }
@@ -145,7 +145,45 @@ section[id] { content-visibility: auto; contain-intrinsic-size: auto 700px; }
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
       animation: sd-tl-link linear both;
-      animation-timeline: view(block 58vh 41vh);
+      animation-timeline: view(block 58% 41%);
+    }
+  }
+}
+
+/* ---------- About: sticky scroll text colour reveal ----------
+   The section becomes a tall scroll track (300vh) with a named view timeline. Its content is pinned in the middle
+   of the viewport, and every word is coloured in (muted -> bright) during the part of the scroll that belongs to
+   its line, top to bottom. Without scroll-timeline support, or with reduced motion, it is an ordinary section
+   with all text in the bright colour. */
+@keyframes sd-rv { from { color: rgb(11 27 58 / .2); } to { color: var(--color-ink); } }
+
+@utility sd-pin {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      min-height: 300vh;
+      view-timeline: --about block;
+    }
+  }
+}
+@utility sd-pin-stage {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      position: sticky;
+      top: 0;
+      min-height: 100svh;
+    }
+  }
+}
+/* the global "section[id] { content-visibility: auto }" would shrink an off-screen 300vh track, so opt this one out */
+section[id].sd-pin { content-visibility: visible; }
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .rv[data-ready] .rv-word {
+      color: rgb(11 27 58 / .2);
+      animation: sd-rv linear both;
+      animation-timeline: --about;
+      animation-range: contain var(--s) contain var(--e);
     }
   }
 }

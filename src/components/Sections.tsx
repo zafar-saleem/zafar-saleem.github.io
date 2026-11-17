@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AboutReveal from "./AboutReveal";
 import FaqAccordion from "./FaqAccordion";
 import Link from "next/link";
 import { cta, FAQS, GUARANTEES, PLANS, PROJECTS, REVIEWS, SERVICES, SITE, TOOLS, TYPES } from "@/lib/content";
@@ -44,20 +45,24 @@ export function Feature() {
 }
 
 export function About() {
+  // Sticky scroll text colour reveal: the section is taller than the screen, its text stays pinned in the middle
+  // and the lines change from muted to bright one after another as you scroll through it.
   return (
-    <Section id="about" labelledBy="about-h" className="sd-zoom">
-      <div className="scroll-section grid items-center gap-8 md:grid-cols-1 text-center">
-        <div className="scroll-sticky">
-          <div className="scroll-text">
-            <p className="w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand mx-auto">About</p>
-            <h2 id="about-h" className="mt-3 text-3xl font-extrabold sm:text-4xl w-[40vw] mx-auto">Meet Your Landing Page Development Partner</h2>
-            <p className="mt-4 text-muted">I am Zafar, an independent landing page developer based in Lisbon, Portugal. I work with startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.</p>
-            <p className="mt-3 text-muted">Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.</p>
-            <p className="mt-3 text-muted">I handle the technical development, responsive implementation and launch, so you can focus on running your business.</p>
-          </div>
+    <section id="about" aria-labelledby="about-h" className="sd-pin relative">
+      <div className="sd-pin-stage mx-auto flex w-full max-w-6xl items-center justify-center px-5 py-16 text-center sm:px-8 md:py-24">
+        <div className="mx-auto max-w-4xl">
+          <p className="mx-auto w-fit rounded-full bg-sky px-3 py-1 text-xs font-semibold text-brand">About</p>
+          <AboutReveal
+            blocks={[
+              { tag: "h2", id: "about-h", text: "Meet Your Landing Page Development Partner", className: "mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink md:text-5xl" },
+              { tag: "p", text: "I am Zafar, a website developer based in Lisbon, Portugal. I work with small businesses (SMEs), local service providers, indie hackers, startup founders, SaaS businesses and growing companies to create professional landing pages that communicate their value and encourage visitors to take action.", className: "mt-6 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-2xl lg:text-3xl" },
+              { tag: "p", text: "Whether you have a finished Figma design, an early product idea or an existing landing page that needs improvement, I can help turn it into a fast, responsive and search-friendly experience.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-2xl lg:text-3xl" },
+              { tag: "p", text: "I handle the technical development, responsive implementation and launch, so you can focus on running your business.", className: "mt-4 text-lg font-semibold leading-snug tracking-tight text-ink sm:text-xl md:text-2xl lg:text-3xl" },
+            ]}
+          />
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
 

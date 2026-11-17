@@ -30,6 +30,9 @@
 .vante .acts a i{width:6px;height:6px;border-radius:50%;background:currentColor}
 .vante .acts a b{display:block;width:13px;height:7px;border-top:1px solid currentColor;border-bottom:1px solid currentColor}
 .vante #vh-hint{position:absolute;left:50%;top:33px;transform:translateX(-50%);font:400 11.5px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:var(--ink);text-decoration:none;white-space:nowrap;padding-bottom:6px;border-bottom:1px solid var(--line)}
+/* Tagline under the CTA. Hidden at first; ribbon.ts reveals it while the video cards are on screen and hides it again when they go. */
+.vante #vh-tag{position:absolute;left:50%;top:62px;z-index:60;transform:translate(-50%,8px);white-space:nowrap;text-align:center;font:500 clamp(16.5px,2.9vw,24px)/1.25 'Inter Tight',system-ui,sans-serif;letter-spacing:.01em;opacity:0;visibility:hidden;pointer-events:none}
+@media (max-width:760px){.vante #vh-tag{top:58px;font-weight:600}}
 .vante #vh-hint::before{content:"";width:0%;height:2px;background-color:#ffffff;position:absolute;bottom:0;transition:width 0.2s;}
 .vante #vh-hint:hover::before{width:100%}
 .vante a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
@@ -65,7 +68,7 @@
 /* No WebGL, or three.js could not load: show a calm static hero instead of an empty scroll track. */
 .vante[data-failed] #vh-track{height:auto}
 .vante[data-failed] .stage{position:relative;top:0;height:auto;min-height:calc(100svh - var(--vante-top))}
-.vante[data-failed] #vh-gl,.vante[data-failed] #vh-rule,.vante[data-failed] #vh-reviews{display:none}
+.vante[data-failed] #vh-tag,.vante[data-failed] #vh-gl,.vante[data-failed] #vh-rule,.vante[data-failed] #vh-reviews{display:none}
 .vante[data-failed] #vh-l1,.vante[data-failed] #vh-l2,.vante[data-failed] #vh-cap{transform:none}
 .vante[data-failed] #vh-l1{top:calc(50% - 1.3em)}
 .vante[data-failed] #vh-l2{top:calc(50% - .3em)}
